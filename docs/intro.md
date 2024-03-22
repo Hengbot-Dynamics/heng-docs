@@ -2,15 +2,15 @@
 sidebar_position: 1
 ---
 
-# 教程介绍
+# Tutorial Introduction
 
-让我们在不到 5 分钟的时间内发现 **Docusaurus**。
+Let's discover **Docusaurus** in less than 5 minutes.
 
-## 入门
+## Getting started
 
-首先**创建一个新网站**。
+First **Create a new website**.
 
-或者**立即尝试 Docusaurus** 和 **[docusaurus.new](https://docusaurus.new)**。
+Or **try Docusaurus** and **[docusaurus.new](https://docusaurus.new)**.
 
 ### What you'll need
 
