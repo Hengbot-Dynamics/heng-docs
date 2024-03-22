@@ -1,4 +1,5 @@
 ---
+sidebar_label: "中文测试"
 sidebar_position: 6
 ---
 
