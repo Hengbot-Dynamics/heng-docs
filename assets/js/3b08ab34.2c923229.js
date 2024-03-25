@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkheng_docs=self.webpackChunkheng_docs||[]).push([[5340],{4945:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/heng-docs/blog/tags/hello","allTagsPath":"/heng-docs/blog/tags","count":2,"unlisted":false}')}}]);
