@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'heng-docs',
-  tagline: 'Dinosaurs are cool',
+  title: 'HENGBOT',
+  tagline: 'itSparky, A Futuristic Robotic Dog, Lifelike, Dynamic & Open Sourced',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -69,13 +69,18 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'https://i.postimg.cc/cHcppDm5/1280-X1280-4.png',
       },
       items: [
         {
@@ -120,8 +125,25 @@ const config: Config = {
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/hellohengbot',
+            },
+          ],
+        },
+        {
+          title: 'Contacts',
+          items: [
+            {
+              label: 'Business',
+              to: 'mailto:sales@hengbot.com',
+            },
+            {
+              label: 'Media',
+              href: 'mailto:pr@hengbot.com',
+            },
+            {
+              label: 'MediMarketing',
+              href: 'mailto:marketing@hengbot.com',
             },
           ],
         },

@@ -1,5 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
+sidebar_label: "你好"
+
 ---
 
 # Manage Docs Versions

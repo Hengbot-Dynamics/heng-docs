@@ -28,3 +28,9 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* custom.css */
+.navbar__logo img {
+  width: 100px; /* 设置 Logo 的宽度 */
+  height: auto;  /* 保持 Logo 的原始宽高比 */
+}
