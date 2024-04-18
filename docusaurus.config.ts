@@ -1,12 +1,13 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
+import React from 'react';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'HENGBOT',
-  tagline: 'itSparky, A Futuristic Robotic Dog, Lifelike, Dynamic & Open Sourced',
+  tagline: 'Sparky, A Futuristic Robotic Dog, Lifelike, Dynamic & Open Sourced.',
   favicon: 'img/favicon.ico',
-
+  
   // Set the production url of your site here
   url: 'https://Hengbot-Dynamics.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -92,6 +93,16 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tutorial',
+        },
+        {
+          to: '/blog', 
+          label: 'Support', 
+          position: 'left'
+        },
+        {
+          href: 'https://github.com/facebook/docusaurus',
+          label: 'GitHub',
+          position: 'right',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {

@@ -8,8 +8,9 @@ type FeatureItem = {
   description: JSX.Element;
 };
 
+<p>这里是两个特性列表之间的额外说明文字，可以提供更多信息或进行分隔。</p>
+
 const FeatureList: FeatureItem[] = [
-  
   {
     title: 'Swimming',
     Gif: 'img/sparky_swimming.gif',
@@ -33,14 +34,16 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
+
 function Feature({title, Gif, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <img src={Gif} alt={title} className={styles.featureGif} role="img" />
+
+      <Heading as="h3" style={{ color: 'white' } }>{title}</Heading>
+        <img src={Gif} alt={title} className={styles.featureGif}  role="img" style={{ borderRadius: '10px' }}/>
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
@@ -64,7 +67,7 @@ function Feature1({title, Gif, description}: FeatureItem) {
 export default function HomepageFeatures1(): JSX.Element {
   return (
     <section className={styles.features}>
-      <div className={clsx('hero hero')}>
+      <div className={clsx('hero hero')} style={{ backgroundColor: 'rgb(28 28 28)' }}>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

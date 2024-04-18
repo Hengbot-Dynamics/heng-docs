@@ -34,3 +34,29 @@
   width: 100px; /* 设置 Logo 的宽度 */
   height: auto;  /* 保持 Logo 的原始宽高比 */
 }
+
+body {
+  padding-top: 0px; /* 根据需要调整，确保标题和导航栏有足够的空间 */
+  /* background: linear-gradient(to right,#555, #333, #000, #222); 背景色渐变 */
+}
+
+.hero__title {
+  text-align: left;
+  margin-bottom: 60px; /* 根据需要调整下边距 */
+}
+
+.hero__subtitle {
+  text-align: left;
+  font-size: 1.3em; /* 根据需要调整字体大小 */
+}
+
+/* 媒体查询：当屏幕尺寸小于或等于 768px 时，应用这些样式 */
+@media (max-width: 100%) {
+  .hero__title {
+    font-size: 1.5em; /* 减小标题字体大小以适应小屏幕 */
+  }
+
+  .hero__subtitle {
+    font-size: 1em; /* 减小副标题字体大小 */
+  }
+}

@@ -24,8 +24,9 @@
   }
 }
 
+
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* 水平对齐到容器的开始位置，即左对齐 */
+  align-items: center; /* 垂直居中对齐 */
 }

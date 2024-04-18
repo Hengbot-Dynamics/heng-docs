@@ -1,3 +1,4 @@
+import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -19,7 +20,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx("button button--secondary button--lg button")}
             to="https://sparky.hengbot.com/pages/sparky">
             Buy Now⏱️
           </Link>
@@ -36,18 +37,15 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-      <main>
-        <HomepageFeatures1 />
-      </main>
-      <h1 style={{margin: 20}}>
-        <Translate description="The homepage main heading">
-          Welcome to my Docusaurus translated site!
-        </Translate>
-      </h1>
+      <div style={{ backgroundColor: 'rgb(28 28 28)' }} >
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+        </main>
+        <main>
+          <HomepageFeatures1 />
+        </main>
+      </div>
     </Layout>
   );
 }
