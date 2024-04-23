@@ -5,6 +5,11 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HomepageFeatures1 from '@site/src/components/HomepageFeatures1';
+import HomepageFeatures2 from '@site/src/components/HomepageFeatures2';
+import HomepageFeatures3 from '@site/src/components/HomepageFeatures3';
+import HomepageFeatures4 from '@site/src/components/HomepageFeatures4';
+import HomepageFeatures5 from '@site/src/components/HomepageFeatures5';
+import HomepageFeatures6 from '@site/src/components/HomepageFeatures6';
 import Heading from '@theme/Heading';
 import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
@@ -31,6 +36,7 @@ function HomepageHeader() {
 }
 
 
+
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -44,6 +50,24 @@ export default function Home(): JSX.Element {
         </main>
         <main>
           <HomepageFeatures1 />
+        </main>
+        <main>
+          <HomepageFeatures2 />
+        </main>
+        <main>
+          <HomepageFeatures3 />
+        </main>
+        <main>
+          <HomepageFeatures4 />
+        </main>
+        <main>
+          <HomepageFeatures5 />
+        </main>
+        <section>
+        <h2>Software Capability</h2>
+</section>
+        <main>
+          <HomepageFeatures6 />
         </main>
       </div>
     </Layout>

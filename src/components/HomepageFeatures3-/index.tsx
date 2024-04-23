@@ -10,24 +10,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Precise Leg Movement',
-    Gif: 'img/leg_circle.gif',
+    title: 'High-speed dynamic motion',
+    Gif: 'img/speed.gif',
     description: (
-    <>SPARKY's legs have an extensive movement range.The entire body possesses 14 degrees otfreedom, providing a remarkable workspace. its incredibly precise leg mobility allows it todraw a perfect circle.</>
+    <>with a maximum forward speed of 0.5m/s and a maximum backward speed of 0.4m/s.</>
     ),
   },
 ];
 
 function Feature({ title, Gif, description }) {
   return (
-    <div className={clsx('col col--12')}>
+    <div className="col col--12">
+      {/* 使用Flexbox布局，图片在左侧，文本内容在右侧 */}
       <div className="feature-content" style={{ display: 'flex', alignItems: 'flex-start' }}>
-        <div className="description-container" style={{ marginRight: '20px', flexGrow: 1 }}>
+        {/* 图片在左侧 */}
+        <img 
+          src={Gif} 
+          alt={title} 
+          className={styles.featureGif} 
+          style={{ borderRadius: '10px', marginRight: '20px', objectFit: 'cover'}} 
+        />
+        {/* 描述和标题容器 */}
+        <div className="text-container" style={{ flexGrow: 1, textAlign: 'right' }}>
           <Heading as="h1" style={{ color: 'white', marginTop: '20px', marginBottom: '60px' }}>{title}</Heading>
-          <Heading as="p" style={{color: 'white', marginBottom: '0px'}}>
+          <Heading as="p" style={{color: 'white', }}>
           {description}</Heading>
         </div>
-        <img src={Gif} alt={title} className={clsx(styles.featureGif, 'img-right')} style={{ borderRadius: '10px' }} />
       </div>
     </div>
   );

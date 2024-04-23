@@ -10,24 +10,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Precise Leg Movement',
-    Gif: 'img/leg_circle.gif',
+    title: 'A Robot、A Pet、A Friend',
+    Gif: 'img/head_interaction.gif',
     description: (
-    <>SPARKY's legs have an extensive movement range.The entire body possesses 14 degrees otfreedom, providing a remarkable workspace. its incredibly precise leg mobility allows it todraw a perfect circle.</>
+    <>SPARKY is a unique blend of technologyand fun.lt has a built-in camera andmicrophone that allow it to interact withpeople.lt can respond to commands andbring joy to everyone it meets.</>
     ),
   },
 ];
 
 function Feature({ title, Gif, description }) {
   return (
-    <div className={clsx('col col--12')}>
+    <div className="col col--12">
+      {/* 使用Flexbox布局，图片在左侧，文本内容在右侧 */}
       <div className="feature-content" style={{ display: 'flex', alignItems: 'flex-start' }}>
-        <div className="description-container" style={{ marginRight: '20px', flexGrow: 1 }}>
+        {/* 图片在左侧 */}
+        <img 
+          src={Gif} 
+          alt={title} 
+          className={styles.featureGif} 
+          style={{ borderRadius: '10px', marginRight: '20px', objectFit: 'cover'}} 
+        />
+        {/* 描述和标题容器 */}
+        <div className="text-container" style={{ flexGrow: 1, textAlign: 'right' }}>
           <Heading as="h1" style={{ color: 'white', marginTop: '20px', marginBottom: '60px' }}>{title}</Heading>
-          <Heading as="p" style={{color: 'white', marginBottom: '0px'}}>
+          <Heading as="p" style={{color: 'white', }}>
           {description}</Heading>
         </div>
-        <img src={Gif} alt={title} className={clsx(styles.featureGif, 'img-right')} style={{ borderRadius: '10px' }} />
       </div>
     </div>
   );

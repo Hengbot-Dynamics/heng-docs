@@ -10,37 +10,30 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Swimming',
-    Gif: 'img/sparky_swimming.gif',
+    title: 'ALL-IN-ACTUATOR',
+    Gif: 'img/aia_module.jpg',
     description: (
-      <></>
+      <>AIA integrates the entire leg’s three degrees of freedom</>
     ),
   },
   {
-    title: 'Jumping',
-    Gif: 'img/sparky_jumping.gif',
+    title: 'Mechanical Linkage Leg Structure',
+    Gif: 'img/legs.jpg',
     description: (
-      <></>
-    ),
-  },
-  {
-    title: 'Dancing',
-    Gif: 'img/sparky_dance.gif',
-    description: (
-      <></>
+      <>Adopts a biomimetic leg linkage design using springs as energy storage components,allowing the remaining weight of the legs to be shared, and even negligible</>
     ),
   },
 ];
 
 function Feature({title, Gif, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
       <div className="text--center">
-      <Heading as="h3" style={{ color: 'white', marginTop: '0px', marginBottom: '20px' }}>{title}</Heading>
+      <Heading as="h2" style={{ color: 'white', marginTop: '0px', marginBottom: '20px' }}>{title}</Heading>
         <img src={Gif} alt={title} className={styles.featureGif}  role="img" style={{ borderRadius: '10px' }}/>
-      </div>
+        </div>
       <div className="text--center padding-horiz--md">
-        <p>{description}</p>
+      <Heading as="p" style={{color: 'white', }}>{description}</Heading>
       </div>
     </div>
   );

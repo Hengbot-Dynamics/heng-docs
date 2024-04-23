@@ -17,7 +17,7 @@
 
 p {
   font-size: 1.1em; /* 默认大小，通常等于16px */
-    margin-bottom: 10px;     /* 在<p>元素下方添加外边距，1em相对于当前字体大小 */
+  margin-bottom: 10px;     /* 在<p>元素下方添加外边距，1em相对于当前字体大小 */
     /* 如果您想要更精确的控制，可以使用像素值或其他单位 */
 }
 
@@ -25,3 +25,9 @@ p {
   margin-top: 0px; /* 顶部外边距 */
   margin-bottom: -5px; /* 底部外边距 */
 }
+
+.text-container {
+  textAlign: right; /* 文本靠右对齐 */
+  padding: 0; /* 根据需要调整内边距 */
+}
+

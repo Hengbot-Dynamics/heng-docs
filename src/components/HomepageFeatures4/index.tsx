@@ -10,34 +10,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Swimming',
-    Gif: 'img/sparky_swimming.gif',
+    title: 'Around the Y-axis -75°~120° ',
+    Gif: 'img/y_axis.gif',
     description: (
       <></>
     ),
   },
   {
-    title: 'Jumping',
-    Gif: 'img/sparky_jumping.gif',
+    title: 'Around the X-axis -50°~110°',
+    Gif: 'img/x_axis.gif',
     description: (
       <></>
     ),
   },
   {
-    title: 'Dancing',
-    Gif: 'img/sparky_dance.gif',
+    title: 'Along the Z-axis 70mm~170mm',
+    Gif: 'img/z_axis.gif',
     description: (
       <></>
     ),
   },
 ];
 
+
 function Feature({title, Gif, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
       <Heading as="h3" style={{ color: 'white', marginTop: '0px', marginBottom: '20px' }}>{title}</Heading>
-        <img src={Gif} alt={title} className={styles.featureGif}  role="img" style={{ borderRadius: '10px' }}/>
+        <img src={Gif} alt={title} className={styles.featureGif}  role="img" style={{ borderRadius: '10px', marginBottom: '0px'}}/>
       </div>
       <div className="text--center padding-horiz--md">
         <p>{description}</p>
@@ -53,7 +54,7 @@ function Feature1({title, Gif, description}: FeatureItem) {
         <img src={Gif} alt={title} className={styles.featureGif} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h2">{title}</Heading>
+        <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
