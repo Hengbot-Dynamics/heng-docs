@@ -60,3 +60,8 @@ body {
     font-size: 1em; /* 减小副标题字体大小 */
   }
 }
+
+/* 仅对具有 "indent-first-line" 类的段落添加首句缩进 */
+.indent-first-line p:first-of-type {
+  text-indent: 2em;
+}

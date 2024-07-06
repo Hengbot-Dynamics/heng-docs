@@ -30,12 +30,7 @@
   align-items: center; /* 垂直居中对齐 */
 }
 
-section {
-  /* 设置上边距和下边距 */
-  padding: 0px 0;
-  /* 确保section填满整个容器宽度 */
-  width: 100%;
-}
+
 
 h2 {
   /* 设置文本颜色 */
