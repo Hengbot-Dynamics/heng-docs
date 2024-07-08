@@ -3,6 +3,8 @@ sidebar_label: "探索 Sparky：玩转动作编辑"
 sidebar_position: 4
 ---
 
+# 探索 Sparky：玩转动作编辑
+
 ## 一、前言
 
 <div className="indent-first-line">

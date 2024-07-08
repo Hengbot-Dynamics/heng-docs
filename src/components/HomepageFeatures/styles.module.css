@@ -16,18 +16,3 @@
   margin-top: 0px; /* 顶部外边距 */
   margin-bottom: -5px; /* 底部外边距 */
 }
-
-h3 {
-  /* 设置文本颜色 */
-  color: #ffffff;
-  /* 水平居中文本 */
-  text-align: center;
-  /* 设置文字边框 */
-  border: 5px solid #323030;
-  /* 添加一些内边距 */
-  padding: 10px;
-  /* 添加圆角边框 */
-  border-radius: 10px;
-  /* 确保h2元素在section中垂直居中 */
-  margin: 0;
-}
