@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# SPARKY Product Manual
+# Sparky Product Manual
 
 Thank you for choosing SPARKY, the Hengbot Quadruped Robot!
 
