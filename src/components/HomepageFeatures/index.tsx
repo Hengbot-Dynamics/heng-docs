@@ -12,10 +12,11 @@ interface FeatureItem {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Introducing Sparky',
-    subtitle: 'A high-dynamic robotic dog with a combination of interactivity and extensibility',
+    title: '初识哮天',
+    subtitle: '集交互性和可扩展性于一身的高动态机器狗',
     description: (
-      <>SPARKY is a nimble and agile robotic companion equipped with a Cortex-A7 1GHz processor. By prioritizing aesthetics and user experience,<br/>we have refined SPARKY's design and structure over the years. Its legs feature modular linkages and integrate an AIA actuator unit, allowing you to upgrade SPARKY's power system as easily as changing a four-wheel drive car motor and customize a one-of-a-kind SPARKY just like swapping phone cases.</>
+      <>哮天是一款灵活敏捷的机器人伴侣，配备 Cortex-A7 1GHz 处理器。通过优先考虑美学和用户体验，
+      多年来我们完善了SPARKY的设计和结构。它的支腿采用模块化连杆，并集成了 AIA 执行器单元，让您可以像更换四轮驱动汽车电机一样轻松升级 SPARKY 的动力系统，并像更换手机壳一样定制独一无二的 SPARKY。</>
     ),
     Gif: 'img/sparky.gif',
   },

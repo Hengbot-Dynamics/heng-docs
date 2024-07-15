@@ -8,19 +8,19 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image:url("https://i.postimg.cc/PJZZq8Xn/20240326-145638.jpg");
+  background-image:url(./img/sparky_zh.jpg);
   background-repeat: no-repeat;
   background-repeat: repeat-x;
   background-repeat: repeat-y;
   background-position: center center;
   background-size: cover;
-  width: 100%;
-  height: 800px;
+  width: auto;
+  height: 1080px;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 768px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 2rem 0;
   }
 }
 
@@ -30,14 +30,11 @@
   align-items: center; /* 垂直居中对齐 */
 }
 
+section {
+  /* 设置上边距和下边距 */
+  padding: 0px 0;
+  /* 确保section填满整个容器宽度 */
+  width: 100%;
+}
 
-
-h2 {
-  /* 设置文本颜色 */
-  color: #cc0606;
-  /* 水平居中文本 */
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
- }
 
