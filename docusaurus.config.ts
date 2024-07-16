@@ -4,8 +4,8 @@ import React from 'react';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'HENGBOT',
-  tagline: 'Sparky, A Futuristic Robotic Dog, Lifelike, Dynamic & Open Sourced.',
+  title: '哮天',
+  tagline: '首个手办级高动态开源机器人平台',
   favicon: 'img/favicon.ico',
   
   // Set the production url of your site here
@@ -27,8 +27,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh-Hans'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans', 'en'],
   },
 
   presets: [
@@ -65,7 +65,7 @@ const config: Config = {
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,   // 是否对搜索结果进行hash
-        language: ["en", "zh"], // 搜索语言
+        language: ["zh", "en"], // 搜索语言
         indexDocs: true, // 是否对docs进行索引
         indexBlog: true, // 是否对blog进行索引
         indexPages: false, // 是否对pages进行索引
@@ -96,19 +96,13 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '使用指南',
         },
         {
           to: '/blog', 
-          label: 'Support', 
+          label: '技术支持', 
           position: 'left'
         },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',

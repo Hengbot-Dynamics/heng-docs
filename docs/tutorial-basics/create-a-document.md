@@ -1,224 +1,95 @@
 ---
+sidebar_label: "Sparky 哮天使用说明书"
 sidebar_position: 2
 ---
-# Sparky Product Manual
 
-Thank you for choosing SPARKY, the Hengbot Quadruped Robot!
+# Sparky 哮天使用说明书
 
-SPARKY is a nimble and agile robotic companion equipped with a Cortex-A7 1GHz processor. By prioritizing aesthetics and user experience, we have refined SPARKY's design and structure over the years. Its legs feature modular linkages and integrate an AIA actuator unit, allowing you to upgrade SPARKY's power system as easily as changing a four-wheel drive car motor and customize a one-of-a-kind SPARKY just like swapping phone cases.
+<div className="indent-first-line">
+感谢选择恒之未来四足机器人 Sparky 哮天！Sparky 哮天是一款灵动灵巧的机器人伙伴，搭载 Cortex-A7 1GHz 处理器。颜值当道，体验为先。哮天的造型与结构经过多年打磨，它的腿部采用模块化连杆设计，搭载 AIA 一体化电机单元，让您可以像更换四驱车马达一样升级哮天的动力系统，也可以像更换手机壳般定制一款独一无二的哮天。让每一位“二郎神”，都有哮天机器人的守护与陪伴。  
+</div>
 
-May everyone enjoy SPARKY's guardianship and companionship.
+![sparky](./img/app/sparky.jpg)
 
-##  Product Introduction
 
-- **Host**
+## 产品介绍 
+
+- **主机**
   
-![sparky_host](./img/sparky_host.jpg)
-![sparky_instep](./img/sparky_instep.jpg)
+| 主机正面标注图 | 主机背面标注图 | 
+|----|----|
+|![sparky_host](./img/sparky_host.jpg) | ![sparky_instep](./img/sparky_instep.jpg) |
 
-- **Attachment List**
+- **配件清单**
 
-![fittings](./img/fittings.jpg)
+![accessories](./img/Quick_use_img/accessories.jpg)
 
-Cleaning brush / hex key (Allen wrench) / Type-C USB data cable / charger / peripheral connection cable / SD card reader.
+从左至右：清洁刷  六角扳手  Type-C USB数据线 充电器 SD读卡器  
 
-##  Basic Parameters
-
+## 基本参数
 | Name  | Parameter |
 | ------------- | ------------- |
-| Product Dimensions | 250x130x250mm |
-| Total Weight | 850g |
-| Maximum Load | 300g |
-| Operating Environment | Operating Temperature: 0-30°C |
-| Battery Life | 45 minutes to 1 hour 30 minutes |
-| Maximum Speed | 0.5m/s |
-| Power Interface | 5V2A（PD fast charging） |
-| Communication Interfaces | USB/WIFI/Serial/IIC |
-| Operating System | Linux |
-| Programming Languages | C/C++/Python |
+| 产品尺寸 | 250x130x250mm |
+| 整机重量 | 850g |
+| 最大负载 | 300g |
+| 工作环境| Operating Temperature: 0-30°C |
+| 续航时间| 45 minutes to 1 hour 30 minutes |
+| 最高速度 | 0.5m/s |
+| 电源接口 | 5V2A（PD fast charging） |
+| 通讯连接 | USB/WIFI/Serial/IIC |
+| 操作系统 | Linux |
+| 编程语言 | C/C++/Python |
 
-## Quick Start Guide
+## 快速入门指引
+
+- **开机**
 
 :::tip[Use Tip]
 
-Note: Please use the official charging equipment to charge SPARKY by connecting it to the rear of the SPARKY body before powering on.
+将 Sparky 放置到平面上，长按电源键3秒开机。
+注：请在开机前使用官方配套充电设备接入 Sparky 机身尾部为其充电。
 
 ![charge](./img/charge.jpg)
 
 :::
 
-- **Powering On**
+| 按下背部按键开机 |开机后收紧四肢 | 收紧四肢后站立 |
+|---|---|---|
+| ![sparky_open](./img/sparky_open.jpg) | ![crouch](./img/crouch.jpg)| ![stand](./img/stand.jpg) |
 
-Place SPARKY on a flat surface, and long-press the power button for 3 seconds to turn it on.
-![sparky_open](./img/sparky_open.jpg)
-After powering on, SPARKY retracts its limbs.
-![crouch](./img/crouch.jpg)
-SPARKY stands upright after retracting the four limbs.
-![stand](./img/stand.jpg)
-
-- **Download and Install the SPARKY's App**
+- **下载安装应用 Sparky's App**
   
-Users can temporarily install the app using the software installation package we have provided to you. If this causes any inconvenience, we apologize and appreciate your understanding. We will soon release the app on major application stores, so please stay tuned for updates.
+用户可暂时通过我们向您发布的软件安装包进行安装APP，如给您带来的不便，还请谅解，我们将尽快将APP发布于各大应用市场中，敬请期待。
 
-[APP二维码]
+> 链接
 
-- **Connecting SPARKY Through the App**
-  
-**Method 1: SPARKY Connects to the Same Wi-Fi Network as the Phone**
 
-1. Enable Wi-Fi sharing on your phone and display the QR code.
-2. Use SPARKY's camera to scan the QR code displayed on your phone screen.
-3. Follow the prompts to manually input the Wi-Fi password and complete the connection.
+## 使用小技巧
 
-**Method 2: SPARKY Connects to the Phone's Hotspot**
+| 功能         | 使用技巧 | 备注 |
+| -----------  | ----------- | ------- |
+| **使用环境** | 使整洁的桌面或平整的工作地面可以提供一个相对理想的操控环境，请勿在有水或其他液体的户外地面上操作，有助于提高您操控哮天的精准度，确保任务的顺利进行。| ![deposit](./img/deposit.jpg) |
+| **查看电量** | 哮天头部顶端会**实时显示电量条**，电量充足的情况下，哮天可**实现 45-60min 的不插电使用**，如电量低时，它会发出**提醒（狗狗）叫声并自动关机恢复趴下状态.** | ![QR](./img/Quick_use_img/QR.jpg) |
+| **充电** | 我们建议您**使用哮天官方认证的充电器**，以确保安全和效果。在充电过程中，您可以通过尾灯颜色变化来了解充电状态：**红色表示正在充电**，蓝色则意味着充电已完成。| ![sparky_charge](./img/Quick_use_img/sparky_charge.jpg) |
+| **开机** | 长按背部电源键三秒进行开机操作 |
+| **关机** | 一种是头部 UI 程序进行系统关机，另一种是长按背部电源键进行关机。|
+| **头部交互** | 左右耳按键功能一致，均可进行选项选择或调节，头顶触摸可确认选项。| ![head_usage](./img/Quick_use_img/head_usage.jpg) |
+||长期不使用遥控状态，动作编辑状态或点击菜单相应选项会进入自由模式（显示屏显示眼睛），自由模式时眼睛会追踪人脸，触摸头部会有声音动作与灯光反馈。此时，按任意耳朵键可退出自由模式。|![watch](./img/watch.jpg)|
+| **发热** |哮天长时间使用后电机温度会升高，这是正常现象，请确保您在通风良好的环境中使用。此外，哮天内置过热保护程序，当电机温度过高时该电机将主动失能，待其温度降到合理范围内再重新启动工作。| |
+| **清洁** | 长时间使用哮天导致积压灰尘时，可使用附赠小刷子对执行器凹槽进行清洁，头部面盖及其他部位可使用柔软的湿布轻轻擦拭，但在清洁时确保哮天在关闭电源且不在充电状态下，避免将水或其他液体直接溅到机器人表面。| ![sparky_clean](./img/Quick_use_img/sparky_clean.jpg) |
 
-1. Enable the hotspot on your phone and display the QR code.
-2. Use SPARKY's camera to scan the QR code displayed on your phone screen.
-3. Follow the prompts to manually input the hotspot name and password.
-4. Use your phone to scan the QR code displayed on SPARKY's screen to complete the connection.
+:::danger
 
->Note: When the device is connected, you can perform all operations within the software. When the device is not connected, some functions are available, but control functions are not accessible.
+**注意事项**：为避免出现过热、起火等危险情况,请严格遵守以下注意事项:
 
-![head](./img/head.jpg)
-
-  Follow the app's instructions to generate a QR code. Then, use SPARKY's camera to scan the QR code for network connection.
-
-![scan](./img/scan.jpg)
-
-- **Select an Appropriate Area for Controlling SPARKY**
-
-A clean desktop or a level working surface can provide a relatively ideal control environment, helping 
-to enhance the precision of controlling SPARKY and ensuring smooth task execution.
-
-![deposit](./img/deposit.jpg)
-
-## Function Explanation
-
->**With an accompanying app interface diagram below, annotated with functions and usage instructions**
-
-- Omni-Directional Remote Control: Control SPARKY's movement or perform specific actions. The system comes with pre-set action sets, allowing users to command SPARKY to execute these actions.
-- Live Video Feed: The app can receive the live video feed from SPARKY's camera.
-- Unleash Skills: Achieve agile and lifelike movements, with several sets of nimble actions preloaded in the app for user selection.
-- Edit Actions: Develop custom nimble actions for SPARKY with zero programming knowledge. Users can customize SPARKY's actions through fast recording, manual teaching, and editing in director mode. These custom actions can be saved and replayed.
-- AI Capabilities: SPARKY's head features a camera, display screen, microphone, and speaker, enabling AI functions like facial recognition, facial tracking, object recognition, and color tracking.
-- Advanced Player Development Platform: Hardware development interfaces are exposed on the back, facilitating debugging and development. An API for robot motion control software is provided.
-
->Note: For information about the head circuit board, you can visit the MaixPy3 documentation on the Sipeed Wiki website.
-
-## User Instructions
-
-- **Retain the Packaging Box**
-Please keep this packaging box for future transport and storage to prevent unnecessary damage to the robot when it's not in use.
-
-- **Powering On and Off**
-Press and hold the power button for 3 seconds to start SPARKY. To turn it off, press and hold the power button for 3 seconds again. Welcome to the beginning of your robot exploration journey!
-
-:::danger[Take care]
-
-When powering off, please hold SPARKY's body by hand to prevent any unintended collisions due to the motors losing power.
-
-![power_on](./img/power_on.jpg)
+- 产品内置锂离子电池,不可以拆卸或更换；
+- 请使用规格输出为 5V/2A的电源适配器为产品充电;
+- 请勿将产品放置在火中或火源附近,请勿将产品放置在微波炉中;
+- 请勿将产品放置在炎热的天气暴晒;
+- 请勿在潮湿的环境中使用产品，例如,浴缸、水槽或游泳池附近:
+- 请勿拆卸、挤压或刺穿产品;
+- 请勿让产品受到过度冲击,例如从高处跌落;
+- 产品正常工作温度范围为10°C至30°C，请避免在极热或极冷的环境中使用您的产品;
+- 请保持产品干燥,不要将食物或液体洒在产品上;
+- 随意丢弃此玩具,可能会对环境造成影响,请妥善回收处理。
 :::
-
-- **Head Interaction**
-
-Adjustment Options for Left and Right Ear Buttons
-
-[交互英文版图片]
-
-Top Touch for Confirming Options
-
-[交互英文版图片]
-
-If not in use for an extended period, while in remote control mode or action editing mode, or when clicking on specific menu options, SPARKY will enter Free Mode (indicated by eyes displayed on the screen). In Free Mode, the eyes will track faces, and there will be sound and light feedback when touching the head. To exit Free Mode at any time, simply press any of the ear buttons.
-
-![watch](./img/watch.jpg)
-
-- **WiFi Connection**
-  
-To enjoy most of SPARKY's features, it needs to be connected to your WiFi network or your mobile hotspot for seamless remote control and real-time monitoring.
-
-**Method 1: SPARKY Connects to the Same WiFi Network as Your Phone**
-1. Enable WiFi sharing on your mobile phone to generate a QR code.
-2. Use SPARKY's camera to scan the QR code displayed on your phone's screen.
-3. Follow the prompts to manually input the WiFi password, and complete the connection.
-   
-**Method 2: SPARKY Connects to Your Phone's Hotspot**
-1. Enable the hotspot on your mobile phone to generate a QR code.
-2. Use SPARKY's camera to scan the QR code displayed on your phone's screen.
-3. Follow the prompts to manually input the hotspot name and password.
-4. Then, use your mobile phone to scan the QR code displayed on SPARKY's head screen to finalize the connection.
-   
->These methods will ensure a smooth connection for remote control and real-time monitoring of SPARKY's functions.
-
-- **Remote Control**
-
-After successfully connecting SPARKY to the network, you can remotely control SPARKY using the mobile app or an optional remote control joystick. Through the interface's virtual joystick, you can control SPARKY's 14 degrees of freedom for omnidirectional movement, including forward and backward motion, left and right turns, pitch, yaw, and head movements.
-
-- **Action Editing**
-  
-Through the editing feature, you can customize SPARKY's performance, making it your most personalized companion and exploring endless possibilities!
-
-**Method 1: Teaching Mode**
-
-In this mode, you can manually pose SPARKY into the desired positions. SPARKY will record these key positions and reproduce them sequentially.
-
-**Method 2: Editing Mode**
-
-You can adjust SPARKY's actions within the app's interface. Follow the prompts to create more complex action sequences.
-
-**Method 3: Simple Gestures Through Head Interaction**
-
-You can also perform simple gesture-based action editing directly through head interaction without opening the app. 
-
-> Note: This method can not be used to name or permanently save edited actions; it only supports
-recording and playing back actions on the fly.
-
-With these methods, you can tailor SPARKY's actions to your liking, making it your unique companion for endless exploration!
-
-1. **Manually adjust SPARKY's pose**
-![study](./img/study.jpg)
-
-2. **SPARKY replicates the manually adjusted poses**
-![reiteration](./img/reiteration.jpg)
-
-In manual teaching mode, the motors will be disengaged. When you receive a disengagement prompt, please hold SPARKY's body by hand to prevent any unintended collisions.
-
-![hold_body](./img/hold_body.jpg)
-
-### About Heat Generation
-
-SPARKY generates heat during operation, and the motor temperature may rise after prolonged use, which is a normal occurrence. Please ensure that you place it in a well-ventilated environment during use. Additionally, SPARKY has overheat protection mechanisms. When the motor temperature becomes too high, it will automatically disable the affected motor and restart it when the temperature returns to a reasonable range.
-
-- **About Charging**
-
-When the robot's battery level is low, connect it to the provided charger for charging to maintain its continued efficient performance. SPARKY needs to be charged under indoor temperature conditions, and when the battery is completely depleted, it is expected to take approximately 100 minutes to fully charge.
-
-- **About Cleaning**
-
-When cleaning the robot, be sure to turn off the power and disconnect it from the charger. You can use the included small brush to clean the actuator grooves. For the head cover and other parts, gently wipe them with a soft, damp cloth, avoiding direct splashes of water or other liquids onto the robot's surface.
-
-## Safety Precautions
-
-:::danger[To prevent overheating, fires, and other potential dangers, please strictly adhere to the following safety precautions:]
-
-- The product has a built-in lithium-ion battery and should not be disassembled or replaced.
-- Use a power adapter with an output specification of 5V/2A to charge the product.
-- Do not place the product in or near an open flame or heat source, and do not place it in a microwave oven.
-- Avoid exposing the product to extremely hot weather.
-- Do not use the product in damp environments, such as near bathtubs, sinks, or swimming pools.
-- Do not disassemble, crush, or puncture the product.
-- Avoid subjecting the product to excessive impact, such as dropping it from a height.
-- The normal operating temperature range for the product is 10°C to 30°C; please avoid using your product in extremely hot or cold environments.
-- Keep the product dry and avoid spilling food or liquids on it.
-- Disposing of this toy improperly may have environmental impacts, so please recycle or dispose of it properly.
-
-:::
-
-## Maintenance Records
-
-| Date | Serial Number | Issue Description | Maintenance Personnel |
-| ------------- | ------------- | ------------- | ------------- | 
-|  |  |  |  |  
-|  |  |  |  |  
-|  |  |  |  | 

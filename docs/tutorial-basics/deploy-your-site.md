@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## 一、前言
 
-阅读此文档前请先浏览哮天相关文档熟悉基础使用，HENGBOT 前提默认您有一定的编程开发基础、熟悉 Python 语言及接口调用，文档在这不对任何专业名词进行介绍以及科普。一起跟着这篇文档来调试并开发 SPARKY 哮天的 API 接口实现更多有趣的玩法。
+阅读此文档前请先浏览哮天相关文档熟悉基础使用，HENGBOT 前提默认您有一定的编程开发基础、熟悉 Python 语言及接口调用，文档在这不对任何专业名词进行介绍以及科普。一起跟着这篇文档来调试并开发 Sparky 哮天的 API 接口实现更多有趣的玩法。
 
 ## 二、准备工作
 
@@ -36,17 +36,21 @@ sidebar_position: 5
 
 为了更好的使用 API，您需要了解一些关于哮天的机身物理定义：
 
+| 示意图 |  |
+|-----|-----|
+|![api_move](./img/api_move.jpg)|![api_head](./img/api_head.jpg)|
+
 | | 机身物理含义 | |
 |----|----|---|
-| 遥控 | move_x | ove_x = 1/-1 时最大前进、后退速率为0.28m/s|
-| | move_y | move_y = 1/-1 时最大前进、后退速率为0.3m/s |
+| **遥控** | move_x | ove_x = 1/-1 时最大前进、后退速率为 0.28m/s|
+| | move_y | move_y = 1/-1 时最大前进、后退速率为 0.3m/s |
 | | move_w | move_w = 1 时最大z轴旋转速度为 2 弧度每秒 | 
 | | head_pitch | 活动范围为 -1 ~ 1弧度 |
 | | head_yaw | 活动范围为 -1 ~ 1弧度 |
-| | tranx | tranx 在-1~1时 活动范围为前后20mm |
-| | trany |trany 在-1~1时 活动范围为左右20mm |
-| | tranz | tranz 在-1~1时 活动范围为上下30mm |
-| 关键帧 | roll、pitch、yaw | 使用弧度制，范围在-1~1之间。|
+| | tranx | tranx 在-1~1时 活动范围为前后 20mm |
+| | trany |trany 在-1~1时 活动范围为左右 20mm |
+| | tranz | tranz 在-1~1时 活动范围为上下 30mm |
+| **关键帧** | roll、pitch、yaw | 使用弧度制，范围在 -1~1 之间。|
 | | body | body 中 tran_z 为机身站立高度单位mm |
 | | 足端位置 | 均使用mm单位，使用笛卡尔坐标系。|
 
@@ -77,15 +81,15 @@ sidebar_position: 5
 我们已经在准备工作里将哮天联网并获取了 IP 地址做备用，此处以 IP：192.168.8.74 来示例。
 
 :::danger[Take care]
-注意：如有部分用户开启后显示得是：https://wstool.js.org/ 请将 https 改为 http，浏览器安全规范只能建立 wws 链接，而 ws 链接会导致报错。
+注意：如有部分用户开启后显示得是：`https://wstool.js.org/` 请将 https 改为 http，浏览器安全规范只能建立 wws 链接，而 ws 链接会导致报错。
 :::
 
 | 操作步骤 | 示例图 |
 |----|----|
-| `第一步：点击进入 Webscoket 调试网页 并输入 ws://<机器狗IP>:10710/getjson 以 IP 为信息的服务地址。例：ws://192.168.8.74:10710/getjson` | |
-| 第二步：输入后点击“开启连接”，此时连接成功哮天后会返回调试信息。接下来接着勾选“收包 JSON 解码”，您就可以在浏览器端开启调试 API 功能啦！ ||
-| 第三步：尝试向哮天发出第一条指令，来获取哮天机体的基本状态吧！ |`{"cmd":"Get_Status"}`|
-| 第四步：复制上文指令并粘贴在发送框点击发送，右侧消息框会返回哮天端状态信息。 | |
+| **第一步**：点击进入 Webscoket 调试网页 并输入 `ws://<机器狗IP>:10710/getjson` 以 IP 为信息的服务地址。例：`ws://192.168.8.74:10710/getjson` | |
+| **第二步**：输入后点击 **“开启连接”**，此时连接成功哮天后会返回调试信息。接下来接着勾选“收包 JSON 解码”，您就可以在浏览器端开启调试 API 功能啦！ ||
+| **第三步**：尝试向哮天发出第一条指令，来获取哮天机体的基本状态吧！ |`{"cmd":"Get_Status"}`|
+| **第四步**：复制上文指令并粘贴在发送框点击发送，右侧消息框会返回哮天端状态信息。 | |
 
 我们可以尝试解读返回的数据代表的是什么意思？数据里包含了电池信息、硬件错误状态、联网信息、状态信息这四大部分。目前可获取的有效信息只有以下三大部分，而硬件状态还未规范。
 
@@ -114,11 +118,17 @@ sidebar_position: 5
 3. 用户可以根据需求使用恢复机身姿态的功能，以将机器狗调整到稳定的站立状态。
 :::
 
-在验证哮天机器人可正常连接之后，可参考下文开启操纵指令测试，来测试哮天是否能够接收并执行指令。
+验证哮天机器人可正常连接之后，参考下文开启指令测试，来测试哮天是否能够接收并执行指令。
 
 #### 测试一：切换模式并恢复正常姿态
 
-分别发送进入遥控模式 -> 急停模式 -> 恢复机身姿态 的代码指令，参考指令发送后效果视频如下。
+分别发送进入 **遥控模式 -> 急停模式 -> 恢复机身姿态** 的代码指令，参考指令发送后效果视频如下。
+
+```json
+{"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
+{"cmd":"Mode_Switch","target":"Emergency_Stop"}
+{"cmd":"Reset_Robot_Position"} 
+```
 
 ```json
 // 切换到遥控模式
@@ -138,6 +148,13 @@ sidebar_position: 5
 3. 测试完成后，发送恢复机身姿态的指令，确保哮天能够安全地恢复到原始姿态。
 
 ```json
+{"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
+{"cmd":"Control_Move","movex":1.0,"movey":0,"movew":0,"moveh":0,"tranx":0,"trany":0,"tranz":0,"roll":0,"pitch":0,"yaw":0,"headpitch":0,"headyaw":0,"speed":"normal"}
+{"cmd":"Control_Move","movex":0,"movey":0,"movew":0,"moveh":0,"tranx":0,"trany":0,"tranz":0,"roll":0,"pitch":0,"yaw":0,"headpitch":0,"headyaw":0,"speed":"normal"}
+{"cmd":"Reset_Robot_Position"} 
+```
+
+```json
 // 切换到遥控模式
 {"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
 // 全速前进，开启前请把哮天放置在平整空旷的地面或台面！！！
@@ -152,6 +169,18 @@ sidebar_position: 5
 
 录制播放是示教模式下的亮点功能，在进入 API 开发前我们先体验一下如何播放已录制好的动作帧。  
 模式切换与机身姿态重置是所有模式功能的前置步骤，开始使用前请认已经切换到示教模式。
+
+```json
+{"cmd":"Mode_Switch","target":"Teach_Mode"}
+
+{"cmd":"Start_Play"} 
+
+{"AIA":{"BackLeftLeg":{"x":-58.03042221069336,"y":19.174842834472656,"z":-166.43234252929688},"BackRightLeg":{"x":-64.67723846435547,"y":0.9458351135253906,"z":-164.07229614257813},"FrontLeftLeg":{"x":38.319374084472656,"y":-8.239791870117188,"z":-168.74769592285156},"FrontRightLeg":{"x":54.310855865478516,"y":21.319934844970703,"z":-165.0332794189453},"Head":{"pitch":0.3413107395172119,"yaw":0.0007669925689697266}},"cmd":"Playing","time":3000}
+
+{"cmd":"Stop_Play"}
+
+{"cmd":"Reset_Robot_Position"}
+```
 
 ```json
 // 切换到示教模式
@@ -179,12 +208,20 @@ sidebar_position: 5
 编辑模式下可以精细控制动作播放，该模式使用机身坐标系，除了四肢坐标外还包含机身的姿态信息。  
 一起与 HENGBOT 体验播放一帧已压缩好的关键帧动作吧！
 
-
 :::danger[Take care]
 注意
 1. 模式切换与机身姿态重置是所有模式功能的前置步骤，在开始使用前需要确认已经切换到编辑模式。
 2. 编辑模式下发送任何关键帧都会被立刻执行。
 :::
+
+```json
+
+{"cmd":"Mode_Switch","target":"Edit_Mode"}
+
+{"cmd":"Play_Keyframe","speed":"Fastest","acc":"Fastest","time":10,"Body":{"pitch":0.0,"roll":0.0,"tran_x":0.0,"tran_y":0.0,"tran_z":145.0,"yaw":0.0},"FootPoint":{"FrontLeftLeg":{"x":75.0,"y":48.0,"z":0.0},"FrontRightLeg":{"x":75.0,"y":-48.0,"z":0.0},"BackLeftLeg":{"x":-55.0,"y":48.0,"z":0.0},"BackRightLeg":{"x":-55.0,"y":-48.0,"z":0.0}},"Head":{"pitch":0.0,"yaw":0.0}}
+
+{"cmd":"Reset_Robot_Position"}
+```
 
 ```json
 // 切换到编辑模式
@@ -230,6 +267,20 @@ A：刷新浏览器端的网页，数据量过大导致出现缓慢情况。
 可根据下文指令来自由切换当下机器狗的模式及恢复机身姿态。
 
 ```json
+{"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
+
+{"cmd":"Mode_Switch","target":"Teach_Mode"}
+
+{"cmd":"Mode_Switch","target":"Edit_Mode"}
+
+{"cmd":"Mode_Switch","target":"Emergency_Stop"}
+
+{"cmd":"Mode_Switch","target":"Free_Mode"}
+
+{"cmd":"Reset_Robot_Position"} 
+```
+
+```json
 /* 模式切换相关指令 */
 // 切换到遥控模式
 {"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
@@ -249,6 +300,14 @@ A：刷新浏览器端的网页，数据量过大导致出现缓慢情况。
 #### 6.1.2 模式使用顺序说明
 
 模式切换的指令交互流程全部相同，以进入遥控模式为例子，下表是过程中需要的全部指令。
+
+```json
+{"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
+
+{"cmd":"Mode_Switch","target":"Emergency_Stop"}
+
+{"cmd":"Reset_Robot_Position"}
+```
 
 ```json
 // 1、发送切换到遥控模式的指令
@@ -276,6 +335,7 @@ A：刷新浏览器端的网页，数据量过大导致出现缓慢情况。
 步行遥控是由单个多参数指令组成，不同字段的含义大致如下：
 
 | 名称 | 功能 |
+|------|------|
 | move | 用于控制机身的位置变化 |
 | movex | 控制前进后退 |
 | movey | 控制左右运动 |
@@ -284,6 +344,16 @@ A：刷新浏览器端的网页，数据量过大导致出现缓慢情况。
 | roll、pitch、yaw | 用于控制机身姿态 |
 | headpitch、headyaw |专门控制头部的俯仰和偏航| 
 |speed | 配置步频，当前并不影响速度。|
+
+```json
+{"cmd":"Control_Move","movex":1.0,"movey":0,"movew":0,"moveh":0,"tranx":0,"trany":0,"tranz":0,"roll":0,"pitch":0,"yaw":0,"headpitch":0,"headyaw":0,"speed":"normal"}
+
+{"cmd":"Control_Move","movex":-1.0,"movey":0,"movew":0,"moveh":0,"tranx":0,"trany":0,"tranz":0,"roll":0,"pitch":0,"yaw":0,"headpitch":0,"headyaw":0,"speed":"normal"}
+
+{"cmd":"Control_Move","movex":0,"movey":0,"movew":0,"moveh":0,"tranx":0,"trany":0,"tranz":0,"roll":0,"pitch":0,"yaw":0,"headpitch":0,"headyaw":0,"speed":"normal"}
+```
+
+> 以下包含带有注释及部分未经过 `json` 压缩的指令，使用前请看注释。  
 
 ```json
 /* 未压缩的遥控指令 */
@@ -321,6 +391,14 @@ A：刷新浏览器端的网页，数据量过大导致出现缓慢情况。
 
 步行模式下的电机扭力由程序自动控制，快速录制会导致机器人完全卸力，务必在开始录制前抓握住机器人，避免磕碰或跌落造成损坏。
 快速录制过程中的指令:
+
+```json
+{"cmd":"Start_Record"}
+
+{"cmd":"Stop_Record"}
+
+{"cmd":"Reset_Robot_Position"}
+```
 
 ```json
 // 1、开始录制
@@ -383,9 +461,34 @@ A：刷新浏览器端的网页，数据量过大导致出现缓慢情况。
 :::danger[Take care]
 注意:模式（6.1）切换与机身姿态重置是所有模式功能的前置步骤，开始使用前请认已经切换到示教模式。  
 示教模式下用户可以干涉电机的扭力输出，该模式下的录制允许少量输出扭力。方便用户对姿态进行精细控制。
-
+:::
 
 #### 6.3.1 指令表/电机扭力配置
+
+```json
+{"cmd":"Get_Parameter","parameter":"Output_Torque","type":"AIA_ALL"}
+
+{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque","value":"Enable"} 
+{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque","value":"Disable"} 
+
+{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque","value":"Limit"}   
+
+{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque","value":"UnLimit"} 
+
+{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque","value":"Limit"}
+{"cmd":"Set_Parameter","type":"AIA_FrontLeft","parameter":"Output_Torque","value":"Limit"}
+{"cmd":"Set_Parameter","type":"AIA_FrontRight","parameter":"Output_Torque","value":"Limit"}
+{"cmd":"Set_Parameter","type":"AIA_BackLeft","parameter":"Output_Torque","value":"Limit"}
+{"cmd":"Set_Parameter","type":"AIA_BackRight","parameter":"Output_Torque","value":"Limit"}
+
+{"cmd":"Set_Parameter","type":"AIA_ALL","parameter":"Output_Torque","value":"Limit"}
+
+{"cmd":"Start_Record"}
+
+{"cmd":"Stop_Record"}
+
+{"cmd":"Reset_Robot_Position"}
+```
 
 ```json
 /* 获取电机扭力输出配置 */
@@ -431,6 +534,16 @@ A：刷新浏览器端的网页，数据量过大导致出现缓慢情况。
 动作播放涉及数据的序列化与反序列化，不推荐用户直接使用 API。
 
 **播放流程**
+
+```json
+{"cmd":"Start_Play"}
+
+{"AIA":{"BackLeftLeg":{"x":-58.03042221069336,"y":19.174842834472656,"z":-166.43234252929688},"BackRightLeg":{"x":-64.67723846435547,"y":0.9458351135253906,"z":-164.07229614257813},"FrontLeftLeg":{"x":38.319374084472656,"y":-8.239791870117188,"z":-168.74769592285156},"FrontRightLeg":{"x":54.310855865478516,"y":21.319934844970703,"z":-165.0332794189453},"Head":{"pitch":0.3413107395172119,"yaw":0.0007669925689697266}},"cmd":"Playing","time":3000}
+
+{"cmd":"Stop_Play"}
+
+{"cmd":"Reset_Robot_Position"}
+```
 
 ```json
 /* 动作播放 */
@@ -508,523 +621,65 @@ A：刷新浏览器端的网页，数据量过大导致出现缓慢情况。
     }
 ```
 
-### 6.5使用 Python 控制机器人运动
+#### 6.4.2 播放关键帧
+
+```json
+
+{"cmd":"Play_Keyframe","speed":"Fastest","acc":"Fastest","time":10,"Body":{"pitch":0.0,"roll":0.0,"tran_x":0.0,"tran_y":0.0,"tran_z":145.0,"yaw":0.0},"FootPoint":{"FrontLeftLeg":{"x":75.0,"y":48.0,"z":0.0},"FrontRightLeg":{"x":75.0,"y":-48.0,"z":0.0},"BackLeftLeg":{"x":-55.0,"y":48.0,"z":0.0},"BackRightLeg":{"x":-55.0,"y":-48.0,"z":0.0}},"Head":{"pitch":0.0,"yaw":0.0}}
+
+{"cmd":"Reset_Robot_Position"}
+```
+
+```json
+/* 关键帧播放 */
+// 发送压缩后的关键帧
+{"cmd":"Play_Keyframe","speed":"Fastest","acc":"Fastest","time":10,"Body":{"pitch":0.0,"roll":0.0,"tran_x":0.0,"tran_y":0.0,"tran_z":145.0,"yaw":0.0},"FootPoint":{"FrontLeftLeg":{"x":75.0,"y":48.0,"z":0.0},"FrontRightLeg":{"x":75.0,"y":-48.0,"z":0.0},"BackLeftLeg":{"x":-55.0,"y":48.0,"z":0.0},"BackRightLeg":{"x":-55.0,"y":-48.0,"z":0.0}},"Head":{"pitch":0.0,"yaw":0.0}}
+//恢复到站立姿态
+{"cmd":"Reset_Robot_Position"}
+```
+
+### 6.5 使用 Python 控制机器人运动
 
 :::tip[Use Tip] 
 以下程序需要根据用户实际使用环境与机器人IP调整使用，非大规模对外释放版本。
 :::
 
-默认已安装好 Python 环境，请参考以下命令安装相关依赖包。
+> 注意：默认已安装好 Python 环境，请参考以下命令安装相关依赖包。
+
 ```python
-# 此程序在PC端侧运行
-# 240611 遥控协议单元测试，如果碰上主机拒绝连接，可以在哮天头部退出遥控模式重新进入
-import json
-import numpy as np
-import websocket
-import time
-
-# 开始时间
-start_time = time.time()
-
-
-class DefaultValue:
-    def __init__(self):
-        self.pitch = 0
-        self.roll = 0
-        self.tran_x = 0
-        self.tran_y = 0
-        self.tran_z = 155.5
-        self.yaw = 0.0
-        self.pitch_head = 0.0
-        self.yaw_head = 0.0
-        self.front_left_leg_x = 75
-        self.front_left_leg_y = 55
-        self.front_left_leg_z = 0
-        self.front_right_leg_x = 75
-        self.front_right_leg_y = -55
-        self.front_right_leg_z = 0
-        self.back_left_leg_x = -75
-        self.back_left_leg_y = 55
-        self.back_left_leg_z = 0
-        self.back_right_leg_x = -75
-        self.back_right_leg_y = -55
-        self.back_right_leg_z = 0
-        self.acc = 'Slowest'
-        self.speed = 'Slowest'
-        self.time = 10
-
-
-# 创建UI
-class websocket_test:
-    def __init__(self):
-        self.ws = websocket.WebSocket()
-        self.ws.connect('ws://192.168.8.232:10710/getjson')  # 机器人端的websocket地址
-        self.ws.send('{"cmd":"Mode_Switch","target":"Edit_Mode"}')
-
-        self.pitch = 0
-        self.roll = 0
-        self.tran_x = -20
-        self.tran_y = 0
-        self.tran_z = 155
-        self.yaw = 0.0
-        self.pitch_head = 0.0
-        self.yaw_head = 0.0
-
-        self.front_left_leg_x = 75
-        self.front_left_leg_y = 55
-        self.front_left_leg_z = 0
-        self.front_right_leg_x = 75
-        self.front_right_leg_y = -55
-        self.front_right_leg_z = 0
-        self.back_left_leg_x = -75
-        self.back_left_leg_y = 55
-        self.back_left_leg_z = 0
-        self.back_right_leg_x = -75
-        self.back_right_leg_y = -55
-        self.back_right_leg_z = 0
-
-        self.acc = 'Slowest'
-        self.speed = 'Slowest'
-        self.time = 10
-        self.mode = 'Edit_Mode'
-        self.key_file_name = 'keyframe.txt'  # 默认打开读写的关键帧文件名称
-        self.last_time = 0  # 关键帧文件上次修改时间
-        self.current_key_frame_index = 0
-
-    # 发送json数据
-    def send_key_frame(self):
-        # 参数设置
-        amplitude = 1  # 振幅
-        frequency = 0.8  # 频率（周期数每秒）
-        phase = 0  # 相位
-        # 当前时间（毫秒）
-        current_time_ms = (time.time() - start_time) * 1000
-        # 计算当前时间点的x值（周期内的位置）
-        x = 2 * np.pi * frequency * current_time_ms / 1000
-        # 计算对应的y值
-        y = amplitude * np.sin(x + phase)
-        # 打印或存储数据
-        print(f"Time: {current_time_ms:.2f} ms, Y: {y:.4f}")
-
-        data = {
-            "cmd": "Play_Keyframe",
-            "acc": self.acc,
-            "speed": self.speed,
-            "time": 10,  # GUI演示用时间固定为10ms
-            "Body": {
-                "pitch": self.pitch + y / 10,
-                "roll": self.roll,
-                "tran_x": self.tran_x,
-                "tran_y": self.tran_y,
-                "tran_z": self.tran_z,
-                "yaw": self.yaw
-            },
-            "FootPoint": {
-                "FrontLeftLeg": {
-                    "x": self.front_left_leg_x,
-                    "y": self.front_left_leg_y,
-                    "z": self.front_left_leg_z
-                },
-                "FrontRightLeg": {
-                    "x": self.front_right_leg_x,
-                    "y": self.front_right_leg_y,
-                    "z": self.front_right_leg_z
-                },
-                "BackLeftLeg": {
-                    "x": self.back_left_leg_x,
-                    "y": self.back_left_leg_y,
-                    "z": self.back_left_leg_z
-                },
-                "BackRightLeg": {
-                    "x": self.back_right_leg_x,
-                    "y": self.back_right_leg_y,
-                    "z": self.back_right_leg_z
-                }
-            },
-            "Head": {
-                "pitch": self.pitch_head + y / 5,
-                "yaw": self.yaw_head
-            }
-        }
-        data = json.dumps(data)
-        self.ws.send(data)
-        print(data)
-
-    def send_move_mode(self):
-        data_move_mode = {"cmd": "Mode_Switch", "target": "Remote_Control_Mode"}
-        data_move_mode = json.dumps(data_move_mode)
-        self.ws.send(data_move_mode)
-        print(data_move_mode)
-
-    # def send_move_data(self, movex=0.0, movey=0.0, movew=0.0, moveh=0.0,
-    #                    tranx=-20.0, trany=0.0, tranz=140.0,
-    #                    roll=0.0, pitch=0.0, yaw=0.0,
-    #                    headpitch=0.0, headyaw=0.0):
-    def send_move_data(self,
-                       movex=0.0, movey=0.0, movew=0.0, moveh=0.0,
-                       tranx=0.0, trany=0.0, tranz=0.0,
-                       roll=0.0,  pitch=0.0, yaw=0.0,
-                       headpitch=0.0, headyaw=0.0):
-        # move模式下所有参数传入都已经归一化
-        data_move = {
-            "cmd": "Control_Move",
-            "movex": movex,
-            "movey": movey,
-            "movew": movew,
-            "moveh": moveh,
-            "tranx": tranx,
-            "trany": trany,
-            "tranz": tranz,
-            "roll": roll,
-            "pitch": pitch,
-            "yaw": yaw,
-            "headpitch": headpitch,
-            "headyaw": headyaw,
-            "speed": "normal"
-        }
-        data_move = json.dumps(data_move)
-        self.ws.send(data_move)
-        print(data_move)
-
-    # 复位
-    def reset(self):
-        self.pitch = DefaultValue().pitch
-        self.roll = DefaultValue().roll
-        self.tran_x = DefaultValue().tran_x
-        self.tran_y = DefaultValue().tran_y
-        self.tran_z = DefaultValue().tran_z
-        self.yaw = DefaultValue().yaw
-        self.pitch_head = DefaultValue().pitch_head
-        self.yaw_head = DefaultValue().yaw_head
-        self.front_left_leg_x = DefaultValue().front_left_leg_x
-        self.front_left_leg_y = DefaultValue().front_left_leg_y
-        self.front_left_leg_z = DefaultValue().front_left_leg_z
-        self.front_right_leg_x = DefaultValue().front_right_leg_x
-        self.front_right_leg_y = DefaultValue().front_right_leg_y
-        self.front_right_leg_z = DefaultValue().front_right_leg_z
-        self.back_left_leg_x = DefaultValue().back_left_leg_x
-        self.back_left_leg_y = DefaultValue().back_left_leg_y
-        self.back_left_leg_z = DefaultValue().back_left_leg_z
-        self.back_right_leg_x = DefaultValue().back_right_leg_x
-        self.back_right_leg_y = DefaultValue().back_right_leg_y
-        self.back_right_leg_z = DefaultValue().back_right_leg_z
-        self.ws.send('{"cmd":"Reset_Robot_Position"}')
-
-    def limit(self):
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_FrontLeft","parameter":"Output_Torque", "value":"Limit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_FrontRight","parameter":"Output_Torque", "value":"Limit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_BackLeft","parameter":"Output_Torque", "value":"Limit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_BackRight","parameter":"Output_Torque", "value":"Limit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque", "value":"Limit"}')
-
-    def unlimit(self):
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_FrontLeft","parameter":"Output_Torque", "value":"UnLimit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_FrontRight","parameter":"Output_Torque", "value":"UnLimit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_BackLeft","parameter":"Output_Torque", "value":"UnLimit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_BackRight","parameter":"Output_Torque", "value":"UnLimit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque", "value":"UnLimit"}')
-
-
-# 主函数
-if __name__ == '__main__':
-    # 初始化ws
-    app = websocket_test()
-
-    # # 关键帧模式测试
-    # while (1):
-    #     app.send_key_frame()
-    #     time.sleep(0.01)
-    # 方格步行测试
-    # while 1 :
-    #     app.send_move_data(movex=0, movey=0)
-    #     time.sleep(2)
-    #     app.send_move_data(movex=0.8, movey=0)
-    #     time.sleep(2)
-    #     app.send_move_data(movex=0, movey=0.5)
-    #     time.sleep(2)
-    #     app.send_move_data(movex=-0.5, movey=0)
-    #     time.sleep(2)
-    #     app.send_move_data(movex=0, movey=-0.5)
-    #     time.sleep(2)
-
-    # 遥控模式生成舞步测试
-    app.send_move_mode()
-    app.reset()
-    while 1 :
-        # 参数设置
-        amplitude = 0.8  # 振幅
-        frequency = 0.5  # 频率（周期数每秒）
-        phase = 0  # 相位
-        # 当前时间（毫秒）
-        current_time_ms = (time.time() - start_time) * 1000
-        # 计算当前时间点的x值（周期内的位置）
-        x = 2 * np.pi * frequency * current_time_ms / 1000
-        # 计算对应的y值
-        y = amplitude * np.sin(x + phase)
-        # 打印或存储数据
-        print(f"Time: {current_time_ms:.2f} ms, Y: {y:.4f}")
-        app.send_move_data(movex=0.3, movey = -0.8*y, yaw = 0.3*y, roll = -0.3*y, pitch = 0.3*y,headpitch=-y,headyaw=y)
-        time.sleep(0.01)
-
-
-# end of file
+# 部分依赖包
+pip install numpy websockets websocket-client opencv-python pillow matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+> 使用 Python 控制机器人运动源码：[controi_UI.py](./api_py/controlui.py
 
-```Python
-# 此程序在831侧运行
-# -*- encoding: utf-8 -*-
-#!/usr/bin/python3
-#240610_测试websocket最简python程序
-import json
-import numpy as np
-import websocket
-import time
+### Jupyter notebookc 测试
 
-# 开始时间
-start_time = time.time()
+我们已在 Windows/linux 下测试过 Jupyter Notebook 均可正常使用，以下连接为遥控功能测试的 `ipynb` 包。
 
+[遥控测试](./api_py/key_test.ipynb)
 
-class DefaultValue:
-    def __init__(self):
-        self.pitch = 0
-        self.roll = 0
-        self.tran_x = 0
-        self.tran_y = 0
-        self.tran_z = 145
-        self.yaw = 0.0
-        self.pitch_head = 0.0
-        self.yaw_head = 0.0
-        self.front_left_leg_x = 75
-        self.front_left_leg_y = 55
-        self.front_left_leg_z = 0
-        self.front_right_leg_x = 75
-        self.front_right_leg_y = -55
-        self.front_right_leg_z = 0
-        self.back_left_leg_x = -75
-        self.back_left_leg_y = 55
-        self.back_left_leg_z = 0
-        self.back_right_leg_x = -75
-        self.back_right_leg_y = -55
-        self.back_right_leg_z = 0
-        self.acc = 'Slowest'
-        self.speed = 'Slowest'
-        self.time = 10
+### 6.6 图形化 GUI 控制哮天各维度运动
+
+源码：[keyDrame_UI.py](./api_py/keyFrameUI.py)
+
+### 6.7 图形化 GUI 录制与播放动作
+
+源码：[record_UI.py](./api_py/recordUI.py)
+
+### 6.8 可视化生成波形曲线控制哮天各自由度节律运动
+
+源码：[wave_control_GUI.py](./api_py/240623_wave_control_GUI.py)
+
+**Websocket 在远端和本地端都可运行**
 
 
-# 创建UI
-class websocket_test:
-    def __init__(self):
-        self.ws = websocket.WebSocket()
-        self.ws.connect('ws://127.0.0.1:10710/getjson')  # 机器人端的websocket地址
-        self.ws.send('{"cmd":"Mode_Switch","target":"Edit_Mode"}')
+:::tip[Use Tip] 
+哮天在本地端（如831/X3）运行websocket时，ip地址需要改为127.0.0.1
+:::
+> 视频
 
-        self.pitch = 0
-        self.roll = 0
-        self.tran_x = -20
-        self.tran_y = 0
-        self.tran_z = 145
-        self.yaw = 0.0
-        self.pitch_head = 0.0
-        self.yaw_head = 0.0
-
-        self.front_left_leg_x = 75
-        self.front_left_leg_y = 55
-        self.front_left_leg_z = 0
-        self.front_right_leg_x = 75
-        self.front_right_leg_y = -55
-        self.front_right_leg_z = 0
-        self.back_left_leg_x = -75
-        self.back_left_leg_y = 55
-        self.back_left_leg_z = 0
-        self.back_right_leg_x = -75
-        self.back_right_leg_y = -55
-        self.back_right_leg_z = 0
-
-        self.acc = 'Slowest'
-        self.speed = 'Slowest'
-        self.time = 10
-        self.mode = 'Edit_Mode'
-        self.key_file_name = 'keyframe.txt'  # 默认打开读写的关键帧文件名称
-        self.last_time = 0  # 关键帧文件上次修改时间
-        self.current_key_frame_index = 0
-
-    # 发送json数据
-    def send_key_frame(self):
-        # 参数设置
-        amplitude = 1  # 振幅
-        frequency = 0.8  # 频率（周期数每秒）
-        phase = 0  # 相位
-        # 当前时间（毫秒）
-        current_time_ms = (time.time() - start_time) * 1000
-        # 计算当前时间点的x值（周期内的位置）
-        x = 2 * np.pi * frequency * current_time_ms / 1000
-        # 计算对应的y值
-        y = amplitude * np.sin(x + phase)
-        # 打印或存储数据
-        print(f"Time: {current_time_ms:.2f} ms, Y: {y:.4f}")
-
-        data = {
-            "cmd": "Play_Keyframe",
-            "acc": self.acc,
-            "speed": self.speed,
-            "time": 10,  # GUI演示用时间固定为10ms
-            "Body": {
-                "pitch": self.pitch + y / 10,
-                "roll": self.roll,
-                "tran_x": self.tran_x,
-                "tran_y": self.tran_y,
-                "tran_z": self.tran_z,
-                "yaw": self.yaw
-            },
-            "FootPoint": {
-                "FrontLeftLeg": {
-                    "x": self.front_left_leg_x,
-                    "y": self.front_left_leg_y,
-                    "z": self.front_left_leg_z
-                },
-                "FrontRightLeg": {
-                    "x": self.front_right_leg_x,
-                    "y": self.front_right_leg_y,
-                    "z": self.front_right_leg_z
-                },
-                "BackLeftLeg": {
-                    "x": self.back_left_leg_x,
-                    "y": self.back_left_leg_y,
-                    "z": self.back_left_leg_z
-                },
-                "BackRightLeg": {
-                    "x": self.back_right_leg_x,
-                    "y": self.back_right_leg_y,
-                    "z": self.back_right_leg_z
-                }
-            },
-            "Head": {
-                "pitch": self.pitch_head + y / 5,
-                "yaw": self.yaw_head
-            }
-        }
-        data = json.dumps(data)
-        self.ws.send(data)
-        print(data)
-
-    def send_move_mode(self):
-        data_move_mode = {"cmd": "Mode_Switch", "target": "Remote_Control_Mode"}
-        data_move_mode = json.dumps(data_move_mode)
-        self.ws.send(data_move_mode)
-        print(data_move_mode)
-
-    # def send_move_data(self, movex=0.0, movey=0.0, movew=0.0, moveh=0.0,
-    #                    tranx=-20.0, trany=0.0, tranz=140.0,
-    #                    roll=0.0, pitch=0.0, yaw=0.0,
-    #                    headpitch=0.0, headyaw=0.0):
-    def send_move_data(self,
-                       movex=0.0, movey=0.0, movew=0.0, moveh=0.0,
-                       tranx=0.0, trany=0.0, tranz=0.0,
-                       roll=0.0,  pitch=0.0, yaw=0.0,
-                       headpitch=0.0, headyaw=0.0):
-        # move模式下所有参数传入都已经归一化
-        data_move = {
-            "cmd": "Control_Move",
-            "movex": movex,
-            "movey": movey,
-            "movew": movew,
-            "moveh": moveh,
-            "tranx": tranx,
-            "trany": trany,
-            "tranz": tranz,
-            "roll": roll,
-            "pitch": pitch,
-            "yaw": yaw,
-            "headpitch": headpitch,
-            "headyaw": headyaw,
-            "speed": "normal"
-        }
-        data_move = json.dumps(data_move)
-        self.ws.send(data_move)
-        print(data_move)
-
-    # 复位
-    def reset(self):
-        self.pitch = DefaultValue().pitch
-        self.roll = DefaultValue().roll
-        self.tran_x = DefaultValue().tran_x
-        self.tran_y = DefaultValue().tran_y
-        self.tran_z = DefaultValue().tran_z
-        self.yaw = DefaultValue().yaw
-        self.pitch_head = DefaultValue().pitch_head
-        self.yaw_head = DefaultValue().yaw_head
-        self.front_left_leg_x = DefaultValue().front_left_leg_x
-        self.front_left_leg_y = DefaultValue().front_left_leg_y
-        self.front_left_leg_z = DefaultValue().front_left_leg_z
-        self.front_right_leg_x = DefaultValue().front_right_leg_x
-        self.front_right_leg_y = DefaultValue().front_right_leg_y
-        self.front_right_leg_z = DefaultValue().front_right_leg_z
-        self.back_left_leg_x = DefaultValue().back_left_leg_x
-        self.back_left_leg_y = DefaultValue().back_left_leg_y
-        self.back_left_leg_z = DefaultValue().back_left_leg_z
-        self.back_right_leg_x = DefaultValue().back_right_leg_x
-        self.back_right_leg_y = DefaultValue().back_right_leg_y
-        self.back_right_leg_z = DefaultValue().back_right_leg_z
-        self.ws.send('{"cmd":"Reset_Robot_Position"}')
-
-    def limit(self):
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_FrontLeft","parameter":"Output_Torque", "value":"Limit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_FrontRight","parameter":"Output_Torque", "value":"Limit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_BackLeft","parameter":"Output_Torque", "value":"Limit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_BackRight","parameter":"Output_Torque", "value":"Limit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque", "value":"Limit"}')
-
-    def unlimit(self):
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_FrontLeft","parameter":"Output_Torque", "value":"UnLimit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_FrontRight","parameter":"Output_Torque", "value":"UnLimit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_BackLeft","parameter":"Output_Torque", "value":"UnLimit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_BackRight","parameter":"Output_Torque", "value":"UnLimit"}')
-        self.ws.send('{"cmd":"Set_Parameter","type":"AIA_Head","parameter":"Output_Torque", "value":"UnLimit"}')
-
-
-# 主函数
-if __name__ == '__main__':
-    # 初始化ws
-    app = websocket_test()
-
-    # # 关键帧模式测试
-    # while (1):
-    #     app.send_key_frame()
-    #     time.sleep(0.01)
-    # 方格步行测试
-    # while 1 :
-    #     app.send_move_data(movex=0, movey=0)
-    #     time.sleep(2)
-    #     app.send_move_data(movex=0.8, movey=0)
-    #     time.sleep(2)
-    #     app.send_move_data(movex=0, movey=0.5)
-    #     time.sleep(2)
-    #     app.send_move_data(movex=-0.5, movey=0)
-    #     time.sleep(2)
-    #     app.send_move_data(movex=0, movey=-0.5)
-    #     time.sleep(2)
-
-    # 遥控模式生成舞步测试
-    app.send_move_mode()
-    app.reset()
-    while 1 :
-        # 参数设置
-        amplitude = 0.8  # 振幅
-        frequency = 0.5  # 频率（周期数每秒）
-        phase = 0  # 相位
-        # 当前时间（毫秒）
-        current_time_ms = (time.time() - start_time) * 1000
-        # 计算当前时间点的x值（周期内的位置）
-        x = 2 * np.pi * frequency * current_time_ms / 1000
-        # 计算对应的y值
-        y = amplitude * np.sin(x + phase)
-        # 打印或存储数据
-        print(f"Time: {current_time_ms:.2f} ms, Y: {y:.4f}")
-        app.send_move_data(movex=0.3, movey = -0.8*y, yaw = 0.3*y, roll = -0.3*y, pitch = 0.3*y,headpitch=-y,headyaw=y)
-        time.sleep(0.01)
-# end of file
-```
 
 ### 6.6 视频 mjpeg 图传
+
 用户可以直接在浏览器中运行，一起来感受哮天视角下的风景。
 > `例：http://<机器狗IP>:8080` http://192.168.8.232:8080
