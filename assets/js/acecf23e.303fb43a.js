@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkheng_docs=self.webpackChunkheng_docs||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/heng-docs/blog","blogTitle":"Blog"}')}}]);

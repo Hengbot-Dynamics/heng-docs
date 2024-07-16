@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkheng_docs=self.webpackChunkheng_docs||[]).push([[1101],{9733:e=>{e.exports=JSON.parse('{"permalink":"/heng-docs/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
