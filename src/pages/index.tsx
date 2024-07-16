@@ -4,12 +4,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import HomepageFeatures1 from '@site/src/components/HomepageFeatures1';
-import HomepageFeatures2 from '@site/src/components/HomepageFeatures2';
-import HomepageFeatures3 from '@site/src/components/HomepageFeatures3';
-import HomepageFeatures4 from '@site/src/components/HomepageFeatures4';
-import HomepageFeatures5 from '@site/src/components/HomepageFeatures5';
-import HomepageFeatures6 from '@site/src/components/HomepageFeatures6';
+
+
 import Heading from '@theme/Heading';
 import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
@@ -27,7 +23,7 @@ function HomepageHeader() {
           <Link
             className={clsx("button button--secondary button--lg button")}
             to="https://sparky.hengbot.com/pages/sparky">
-            Buy Now⏱️
+            点击了解更多
           </Link>
         </div>
       </div>
@@ -47,28 +43,6 @@ export default function Home(): JSX.Element {
         <HomepageHeader />
         <main>
           <HomepageFeatures />
-        </main>
-        <main>
-          <HomepageFeatures1 />
-        </main>
-        <main>
-          <HomepageFeatures2 />
-        </main>
-        {/* <iframe src="https://www.taobao.com/" width="600" height="450" allowfullscreen></iframe> */}
-        <main>
-          <HomepageFeatures3 />
-        </main>
-        <main>
-          <HomepageFeatures4 />
-        </main>
-        <main>
-          <HomepageFeatures5 />
-        </main>
-        <section>
-        <h2>Software Capability</h2>
-</section>
-        <main>
-          <HomepageFeatures6 />
         </main>
       </div>
     </Layout>
