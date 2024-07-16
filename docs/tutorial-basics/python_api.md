@@ -8,8 +8,7 @@ sidebar_position: 5
 
 此文档介绍了如何使用 python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，学习机器人控制，完成哮天的二次开发。在阅读本文档前，请先阅读以下文档，对哮天有一定了解。
 
->[初识 Sparky：开箱指南](./quick_start_guide.md)  
->[探索 Sparky：玩转动作编辑]()
+>[初识 Sparky：开箱指南](./quick_start_guide.md)
 
 ## 二、准备工作
 
