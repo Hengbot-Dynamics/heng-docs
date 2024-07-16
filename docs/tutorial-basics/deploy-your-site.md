@@ -29,8 +29,7 @@ sidebar_position: 5
   - PC端：已安装 Python 环境
 
 以上环境构建在本文档不会详细说明，如有需要可参考以下资料文档。  
->开箱使用文档：[初识 Sparky：开箱指南](./quick_start_guide.md)   
->APP 更多玩法：[探索 Sparky：玩转动作编辑]()
+>开箱使用文档：[初识 Sparky：开箱指南](./quick_start_guide.md)
 
 ## 三、注意事项
 
