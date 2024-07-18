@@ -102,7 +102,7 @@ sidebar_position: 2
 ### 5.2 联网
 
 :::danger[Take care]
-1. 开机时无跳出/错过联网页面时，请前往[开箱续集](./quick_start_two.md)查看如何手动开启 WIFI 联网功能。
+1. 开机时无跳出/错过联网页面时，请前往[开箱续集](/tutorial-basics/quick_start_two.md)查看如何手动开启 WIFI 联网功能。
 2. 局域网连接方式需持有 APP 的手机和哮天双设备都在同一局域网下。
 3. 如果您是第一次为哮天进行联网，并需要同时连接到 Sparky's App，请按照我们的文档流程进行操作确保顺利连接。
 :::
@@ -294,23 +294,23 @@ sidebar_position: 2
 
 您已踏上与哮天（Sparky）的探索之旅。在这份指南的引导下，您可以体验头部的 UI 程序，看看我们预置了哪一些彩蛋以及有趣的应用。
 
-> [初识 Sparky（续）：更多玩法](./tutorial-basics/quick_start_two.md)
+> [初识 Sparky（续）：更多玩法](./quick_start_two.md)
 
 ### 6.2 玩转动作编辑
 
 在这篇《玩转动作编辑》的 `Sparky's App` 续篇中，我们深入探索如何个性化定制哮天的动作。利用示教模式，您可以亲自引导哮天学习一系列新动作，而编辑模式则让您能够精准调整每个动作的关键帧，创造出独一无二的舞蹈或表演。
 
-> [探索 Sparky：玩转动作编辑](./tutorial-basics/create-a-blog-post.md)
+> [探索 Sparky：玩转动作编辑](./create_a_blog_post.md)
 
 ### 6.3 WebSocket API 使用
 
 文档不止有详细的使用指南，开发者们期待已久的 API 使用指南我们也一并奉上，在这我们公开了遥控的 API 接口相关信息，以及部分图形化相关案例，希望您可以使用它探索并为哮天创造更多的花样玩法。
 
-> [WebSocket API 使用说明](./tutorial-basics/deploy-your-site.md)
+> [WebSocket API 使用说明](./deploy_your_site.md)
 
 ### 6.4 Python 二次开发
 
 在这我们着重介绍了核心 API 手册以及如何使用 `Python SDK` 控制哮天的运动状态。您可以按照我们提供的接口和例程，学习机器人控制，完成哮天的二次开发。
 
-> [Python 二次开发指南](./tutorial-basics/python_api.md)
+> [Python 二次开发指南](./python_api.md)
 

@@ -75,9 +75,9 @@ sidebar_position: 3
 |---------|------|
 | 开发者模式是给想深层编程和二次开发的开发者设计的。一旦启用，哮天头部 UI 程序将被中止，以便开发者可以使用 HENGBOT 提供的 API 接口文档，并通过 Python 等编程语言实现自己的创新想法。| ![ui_api](./img/Quick_use_img/ui_api.jpg)|
 
-> [WebSocket API 使用说明](./tutorial-basics/deploy-your-site.md)
+> [WebSocket API 使用说明](./deploy_your_site.md)
 
-> [Python 二次开发指南](./tutorial-basics/python_api.md)
+> [Python 二次开发指南](./python_api.md)
 
 ### 1.6 头部更多设置
 

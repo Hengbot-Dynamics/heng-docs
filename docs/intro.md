@@ -90,13 +90,13 @@ sidebar_position: 1
 
 在这篇《玩转动作编辑》的 `Sparky's App` 续篇中，我们深入探索如何个性化定制哮天的动作。利用示教模式，您可以亲自引导哮天学习一系列新动作，而编辑模式则让您能够精准调整每个动作的关键帧，创造出独一无二的舞蹈或表演。
 
-> [探索 Sparky：玩转动作编辑](./tutorial-basics/create-a-blog-post.md)
+> [探索 Sparky：玩转动作编辑](./tutorial-basics/create_a_blog_post.md)
 
 ### 3.6 WebSocket API 使用
 
 文档不止有详细的使用指南，开发者们期待已久的 API 使用指南我们也一并奉上，在这我们公开了遥控的 API 接口相关信息，以及部分图形化相关案例，希望您可以使用它探索并为哮天创造更多的花样玩法。
 
-> [WebSocket API 使用说明](./tutorial-basics/deploy-your-site.md)
+> [WebSocket API 使用说明](./tutorial-basics/deploy_your_site.md)
 
 ### 3.6 Python 二次开发
 
