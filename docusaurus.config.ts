@@ -98,13 +98,13 @@ const config: Config = {
           position: 'left',
           label: '使用指南',
         },
+        // {
+        //   to: '/blog', 
+        //   label: '技术支持', 
+        //   position: 'left'
+        // },
         {
-          to: '/blog', 
-          label: '技术支持', 
-          position: 'left'
-        },
-        {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Hengbot-Dynamics',
           label: 'GitHub',
           position: 'right',
         },
@@ -125,17 +125,17 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
+            // {
+            //   label: 'Stack Overflow',
+            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            // },
+            // {
+            //   label: 'Discord',
+            //   href: 'https://discordapp.com/invite/docusaurus',
+            // },
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/hellohengbot',
+              href: 'https://www.facebook.com/hellohengbot/about',
             },
           ],
         },
@@ -143,29 +143,29 @@ const config: Config = {
           title: 'Contacts',
           items: [
             {
-              label: 'Business',
-              to: 'mailto:sales@hengbot.com',
+              label: 'Support',
+              to: 'support@hengbot.com',
             },
-            {
-              label: 'Media',
-              href: 'mailto:pr@hengbot.com',
-            },
-            {
-              label: 'MediMarketing',
-              href: 'mailto:marketing@hengbot.com',
-            },
+            // {
+            //   label: 'Media',
+            //   href: 'mailto:pr@hengbot.com',
+            // },
+            // {
+            //   label: 'MediMarketing',
+            //   href: 'mailto:marketing@hengbot.com',
+            // },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Hengbot-Dynamics',
             },
           ],
         },

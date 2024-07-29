@@ -1,56 +1,58 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 
 ---
-# 初识 Sparky（续）：更多玩法
+# 基础系列（一）：UI 界面使用
 
 ## 一、前言
 
-欢迎来到《初识 Sparky：开箱指南》的续集！
-
-## 二、头部 UI 界面
-
 我们将在这介绍哮天头部 UI 界面，它的头部不仅是其视觉和交互的核心，还集成了一个功能丰富的用户界面（UI），以及来自 HENGBOT 研发人员的惊喜彩蛋。
 
-### 1.1 UI 玩法技巧
+## 二、UI 界面
+
+### 2.1 使用技巧
 
 首先我们来介绍一些通用的玩法技巧，帮助大家快速上手。
 
 | **技巧** | **使用** | **示例图** |
 |----|----|---|
-| 进入交互页面后所有的操作 | 只需通过哮天左右耳的按钮选择“退出”或“进入”，并通过轻触头顶区域确认即可。| ![head](./img/head.jpg) |
+| **进入交互页面后所有的操作** | 只需通过哮天左右耳的按钮选择“退出”或“进入”，并通过轻触头顶区域确认即可。| ![head](./img/head.jpg) |
 
-### 1.2 颜色识别
+### 2.2 颜色识别
 
 > 颜色识别通常涉及到图像处理和机器学习技术，颜色识别就像是给哮天一个“调色板”，使其不仅能够看到图像中的颜色，并且能够识别出特定的颜色，并将用户感兴趣的颜色进行标记。
+
+<iframe width="780" height="400" src="https://www.youtube.com/embed/D72uZHluP_s?si=ZFdCK-wyzF8Mfkao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
 
 要体验颜色识别功能，您可以按照以下步骤进行：
 
 | 操作步骤 | 示例图 |
 |---------|------|
-| **第一步：选择颜色识别**：在“更多功能”菜单中，使用左右耳按键选择“颜色识别”功能。并通过触摸头顶来开启这一功能。| ![ui_rgb](./img/Quick_use_img/ui_rgb.jpg) |
-| **第二步：准备识别对象**：功能启动后，准备一个红色的球或红色纸盒。确保该物体完全处于头部摄像头的视野范围内，以便哮天能够自动进行颜色识别。|  |
+| **第一步：选择颜色识别**：在“更多功能”菜单中，使用按键选择“颜色识别”功能。并通过触摸头顶来开启功能。| ![ui_rgb](./img/Quick_use_img/ui_rgb.jpg) |
+| **第二步：准备识别对象**：功能启动后，准备一个红色的球或红色纸盒。确保该物体完全处于头部摄像头的视野范围内，以便哮天能够自动进行颜色识别跟随。| |
 
 如果您需要识别其他颜色，您可能需要自行更改后台脚本，以适应不同的颜色识别需求。
 
->效果视频
 
-### 1.3 自平衡
+
+### 2.3 自平衡
 
 > 自平衡（Self-Balancing）是指一个系统或设备能够自动调整其姿态或位置，以保持稳定状态的能力；想象一下就像是哮天拥有了自己的“平衡感”；当它站立时，无论是被轻轻推动还是自己微调位置，它体内的系统会迅速感知到这些变化，并通过精细调整腿部动作来恢复平衡。
+
+<iframe width="780" height="400" src="https://www.youtube.com/embed/6p6EiA26qwU?si=88CYzRoqmllL6nZl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 要观察哮天在不同动作下如何实现自平衡姿态，请按照以下步骤操作：
 
 | 操作步骤 | 示例图 |
 |---------|------|
-| **第一步：选择自平衡功能**：在“更多功能”菜单中，使用左右耳按键选择“自平衡”功能。并通过触摸头顶来开启这一功能。| ![ui_demo](./img/Quick_use_img/ui_demo.png) |
+| **第一步：选择自平衡功能**：在“更多功能”菜单中，使用按键选择“自平衡”功能。并通过触摸头顶来开启这一功能。| ![ui_demo](./img/Quick_use_img/ui_demo.png) |
 | **第二步：单腿抬起测试**：轻轻抬起哮天的单腿，观察它的其他三条腿如何缓慢而稳定地调整位置，以保持整个机身的平衡。| |
 | **第三步：双腿抬起测试**：尝试同时抬起哮天的前左腿和前右腿，观察它的后腿如何巧妙地降低高度并抬起屁股，以保持整体的平衡。||
-| **第四步：自定义平衡动作**：现在，您可以自由尝试您想让哮天保持平衡的动作。  ||
+| **第四步：自定义平衡动作**：现在，您可以自由尝试您想让哮天保持平衡的动作。 ||
 
 这些步骤不仅帮助您了解哮天的自平衡能力，还能让您探索更多创造性的玩法。但记得在进行测试时，请确保哮天处于安全的环境中，避免因失去平衡而造成损伤。
 
-### 1.4 自由模式
+### 2.4 自由模式
 
 如何开启自由模式，您可以按照以下步骤进行操作：  
 
@@ -61,15 +63,17 @@ sidebar_position: 3
 
 > 视频
 
-### 1.5 遥控模式
+### 2.5 遥控模式
 
-| 介绍 | 操作步骤 | 示例 |
-|---------|------|------|
-| 遥控模式是哮天头部 UI 界面的核心功能之一，专为实现哮天（Sparky）的远程操控而设计。在这个模式下，用户可以进行联网设置、以及实现 Sparky's App 与哮天的连接、以及使用 WebSocket API 接口进行更深层次的开发。 | **直接在主菜单选择 “遥控模式”** 选项。确认选择后，通过触摸头顶来开启这一功能。 | ![ui_app](./img/Quick_use_img/ui_app.png) |
+遥控模式是哮天头部 UI 界面的核心功能之一，专为实现哮天（Sparky）的远程操控而设计。在这个模式下，用户可以进行联网设置、以及实现 Sparky's App 与哮天的连接、以及使用 WebSocket API 接口进行更深层次的开发。
+
+| 操作步骤 | 示例 |
+|------|------|
+| **直接在主菜单选择 “遥控模式”** 选项。确认选择后，通过触摸头顶来开启这一功能。 | ![ui_app](./img/Quick_use_img/ui_app.png) |
 
 
 
-### 1.6 开发者模式
+### 2.6 开发者模式
 
 | 介绍 | 示例图 |
 |---------|------|
@@ -79,17 +83,17 @@ sidebar_position: 3
 
 > [Python 二次开发指南](./python_api.md)
 
-### 1.6 头部更多设置
+### 2.7 头部更多设置
 
-设置里预置了 WIFI、音量、系统自检、系统信息、以及返回上一级五个选项可供用户调整。
+| 介绍 | 示例图 | 视频 |
+|---------|------|------|
+| 设置里预置了 WIFI、音量、系统自检、系统信息、以及返回上一级五个选项可供用户调整。| ![ui_settings](./img/Quick_use_img/ui_settings.jpg) | <iframe width="580" height="380" src="https://www.youtube.com/embed/rsfhIzw3UIE?si=i7me8lW9ld3sJfWN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
 
-![ui_settings](./img/Quick_use_img/ui_settings.jpg)
-
-| 功能  |  介绍 | 操作步骤 | 示例图 |
-|---------|------|--------|------|
-| **如何开启 WIFI 联网** | 除开机时自动跳出联网页面，我们可通过手动开启 WIFI 连接页面，联网操作跟上文一致。| **第一步**：进入“设置”的菜单，使用左右耳按键选择 “WIFI” 功能，并通过触摸头顶来开启。**第二步**：开启WIFI功能后，系统会显示摄像头画面，按照之前的指导进行 “WIFI” 连接。| ![ui_wifi](./img/Quick_use_img/ui_wifi.jpg) |
-| **如何调节音量** | 我们可通过调节音量来控制哮天叫声的大小。 |**第一步**：选择进入“设置”的菜单，再选择 “调节音量”，并通过触摸头顶来开启这一功能。**第二步**：最后通过左右耳按键来进行提高或减小音量的调整即可。| ![ui_volume](./img/Quick_use_img/ui_volume.jpg) |
-| **如何进行系统自检** | 此功能可对哮天的硬件进行自检，确保在所有硬件无任何问题的前提下，再去体验软件功能。| **第一步**：进入“设置”的菜单，选择 “系统自检”，并通过触摸头顶来开启这一功能。**第二步**：进入后系统会自动对：IMU、KEY、Battery、WiFi Driver、Motor Servo 此硬件进行自检，检查完成后会显示以勾为图标全部通过的页面。| |
-| **检查系统信息** | 开启后哮天会自动对系统信息进行读取 | **第一步**：选择 “系统信息”，并通过触摸头顶来开启这一功能。**第二步**：开启后可看见系统相关版本信息。 | ![ui_system](./img/Quick_use_img/ui_system.jpg) |
+| 功能  |  介绍 | 示例图 |
+|---------|------|------|
+| **如何开启 WIFI 联网** | 除开机时自动联网页面，还可通过手动开启 WIFI 连接，联网操作一致。| ![ui_wifi](./img/Quick_use_img/ui_wifi.jpg) |
+| **如何调节音量** | 我们可通过调节音量来控制哮天叫声的大小。| ![ui_volume](./img/Quick_use_img/ui_volume.jpg) |
+| **如何进行系统自检** | 开启后会自动对硬件 IMU、KEY、Battery、WiFi Driver、Motor Servo 进行自检，确保在所有硬件无任何问题的前提下，再去体验软件功能。| ![app_check](./img/Quick_use_img/app_check.jpg) |
+| **检查系统信息** | 开启后哮天会自动对系统信息进行读取 | ![ui_system](./img/Quick_use_img/ui_system.jpg) |
 
 体验到这里后，大家应该对哮天有了基础的了解及认知，开箱指南到这里结束啦，请尽情探索其他有趣的花样玩法吧！

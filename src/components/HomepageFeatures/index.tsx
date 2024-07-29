@@ -12,10 +12,10 @@ interface FeatureItem {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '初识哮天',
+    title: '哮天',
     subtitle: '集交互性和可扩展性于一身的高动态机器狗',
     description: (
-      <>哮天是一款灵活敏捷的机器人伴侣，配备 Cortex-A7 1GHz 处理器。通过优先考虑美学和用户体验，
+      <>哮天是一款灵活敏捷的机器人伴侣，通过优先考虑美学和用户体验，
       多年来我们完善了SPARKY的设计和结构。它的支腿采用模块化连杆，并集成了 AIA 执行器单元，让您可以像更换四轮驱动汽车电机一样轻松升级 SPARKY 的动力系统，并像更换手机壳一样定制独一无二的 SPARKY。</>
     ),
     Gif: 'img/sparky.gif',

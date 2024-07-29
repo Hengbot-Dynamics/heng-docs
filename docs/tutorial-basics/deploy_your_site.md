@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
-# WebSocket API 使用说明
+# 探索系列（三）：WebSocket API 
 
 ## 一、前言
 
