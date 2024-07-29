@@ -144,7 +144,7 @@ const config: Config = {
           items: [
             {
               label: 'Support',
-              to: 'support@hengbot.com',
+              to: 'mailto:support@hengbot.com',
             },
             // {
             //   label: 'Media',
