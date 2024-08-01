@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 
 ---
-# 基础系列（一）：UI 界面使用
+# 拓展系列（一）：UI 界面使用
 
 ## 一、前言
 
@@ -79,9 +79,9 @@ sidebar_position: 4
 |---------|------|
 | 开发者模式是给想深层编程和二次开发的开发者设计的。一旦启用，哮天头部 UI 程序将被中止，以便开发者可以使用 HENGBOT 提供的 API 接口文档，并通过 Python 等编程语言实现自己的创新想法。| ![ui_api](./img/Quick_use_img/ui_api.jpg)|
 
-> [WebSocket API 使用说明](./deploy_your_site.md)
+> [探索系列（二）：Python API](./python_api.md)  
 
-> [Python 二次开发指南](./python_api.md)
+> [探索系列（三）：WebSocket API](./deploy_your_site.md)
 
 ### 2.7 头部更多设置
 

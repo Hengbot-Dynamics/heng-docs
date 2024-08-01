@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 # 探索系列（二）：Python API
@@ -10,10 +10,8 @@ sidebar_position: 6
 而今天，我们会在这篇文档会找到想要的答案！
 
 <div className="indent-first-line">
-**本篇文档介绍了如何使用 python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。在阅读本文档前，请先阅读以下文档，对哮天有一定了解。**
+**本篇文档介绍了如何使用 Python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。在阅读本文档前，请先阅读[开箱系列：基础配置使用](./quick_start_guide.md)，对哮天有一定了解。**
 </div>
-
->[初识 Sparky：开箱指南](./quick_start_guide.md)
 
 ![sparky](./img/app/sparky.jpg)
 

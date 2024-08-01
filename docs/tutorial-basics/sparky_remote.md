@@ -1,9 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 8
 
 ---
 
-# 快速使用系列：手柄遥控
+# 拓展系列（二）：手柄遥控
 
 ## 一、前言
 
@@ -14,7 +14,7 @@ sidebar_position: 3
 - **硬件：哮天 / 官方配套遥控手柄**
 - **环境：(使用手柄遥控的前提）哮天需在头部（UI）界面进入遥控模式。**
 
->图
+>![sparky_remote](./img/remote/sparky_remote.jpg)
 
 ## 三、启动哮天
 

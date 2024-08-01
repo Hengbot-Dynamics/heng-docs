@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 ---
 
-# 基础系列（二）：基础遥控玩法
+# 基础系列：APP 玩法
 
 ## 一、前言
 
@@ -17,7 +17,7 @@ sidebar_position: 5
 | 步骤 | 详细介绍 |
 |------|---------|
 |**软件：下载好 APP 并根据提示安装**| ![app_qr](./img/app/app_qr.jpg) |
-| **环境：哮天已联网并已成功连接手机 app**| 此文档不再对基础配置等使用操作进行阐述，相关资料请参考此文档：[开箱大放送](./quick_start_guide.md) ||
+| **环境：哮天已联网并已成功连接手机 app**| 此文档不再对基础配置等使用操作进行阐述，相关资料请参考此文档：[开箱系列：基础配置使用](./quick_start_guide.md) ||
 
 
 ## 三、体验 APP 基础玩法
@@ -39,13 +39,14 @@ sidebar_position: 5
  |------|-------|
  |**标注一**：滑动摇杆让哮天动起来实现步态运动，**标注二**：切换速度模式 “普通/急速” 来控制哮天的步态速度。| ![app_rocker](./img/Quick_use_img/app_rocker.jpg) |
 
-在了解完基础的操作步骤后，您可以通过观看视频来亲身体验哮天的步态运动。  
+在了解完基础的操作步骤后，您可以一边观看视频更直观的看到操作步骤，一边来体验哮天的步态运动。
 
 | 功能 | 视频效果 |
 |----|----|
 | **左摇杆**：控制四足：向上（前进 向下（后退）/ 左右滑动可控制平移 | <iframe width="780" height="400" src="https://www.youtube.com/embed/sddgrfJwklk?si=AZlOMtSLRWS6SC_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
 | **右摇杆**：实现左右方向转弯 | <iframe width="780" height="400" src="https://www.youtube.com/embed/K-hf0xVGXPQ?si=JcGrO0wLIagjwVRC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
 | **双摇杆结合步态**：控制步态速度：普通/急速  | <iframe width="780" height="400" src="https://www.youtube.com/embed/rxBW_JiWsoE?si=fcfcMxC_ozY2hzIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
+
 ### 3.3 体验头部运动
 
 | 操作步骤 | 示例图 |
@@ -60,7 +61,7 @@ sidebar_position: 5
 
 | 工具 | 用途 | 使用方法 |
 |----|----|----|
-| **头部滑杆** | 实现头部俯仰及偏航运动 | **上下滑动**：实现俯仰（抬头低头）/ **左右滑动**：进行偏航运动（左右摇头）|
+| **头部滑杆** | 实现头部俯仰及偏航运动 | **上下滑动**：实现俯仰（抬头低头）；**左右滑动**：进行偏航运动（左右摇头）|
 | **头部图传** | 头部图传模块暂未开放，敬请期待。| | 
 
 ### 3.4 体验机身运动
@@ -89,3 +90,15 @@ sidebar_position: 5
 <div className="indent-first-line">
 通过上文的玩法介绍，我们熟悉了 APP 的基础遥控玩法，学习了控制哮天的步态、头部和机身运动等技巧。而接下来准备更进一步，探索 APP 中的进阶遥控玩法——关键帧及拖拽示教。让我们共同期待下一章的精彩内容吧。敬请期待！
 </div>
+
+您可根据下文的导读区去往您需要的文档区。
+
+| 文档 | 导读 |
+| ------------- | ------------- |
+| [开箱系列：基础配置使用](./quick_start_guide.md) | 在本文中，我们将带您了解哮天的基础配置和使用方法。这包括启动步骤、操作技巧、联网指南以及如何与 APP 进行连接等各项操作流程。 |
+| [快速使用系列：手柄遥控](./sparky_remote.md) | 本文档详细介绍了如何快速将哮天与蓝牙手柄配对，以便通过遥控操作实现更流畅的步态、头部和机身运动。|
+| [基础系列（一）：UI 界面使用](./quick_start_two.md) | 本文档介绍了哮天头部的 UI 基本界面与交互操作。|
+| [基础系列（二）：基础遥控玩法](./app_user.md) | 本文档为您介绍了App的基础遥控玩法，涵盖从基础操作到步态运动，头部和机身运动等各个方面。让我们一起探索 App 中的各种有趣玩法吧！|
+| [探索系列（一）：进阶遥控玩法](./create_a_blog_post.md) | 在这里我们将更进一步，探索 APP 中的进阶遥控玩法——关键帧模式及拖拽示教，来为您的哮天创造更多独一无二的动作吧！|
+| [探索系列（二）：Python API](./python_api.md) | 本篇文档介绍了如何使用 python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。|
+|[探索系列（三）：WebSocket API](./deploy_your_site.md) | 本篇文档介绍了如何使用 WebSocket API 来控制哮天的运动状态，完成哮天的二次开发以及更详细的 API 资料。|

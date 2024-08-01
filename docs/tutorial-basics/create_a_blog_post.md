@@ -1,9 +1,9 @@
 ---
-sidebar_label: "探索系列（一）：进阶遥控玩法"
-sidebar_position: 5
+sidebar_label: "探索系列（一）：APP 进阶玩法"
+sidebar_position: 4
 ---
 
-# 探索系列（一）：进阶遥控玩法
+# 探索系列（一）：APP 进阶玩法
 
 ## 一、前言
 
@@ -20,7 +20,7 @@ sidebar_position: 5
 
 ## 三、关键帧模式
 
-> **关键帧模式（编辑模式）**：提供了比示教更精准的控制能力，允许调整哮天每一帧的动作细节：包括速度、加速度、停顿时间以及角度等参数；编辑参数的同时会把数值发送到机身同步调整。这种模式使得每一帧动作都能得到精准调整，从而实现更高精度和高控制度。
+> **关键帧模式（编辑模式）**：提供了更精准的控制能力，允许调整哮天每一帧的动作细节：包括速度、加速度、停顿时间以及角度等参数；编辑参数的同时会把数值发送到机身同步调整。这种模式使得每一帧动作都能得到精准调整，从而实现更高精度和高控制度。
 
 <iframe width="780" height="400" src="https://www.youtube.com/embed/razfjav5x6A?si=_TeCl-8AE6svFB4b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -31,13 +31,13 @@ sidebar_position: 5
 
 | 示例图 | 操作描述 |
 |------|-----|
-|![open_editor_mode](./img/app/open_editor_mode.jpg)|**标注一**：通过顶栏切换到编辑模式，**标注二**：进入页面后提示恢复初始姿态，按“确认”即可。编辑页面展示了哮天在初始姿态时的关节参数，供用户在编辑动作时作为参考依据|
+|![open_editor_mode](./img/app/open_editor_mode.jpg)|**标注一**：通过顶栏切换到编辑模式；**标注二**：进入页面后提示恢复初始姿态，按“确认”即可。编辑页面展示了哮天在初始姿态时的关节参数，供用户在编辑动作时作为参考依据|
 
 ### 3.2 新建关键帧
 
 | 示例图 | 操作描述 |
 |------|-----|
-|![new_editor](./img/app/new_editor.jpg)|**标注一：新建关键帧**：点击 “添加关键帧”进入编辑页面。**标注二：编辑页面**：用户可在页面修改头部、机身、右后腿、左后腿、左前腿、右前腿的 XYZ 三轴参数并创建哮天一帧的关键帧，并进行保存、另存为、删除等操作。|
+|![new_editor](./img/app/new_editor.jpg)|**标注一：（新建关键帧）**点击 “添加关键帧”进入编辑页面；**标注二：（编辑页面）**用户可在页面修改头部、机身、右后腿、左后腿、左前腿、右前腿的 XYZ 三轴参数并创建哮天一帧的关键帧，并进行保存、另存为、删除等操作。|
 
 ### 3.3 示例关键帧（拆解步骤）
 
@@ -49,7 +49,7 @@ sidebar_position: 5
 | **机身** | `Roll`：控制机身的滚转运动、`Pitch`：控制机身的俯仰运动、`Yaw`：控制机身的偏航运动。 |
 | **腿部** | `X轴`：控制腿部前后移动、`Y轴`：控制腿部左右摆动、`Z轴`：控制腿部上下活动。 |
 
-了解我们可修改的关节、参数及它的定义后就开始创造一帧新的关键帧啦！
+了解我们可修改的关节部位、参数及它的定义后就开始创造一帧新的关键帧啦！
 
 | 操作步骤 | 示例图（上下为修改对比图） |
 |---------|-------|
@@ -58,7 +58,7 @@ sidebar_position: 5
 
 **第三步编辑四足参数**：调整时需注意各腿部的原始参数，以确保动作自然协调。腿部可进行修改的有左后腿、右后腿、左前腿及右前腿，配合机身的姿势需调整腿部的上下参数，将前腿的位置调低、后腿的位置调高让哮天实现扭屁股的姿态。
 
-| 右后腿示意图| 左后腿示意图 |
+| 右后腿示意图 | 左后腿示意图 |
 |-----|-----|
 |![right_after](./img/app/right_after.jpg)| ![left_after](./img/app/left_after.jpg)|
 
@@ -68,12 +68,21 @@ sidebar_position: 5
 |-----|-----|
 | ![the_front_left](./img/app/the_front_left.jpg)| ![the_front_right](./img/app/the_front_right.jpg)|
 
-完成所有的调整参数后，我们可以将关键帧调整到 200ms 来观察哮天。来一起看看效果吧！  
-以上参数仅供参考，用户可自行根据想法来进行微调动作。
+完成所有的调整参数后，我们可以将关键帧调整到 200ms 来观察哮天，在 200ms 内我们可以。
 
-> 视频
+| 步骤 | 示例图 |
+|------|-------|
+| **第四步保存关键帧**：编辑完成后点击左侧的保存按键（**标注一**）进行这一帧的关键帧保存。| ![save](./img/app/save.jpg) |
+| **第五步播放关键帧**：点击左上角播放图标（三角形）后会进行对此关键帧进行播放操作。 | ![app_play](./img/app/app_play.jpg) |
 
-### 3.4 更多操作 
+<iframe width="780" height="400" src="https://www.youtube.com/embed/razfjav5x6A?si=_TeCl-8AE6svFB4b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### 3.4 调整参数项
+
+- **标注一：先点击播放键后会弹出编辑键。**
+- **标注二：点击即可进入参数编辑页面。**
+
+![app_parameter](./img/app/app_parameter.jpg)
 
 - **调整电机参数**
 
@@ -93,8 +102,13 @@ sidebar_position: 5
 | **标注二：另存至新关键帧** | 选择此选项可以将当前编辑的关键帧作为一个新的独立关键帧保存。 |
 | **标注三：删除此关键帧** | 点击此选项可从动作序列中移除当前选择的关键帧。| 
 
+## 四、结语
 
-## 四、拖拽示教模式（暂未开放）
+<div className="indent-first-line">
+"以上内容是关于进阶遥控玩法的使用指南。对于好奇的用户来说，了解这些遥控操作背后的原理同样重要。因此，我们接下来将探讨遥控操作的核心——遥控 API 接口。让我们一起探索吧！"
+</div>
+
+<!-- ## 四、拖拽示教模式（暂未开放）
 
 > 此功能暂未开放，后期会陆续开放，敬请期待。
 
@@ -104,7 +118,6 @@ sidebar_position: 5
 > ![teach_process](./img/app/teach_process.jpg)
 
 ### 4.1 快速录制（示教）使用
-
 
 ### 4.2 进入示教模式
 
@@ -152,4 +165,4 @@ sidebar_position: 5
 
 <div className="indent-first-line">
 "以上内容是关于进阶遥控玩法的使用指南。对于好奇的用户来说，了解这些遥控操作背后的原理同样重要。因此，我们接下来将探讨遥控操作的核心——遥控 API 接口。让我们一起探索吧！"
-</div>
+</div> -->
