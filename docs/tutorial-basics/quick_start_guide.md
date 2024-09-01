@@ -71,7 +71,7 @@ sidebar_position: 2
 
 将哮天放置平地后**长按背部电源键三秒**开机，启动时哮天将从趴卧形态收回四肢，自动调整至站立姿态并发出狗吠声。此时**头部开始播放开机及眨眼动画**，请接受来自哮天的友好 Wink 吧！
 
-![sparky.gif](./../../static/img/sparky.gif)
+![sparky.gif](./img/sparky.gif)
 
 ### 4.2 使用技巧
 

@@ -651,7 +651,7 @@ pip install numpy websockets websocket-client opencv-python pillow matplotlib -i
 ```
 > 使用 Python 控制机器人运动源码：[controi_UI.py](./api_py/controlui.py
 
-### Jupyter notebookc 测试
+### Jupyter notebook 测试
 
 我们已在 Windows/linux 下测试过 Jupyter Notebook 均可正常使用，以下连接为遥控功能测试的 `ipynb` 包。
 

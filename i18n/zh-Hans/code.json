@@ -1,8 +1,4 @@
 {
-  "Welcome to my Docusaurus translated site!": {
-    "message": "Welcome to my Docusaurus translated site!",
-    "description": "The homepage main heading"
-  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"
@@ -71,7 +67,7 @@
     "message": "页面路径",
     "description": "The ARIA label for the breadcrumbs"
   },
-  "theme.docs.DocCard.categoryDescription": {
+  "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "{count} 个项目",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
