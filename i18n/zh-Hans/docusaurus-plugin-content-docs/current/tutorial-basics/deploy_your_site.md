@@ -113,7 +113,7 @@ We can try to interpret the meaning of the returned data. The data contains four
   - SSID: test
 - Feedback information: Get status (feedback: "Get_Status" may indicate that this is a status update feedback)
 
-### 5.2 测试遥控步态
+### 5.2 Test remote control gait
 
 :::danger[TAKE CARE]
 Notes:
@@ -327,7 +327,7 @@ The instruction interaction process for mode switching is all the same. Taking e
 {"cmd":"Reset_Robot_Position"}
 ```
 
-### 6.2 遥控模式
+### 6.2 Remote Control Mode
 
 :::danger[TAKE CARE]
 Prerequisite: Before executing this section, it is necessary to switch modes (Section 6.1) and confirm that it is in remote control mode.  

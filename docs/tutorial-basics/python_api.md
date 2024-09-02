@@ -10,7 +10,9 @@ sidebar_position: 5
 而今天，我们会在这篇文档会找到想要的答案！
 
 <div className="indent-first-line">
-**本篇文档介绍了如何使用 Python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。在阅读本文档前，请先阅读[开箱系列：基础配置使用](./quick_start_guide.md)，对哮天有一定了解。**
+**首先，我首先，在学会本篇文档介绍了如何使用 Python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。在阅读本文档前，请先阅读[开箱系列：基础配置使用](./quick_start_guide.md)，对哮天有一定了解。**
+
+**本篇会带大家**
 </div>
 
 ![sparky](./img/app/sparky.jpg)
@@ -210,6 +212,23 @@ def test_shake_head(ip, timeout = 3):
         time.sleep(timeout)
 test_shake_head(IP)
 ```
+#### 3.3.4 播放关键帧
+
+```python
+from hengbot import sparky
+# set IP
+IP = '192.168.8.154'
+def test_play_frame(ip):
+    import time
+    # connect through ip
+    with sparky.robot_control(ip) as robot:
+        # switch to edit mode and return to edit mode operation object
+        edit = robot.switch_mode(sparky.MODE_EDIT)
+        # play action frame
+        edit.play('./20240808_Shaking_your_head.txt')
+        input("回车退出")
+test_play_frame(IP)
+```
 
 ### 3.4 示教模式
 
@@ -328,7 +347,7 @@ robot_control.del_close_callback(closeCallback)
 
 | 函数 | 属性 | 备注|
 |----|----|----|
-| robot_control.switch_mode(target) | 切换哮天工作模式 | target:可选 `sparky.MODE_CTRL`、`sparky.MODE_TEACH`、`sparky.MODE_EDIT`、`sparky.MODE_WAVE`  返回对应模式操作对象|
+| robot_control.switch_mode(target, end_reset=True) | 切换哮天工作模式 | target:可选 `sparky.MODE_CTRL`、`sparky.MODE_TEACH`、`sparky.MODE_EDIT`、`sparky.MODE_WAVE`  返回对应模式操作对象; `end_reset`:程序运行结束后是否恢复哮天形态，仅在 `sparky.MODE_TEACH`、`sparky.MODE_EDIT` 有效。|
 | robot_control.reset() | 恢复哮天姿态 | |
 | robot_control.get_status() | 以 Json 的形式返回哮天状态信息，整理后如下所示 |  |
 

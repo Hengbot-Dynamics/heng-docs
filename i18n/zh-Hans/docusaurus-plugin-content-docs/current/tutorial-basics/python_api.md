@@ -209,6 +209,24 @@ def test_shake_head(ip, timeout = 3):
 test_shake_head(IP)
 ```
 
+#### 3.3.4 Play Keyframes
+
+```python
+from hengbot import sparky
+# set IP
+IP = '192.168.8.154'
+def test_play_frame(ip):
+    import time
+    # connect through ip
+    with sparky.robot_control(ip) as robot:
+        # switch to edit mode and return to edit mode operation object
+        edit = robot.switch_mode(sparky.MODE_EDIT)
+        # play action frame
+        edit.play('./20240808_Shaking_your_head.txt')
+        input("回车退出")
+test_play_frame(IP)
+```
+
 ### 3.4 Teaching Demonstration Mode
 
 After experiencing the editing mode above, we came to the teaching demonstration mode to record and play the action.
@@ -325,7 +343,7 @@ robot_control.del_close_callback(closeCallback)
 
 | Function | Attribute | Remarks |
 |----------|-----------|---------|
-| robot_control.switch_mode(target) | Switch Sparky working mode | target:`sparky.MODE_CTRL`、`sparky.MODE_TEACH`、`sparky.MODE_EDIT`、`sparky.MODE_WAVE` can be selected to return the corresponding mode operation object. |
+| robot_control.switch_mode(target, end_reset=True) | Switch Sparky working mode | target:`sparky.MODE_CTRL`、`sparky.MODE_TEACH`、`sparky.MODE_EDIT`、`sparky.MODE_WAVE` can be selected to return the corresponding mode operation object. `end_reset`:Whether to restore sparky mode after the program ends. Only valid in `sparky.MODE_TEACH` and `sparky.MODE_EDIT`. |
 | robot_control.reset() | Restore Sparky's posture | |
 | robot_control.get_status() | The information will be returned in the form of json, which is sorted as follows |  |
 

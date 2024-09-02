@@ -37,17 +37,19 @@ List：Cleaning brush, USB data cable (Type-C), Battery charger
 
 - **Basic**
 
-| 名称  | 说明 |
+| Name  | Parameter |
 | ------------- | ------------- |
-| 控制方式 | WIFI（局域网）APP 遥控/外接遥控手柄 |
-| 传感器 | 摄像头 |
-| | 电机内置编码器与温度传感器 |
-| | 头部触摸传感器 |
-| | 头部按键 |
-| | 高精度姿态传感器（选配）|
-| | 语音识别传感器（选配）|
+| Dimension | 250x130x250mm |
+| Weight | 850g |
+| Max. Load | 300g |
+| Working Temperature | 10-30°C |
+| Battery Duration | Over 45 minutes |
+| Max. Speed | 0.4m/s |
+| Power interface | PD30w |
+| Operating System | Linux |
+| Programming Language | C/C++/Python |
 
-- **硬件参数**  
+<!-- - **硬件参数**  
 
 | 名称   | 说明 | 
 |--------|---------------|
@@ -79,8 +81,8 @@ List：Cleaning brush, USB data cable (Type-C), Battery charger
 
 | 名称   | 说明 | 
 |--------|---------------|
-| 电源	| 输入参数：100-240V~ 50/60Hz |
-| 		| 充电保护：过温保护，过压保护，过流保护，短路保护。|
+| 电源	 | 输入参数：100-240V~ 50/60Hz |
+| 		 | 充电保护：过温保护，过压保护，过流保护，短路保护。|
 | 电池	 | 电池类型：锂离子电池 |
 | 		 | 标称电压：7.4V |
 | 		 | 充电限制电压：8.4V |
@@ -95,7 +97,7 @@ List：Cleaning brush, USB data cable (Type-C), Battery charger
 |--------|---------------|
 | 产品尺寸 | 250x130x250mm |
 | 整机重量 | 850g（含电池105g） |
-| 工作环境 | 工作温度：10-30°C |
+| 工作环境 | 工作温度：10-30°C | -->
 
 ## IV.Quick Start Guide
 
