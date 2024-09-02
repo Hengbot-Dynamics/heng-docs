@@ -20,10 +20,9 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
-            className={clsx("button button--secondary button--lg button")}
+          <Link className={clsx("button button--secondary button--lg button")}
             to="https://hengbot-dynamics.github.io/heng-docs/docs/intro">
-            点击了解更多
+            <Translate>点击了解更多</Translate>
           </Link>
         </div>
       </div>
