@@ -3,177 +3,177 @@ sidebar_position: 2
 
 ---
 
-# 开箱系列：基础配置使用
+# Unboxing: Entry-level Configuration and Usage
 
 
-## 一、前言
+## I.Preface
 
-<div className="indent-first-line">
-嘿，未来的机器狗训练大师！欢迎您踏上与新伙伴——哮天的旅程。这份精心准备的开箱指南将引导您深入了解哮天的奇妙世界。它将教您如何启动、使用并与哮天进行互动。同时，这份指南也将激发您的创造力，鼓励您探索未知，创造更多有趣的玩法。
-</div>
+Hey, the future robot dog trainer! Welcome to the  journey with your new partner-Sparky. This unboxing guide will lead you to understand the wonderful world of Sparky. It will teach you how to start, use and interact with your Sparky. At the same time, this guide will also stimulate your creativity and encourage you to explore the unknown and create more interesting ways to play.   
 
+## II.Unboxing
 
-## 二、开箱
-
-首先，感谢您选择并信任我们的产品——哮天（Sparky）！现在，让我们一起来开箱。
-我们为哮天配备了金属箱体作为外包装，箱体表面采用亮光纹设计，正面镶嵌了银色铭牌，这不仅增加了美观性，箱体还便于用户携带或保存哮天。接下来，一起解开包装箱的锁扣一探究竟吧！
+First of all, thank you for trusting us with your choice of Sparky! Now, let's open the box together. We have equipped Sparky with a metal box as the outer packaging. The surface of the box is designed with bright stripes, and the front is inlaid with a silver nameplate, which not only increases the aesthetics, but also facilitates users to carry or store Sparky. Next, let's unlock the box and find it out!
 
 ![sparky_box](./img/Quick_use_img/sparky_box.jpg)
 
-开箱后，首先映入眼帘的是我们的主角——哮天。它以狗狗休息时的舒适姿态趴在箱内。在开始使用前请抓住哮天的腰部，小心地将它从箱中取出，取出后放置在任意平整的地面或台面上。
+After unpacking, the first thing that catches the eye is our protagonist - Sparky. It lies in the box in the comfortable posture of a dog resting. Before starting to use, please grab Sparky's waist and carefully take it from the box. And then, place it on any flat ground or tabletop.
 
 ![sparky_unbox](./img/Quick_use_img/sparky_unbox.jpg)
 
-哮天整机重量仅有850克，相当于两瓶矿泉水的重量。我们采用了先进的轻量化设计，在机身和腿部进行了重量的大幅减轻，既保持了了轻巧的手感，又保留了金属结构的坚固性。
+Sparky weighs only 850g, which is equivalent to the weight of two bottles of water. We have adopted advanced lightweight design, significantly reduced the weight of the body and legs, while maintained a lightweight feel and the robustness of the metal structure.
 
 ![sparky_grad](./img/Quick_use_img/sparky_grad.jpg)
 
-## 三、配件盘点
+## III.Accessory List  
 
-配件：清洁刷 / 双 Type-C 数据线 / 充电器。
+List: Cleaning brush, USB data cable (Type-C), Battery charger.
 
 ![sparky_all](./img/Quick_use_img/sparky_all.jpg)  
 
-| 配件名称     |    说明     |
+| Accessory Name  |  Description  |
 | ----------- | ----------- |
-| **SD镜像卡** | 内置哮天镜像系统（已提前插入头部卡槽）|
-| **清洁刷** | 可对头部或机身进行灰尘清洁 |
-| **Type-C 数据线** | 连接 SPARKY哮天 与其他设备（PC端）的线材，用于数据传输和充电 |
-| **充电器** | 搭配 Type-C 数据线 进行充电使用 |
+| **SD mirror card** | Built in Sparky mirror system (pre-inserted into the head card slot) |
+| **Cleaning brush** | Clean the dust on the head or body |
+| **USB cable (Type-C)** | Connect Sparky with other devices (e.g. PC) for data transmission or charging |
+| **Charger** | Used with Type-C USB cable for charging |
 
-至此，开箱过程就告一段落了。  
-在开启与哮天的互动前，请仔细对整机及配件进行核对及外观检查。如果在检查过程中发现任何问题，请您可以通过购买渠道或邮箱 support@hengbot.com 联系我们提供必要的帮助和解决方案。
-:::tip[Use Tip] 
+The end of unpacking guide. 
+Before starting the interaction with your Sparky, please carefully check and visually inspect the entire product and accessories. If any problems are found during the inspection, please contact us through the purchasing channel or email support@hengbot.com for necessary assistance and solutions.  
 
-- 外观检查：请仔细观察哮天的外观以及整机机身，确保没有任何明显的损坏迹象，如划痕、凹陷等。
-- 充电检查：请使用官方配套充电器进上电接入哮天进行充电测试，尾巴灯亮起表示在充电状态。
+:::tip[USER TIPS] 
+
+- Appearance inspection: Please carefully check the appearance of your Sparky and the entire body to ensure that there are no obvious signs of damage, such as scratches, dents, etc.  
+- Charging check: Please use the official charger for charging test. The taillight lights up to indicate that it is in the charging state.
+
 :::
 
-## 四、启动哮天
+## IV.Start up Sparky  
 
-检查无误后，下一步是启动哮天。
+After checking, the next step is to start Sparky.
 
 :::tip[Use Tip]
 
-**开机前请保证哮天以正确的初始姿势放置在平稳地面上，使用前可取下包装箱的泡棉起到保护作用**，使用途中也请勿让产品受到过度冲击，例如从高处跌落或碰撞等；
+**Remove the foam from the packaging box**. During moving, prevent the product from excessive impact, such as falling down or colliding, etc. **Make sure that the Sparky is placed on a stable ground in a proper initial posture before starting it up.**  
 
-| 开机前状态 | 开机后状态 |
+| Before starting up | After starting up |
 |----------|----------|
 | ![sparky_crouch](./img/Quick_use_img/crouch.jpg) | ![sparky_ctand](./img/Quick_use_img/stand.jpg) |
 
-
-**请使用包装箱原装充电头与充电线充电**：哮天不充电使用时间在1-2个小时，关机下充满需要50min左右，如果需要长时间编排动作与调试，建议尾部插上充电线使用。
+**Use the original adapter and cable with the product in the packaging box for charging**: The Sparky can work for 1-2 hours without charging. It takes about 50 minutes to fully charge when turned it off. It is recommended to plug in the cable for charging during working for a long time.
 
 ![charge](./img/charge.jpg)
 :::
 
-### 4.1 开机操作
+### 4.1 Startup
 
-将哮天放置平地后**长按背部电源键三秒**开机，启动时哮天将从趴卧形态收回四肢，自动调整至站立姿态并发出狗吠声。此时**头部开始播放开机及眨眼动画**，请接受来自哮天的友好 Wink 吧！
+Place Sparky on a flat ground, **press and hold the power button on its back for three seconds** to turn on the device. Sparky will retract its limbs from a prone position, automatically adjust to a standing posture, and make a barking sound. At this point, **boot and wink animations begin to play on the head**. Please accept the friendly Wink from your Sparky!
 
 ![sparky.gif](./img/sparky.gif)
 
-### 4.2 使用技巧
+### 4.2 Startup
 
-| 功能         | 使用技巧 | 备注 |
+| Function     | Skills | Remarks |
 | -----------  | ----------- | ------- |
-| **使用环境** | 请在平坦宽阔的地面或台面上使用哮天，请勿在有水或其他液体的户外地面上操作。| ![sparky_all](./img/Quick_use_img/sparky_all.jpg)  |
-| **查看电量** | 哮天头部顶端会**实时显示电量条**，电量充足的情况下，哮天可**实现 45min 以上的不插电使用**，如电量低时，它会发出**提醒（狗狗叫声）并自动关机恢复趴下状态.** | ![QR](./img/Quick_use_img/QR.jpg) |
-| **充电** | 我们建议您**使用官方配套充电设备**（PD30w)，以确保充电的安全和效果，如使用其他充电设备出现特殊情况后果自负。充电时设备通电后，尾灯点亮表明已在充电状态。| ![sparky_charge](./img/Quick_use_img/sparky_charge.jpg) |
-| **开机** | 长按背部电源键三秒进行开机操作 | ![power_on](./img/power_on.jpg) |
-| **关机** | 一种是长按背部电源键进行关机，另一种是头部 UI 程序进行系统关机。|
-| **头部交互** | 左右耳按键功能一致，均可进行选项选择或调节，头顶触摸可确认选项。| ![head_usage](./img/Quick_use_img/head_usage.jpg) |
-| **发热** |哮天长时间使用后电机温度会升高，这是正常现象，请确保您在通风良好的环境中使用。此外，哮天内置过热保护程序，当电机温度过高时该电机将主动失能，待其温度降到合理范围内再重新启动工作。| |
-| **清洁** | 长时间使用哮天导致积压灰尘时，可使用附赠小刷子对执行器凹槽进行清洁，头部面盖及其他部位可使用柔软的湿布轻轻擦拭，但在清洁时确保哮天在关闭电源且不在充电状态下，避免将水或其他液体直接溅到机器人表面。| ![sparky_clean](./img/Quick_use_img/sparky_clean.jpg) |
+| **Application environment** | A clean desktop or flat ground is a relatively ideal control environment. Please do not operate the Sparky on the outdoor ground with water or other liquids, so as to avoid reducing the accuracy of Sparky control and ensure the task going well. | ![deposit](./img/deposit.jpg) |
+| **Check the power** | There is a battery status bar on the top of Sparky's head. When the battery is sufficient, Sparky can work for more than 45 minutes. If the battery power is too low, it will bark to warn and automatically power off with limbs retracting. | ![QR](./img/Quick_use_img/QR.jpg) |
+| **Recharge** | Please use the official charger (PD30w) to ensure the charging effect and safety. After connecting the charging cable, the taillight lights up to indicate that it is in the charging state. | ![sparky_charge](./img/Quick_use_img/sparky_charge.jpg) |
+| **Power on** | Press and hold the power button on the back for three seconds to turn on the device. |
+| **Power off** | Method 1 (recommended): Press and hold the power button on the back of Sparky to power off.
+Method 2: Shutdown the system from the UI menu on the Sparky's head. |
+| **Interaction on the head** | The functions of the left and right ear buttons are consistent, and both can be used to select or adjust options. Touching the top of the head can confirm the options. | ![head_usage](./img/head.jpg) |
+| **Heating** | It is normal that the motor temperature will rise after long-term use. Please ensure that you use it in a well-ventilated environment. In addition, Sparky has a built-in overheat protection program, when the motor temperature is too high, the motor will be disabled actively, and then restart the work when its temperature drops to a reasonable range. | |
+| **Cleaning** | When dust accumulates due to long-term use of Sparky, the groove of the actuator can be cleaned with the attached small brush, and the head cover and other parts can be gently wiped with a soft wet cloth. When cleaning, please make sure that Sparky is turned off and not charging, and avoid splashing water or other liquids directly on the robot surface. | ![sparky_clean](./img/Quick_use_img/sparky_clean.jpg) |
 
-## 五、联网操作
+## V.Network Connection
 
-哮天播放开机动画后，如设备处于无联网状态下，则头部会显示摄像头等待扫码联网页面，此时可通过以下两种方式进行联网。
+After playing the startup animation on Sparky, if the device is in a network-disconnected state, QR code scanning page will display on the head and wait to scan the code to connect to the internet. Please connect the internet as following two ways below:
 
-### 5.1 准备工作
+### 5.1 ​Preparation Work
 
-- **下载 App （版本：240726）**  
+- **Download the App (version: 240726)**  
   
-  1. 请准备一台安卓系统的手机备用。
-  2. 请先用准备的手机下载安装包，并依照指示完成安装，方便后续使用。
+i.Prepare an Android phone.
+ii.Download APK into the phone and complete the App installation as instructions.
 
 ![app_qr](./img/app/app_qr.jpg)
 
-### 5.2 APP 局域网连接
+### 5.2 LAN Connection APP  
 
-启动 App 时如果哮天处于未联网状态，App 会直接弹出联网页面，方便我们进行连接。
-> 如果当前 IP 已连接过，APP 会直接自动连接无需扫码手动进行确认连接。
+When open the App, if the network is in disconnection state, a page will pop up for LAN connection.
+If the IP address has been connected before, the App will automatically connect without manually scanning the code.
 
 ![sparky_connect](./img/Quick_use_img/sparky_connect.jpg)
 
-| 操作步骤 | 示意图 |
+| Steps | Reference pictures |
 |----------|-------|
-| **点击 "哮天局域网连接"** 后 Sparky's App 自动搜索并显示网络， | ![app_process](./img/Quick_use_img/app_process.jpg) |
-| **标注一**：选择需连接的网络并输入密码，**标注二**：完成后点击“确定”，**标注三**：生成二维码备用。| ![app_password](./img/Quick_use_img/app_password.jpg) |
-| 请将生成**二维码对准哮天头部**进行扫描，扫描后哮天会自动搜索并连接到网络。 | ![sparky_scan](./img/Quick_use_img/sparky_scan.jpg) |
-| 联网成功后头部会显示 **“连接成功”** 的信息，同时会进入遥控模式并显示相关信息的 `网络名称`、` IP地址` 及`电量`。 | ![sparky_ip](./img/Quick_use_img/sparky_ip.jpg) |
+| After clicking on **“Sparky LAN Connection”**, Sparky's App automatically searches and displays the network | ![app_process](./img/Quick_use_img/app_process.jpg) |
+| **Label 1**: Select the network to be connected and enter the password，**Label 2**: Click "OK" after completion，**Label 3**: Generate a QR code.| ![app_password](./img/Quick_use_img/app_password.jpg) |
+| Please **aim the QR code at Sparky's head** for scanning. After scanning, Sparky will automatically search and connect to the network. | ![sparky_scan](./img/Quick_use_img/sparky_scan.jpg) |
+| After the network connection is successful, the message **"Connection Successful"** will be displayed in the head and at the same time, it will enter remote control mode and display the network name, IP address, and battery level. | ![sparky_ip](./img/Quick_use_img/sparky_ip.jpg) |
 
-### 5.3 Wifi 热点连接
+### 5.3 Wi-Fi Hotspot Connection
 
-:::tip[Use Tip] 
-此 Tip 为非开箱必要步骤，当无手机 APP 且在哮天无法联网的前提下，仍然能为哮天联网的保底操作，联网成功后可跳过。
+:::tip[USER TIPS] 
+This Tip is an optional step. If the network connection is successful, you can skip this step. When you can't use the mobile APP to connect with Sparky, you can still connect with Sparky as following steps.
 :::
 
-| 操作步骤 | 示例图 |
+| Steps    | Reference pictures |
 |----------|-------|
-| **标注一**：选择需连接的网络并点击进入详情页，**标注二**：点击生成或分享此网络（二维码形式），**标注三**：将生成二维码保存备用。| ![phone_wifi](./img/Quick_use_img/phone_wifi.jpg) |
-| 请将生成**二维码对准哮天头部**进行扫描，扫描后哮天会自动搜索并连接到网络。 | ![sparky_scan](./img/Quick_use_img/sparky_scan.jpg) |
-| 联网成功后头部会显示 **“连接成功”** 的信息，同时会进入遥控模式并显示相关信息的 `网络名称`、` IP地址` 及`电量`。 | ![sparky_ip](./img/Quick_use_img/sparky_ip.jpg) |
+| **Label 1**: Select the network to be connected and click to enter the settings page. **Label 2**: Click to generate or share this network (QR code). **Label 3**: Save the generated QR code for later use. | ![phone_wifi](./img/Quick_use_img/phone_wifi.jpg) |
+| Please aim the QR code at Sparky's head for scanning. After scanning, Sparky will automatically search and connect to the network. | ![sparky_scan](./img/Quick_use_img/sparky_scan.jpg) |
+| After the network connection is successful, the message "Connection Successful" will be displayed in the head and at the same time, it will enter remote control mode and display the network name, IP address, and battery level. | ![sparky_ip](./img/Quick_use_img/sparky_ip.jpg) |
 
+## VI.Connect APP  
 
-## 六、连接 APP
+### 6.1 Precondition
 
-### 6.1 前提条件
+- **Ensure that Sparky is connected to the network and the UI on the head displays that it has entered remote control mode.**
+- **Ensure that Sparky and the mobile App are in the same network.**
 
-- **确保哮天已联网并且头部（UI）进入遥控模式。**
-- **确保哮天网络与 `手机app端` 的网络处于同一局域网下。**
+**Here is a partial explanation of the relevant logic:**
+**Logic 1**: Under normal usage, when the device is turned on and the QR code is scanned, the display of the eye logo and IP address on the head of Sparky indicates that it is connected to the internet and has entered remote control mode.
+**Logic 2**: However, if you manually turn on WIFI for network connecting in the head (UI), you also need to manually enter remote control mode.
 
-> **这里阐述下部分相关逻辑：**  
-**逻辑一**：正常使用流程下开机扫码后，哮天头部显示 `眼睛标志` 及 `IP 地址` 就代表已联网并进入遥控模式。  
-**逻辑二**：但如果是在头部（UI）手动开启 `WIFI` 进行联网则也需手动进入遥控模式。  
 ![sparky_ip](./img/Quick_use_img/sparky_ip.jpg) 
 
-|项目 | 操作步骤 | 示例图 |
+| Function | Steps | Reference pictures |
 |---------|--------|-----|
-| **头部交互** | 左右耳按键功能一致，均可进行选项选择或调节，头顶触摸可确认选项。| ![head_usage](./img/Quick_use_img/head_usage.jpg) |
-| **进入头部（UI）遥控模式** | 直接在主菜单选择 “遥控模式” 选项。确认选择后，通过触摸头顶来开启这一功能。  |![ui_app](./img/Quick_use_img/ui_app.png)|
+| **Interaction on the head** | The functions of the left and right ear buttons are consistent, and both can be used to select or adjust options. Touching the top of the head can confirm the options. | ![head_usage](./img/Quick_use_img/head_usage.jpg) |
+| **Enter Head (UI) Remote Control Mode** | Select the 'Remote Control Mode' option directly from the main menu. Activate this function by touching the top of the head to confirm the selection. |![ui_app](./img/Quick_use_img/ui_app.png)|
 
-### 6.2 连接 APP
+### 6.2 Connect APP
 
-完成以上的前提条件后，我们回到 App 联网页面将哮天与手机 App 连接。
+After completing the above preconditions, return to the App networking page to connect Sparky with the mobile App.
 
-| 操作步骤 | 示例图 |
+| Steps    | Reference pictures |
 |---------|--------|
-| **标注一**：点击 "刷新键" 后页面显示检测到的设备 IP，**标注二**：选择哮天的 "IP 地址"，**标注三**：点击 "连接" 按钮使用 IP 地址进行连接，成功后会弹出“连接成功”。 | ![app_connect](./img/Quick_use_img/app_connect.jpg) |
+| **Label 1**: After clicking the "Refresh" icon, the detected device IP will be displayed on the page. **Label 2**: Select the "IP address" of Sparky.**Label 3**: Click the "Connect" button to connect network with the selected IP address. And then, "Connection successful" will pop up. | ![app_connect](./img/Quick_use_img/app_connect.jpg) |  
 
-如果连接时出现没有显示 IP 地址，我们还可以通过此页面的 **“手动连接” 进行连接**哮天。
+If the IP address is not displayed when connecting, we can also connect through the "Manual Connection" feature on this page.
 
-| 操作步骤 | 示例图 |
-|-----|------|
-| **标注一**：点击 “手动连接”，**标注二**：输入哮天头部 IP 地址，**标注三**：点击 “确定” 手动连接哮天。 |![app_manual](./img/Quick_use_img/app_manual.jpg)|
+| Steps | Reference pictures |
+|-------|------|
+| **Label 1**: Click on "Manual Connection".**Label 2**: Enter the IP address of Sparky's head.**Label 3**: Click "OK" to manually connect to Sparky. |![app_manual](./img/Quick_use_img/app_manual.jpg)|
 
-## 七、结语
+## VII.Conclusion
 
-上文我们熟悉了哮天的基础配置用法，接下来就开始探索哮天各种有趣的基础玩法，您可根据下文的导读去往其他文档！
+In the previous text, we learnt the basic configuration and usage of Sparky. Now, we will explore various interesting entry-level gameplay of Sparky. You can follow the introduction below to other documents!
 
-
-| 文档 | 导读 |
+| Document title | Introduction |
 | ------------- | ------------- |
-| [开箱系列：基础配置使用](./quick_start_guide.md) | 在本文中，我们将带您了解哮天的基础配置和使用方法。这包括启动步骤、操作技巧、联网指南以及如何与 APP 进行连接等各项操作流程。 |
-| [快速使用系列：手柄遥控](./sparky_remote.md) | 本文档详细介绍了如何快速将哮天与蓝牙手柄配对，以便通过遥控操作实现更流畅的步态、头部和机身运动。|
-| [基础系列（一）：UI 界面使用](./quick_start_two.md) | 本文档介绍了哮天头部的 UI 基本界面与交互操作。|
-| [基础系列（二）：基础遥控玩法](./app_user.md) | 本文档为您介绍了App的基础遥控玩法，涵盖从基础操作到步态运动，头部和机身运动等各个方面。让我们一起探索 App 中的各种有趣玩法吧！|
-| [探索系列（一）：进阶遥控玩法](./create_a_blog_post.md) | 在这里我们将更进一步，探索 APP 中的进阶遥控玩法——关键帧模式及拖拽示教，来为您的哮天创造更多独一无二的动作吧！|
-| [探索系列（二）：Python API](./python_api.md) | 本篇文档介绍了如何使用 python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。|
-|[探索系列（三）：WebSocket API](./deploy_your_site.md) | 本篇文档介绍了如何使用 WebSocket API 来控制哮天的运动状态，完成哮天的二次开发以及更详细的 API 资料。|
+| [Unboxing: Entry-level configuration and usage](./quick_start_guide.md) | In this section, we will show you the basic configuration and usage of Sparky including steps of startup, operation skills, network connection and how to connect with the APP. |
+| [Entry-level: APP operation](./app_user.md) | This section introduces the basic remote-control gameplay of App, covering from basic operation to gait movement, head and body movement and so on. Let’s explore all kinds of interesting gameplay in the App! |
+| [Mid-level (I): Advanced APP operation](./create_a_blog_post.md) | In this section, we will further explore the advanced remote-control gameplay in the App - Keyframe Mode and Drag & Drop tutorial, to create more unique actions for your Sparky! |
+| [Mid-level (II): Python API](./python_api.md) | This section introduces how to use Python SDK to control the movement status of your Sparky. You can try using Python to learn robot control and complete the secondary development of your Sparky by following the interfaces and instances we provide.|
+|[Mid-level (III): WebSocket API](./deploy_your_site.md) | This section introduces how to use WebSocket API to control the movement status of your Sparky, complete the secondary development of your Sparky, and provide more detailed API information. |
+| [Advanced-level (I): UI Usage](./quick_start_two.md) | This section introduces the basic UI interface and interactive operations of Sparky’s Head. |
+| [Advanced-level (II): Operated by the gamepad](./sparky_remote.md) | This section provides a detailed description on how to quickly pair Sparky with the gamepad through Bluetooth for smoother movements of Sparky’s gait, head, and body through remote control. |
+
+
 <!-- ## 七、更多玩法
 
-
+./quick_start_two.md
+./sparky_remote.md
 
 ### 5.4 拓展用法
 

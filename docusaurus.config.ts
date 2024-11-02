@@ -4,8 +4,8 @@ import React from 'react';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '哮天',
-  tagline: '首个手办级高动态开源机器人平台',
+  title: 'SPARKY',
+  tagline: 'A Highly Dynamic Robotic Dog, Lifelike & Open Sourced',
   favicon: 'img/favicon.ico',
   
   // Set the production url of your site here
@@ -96,7 +96,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '使用指南',
+          label: 'User Guide',
         },
         // {
         //   to: '/blog', 

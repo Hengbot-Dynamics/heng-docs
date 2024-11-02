@@ -3,51 +3,50 @@ sidebar_position: 8
 
 ---
 
-# 拓展系列（二）：手柄遥控
+# Advanced-level (II): Operated by the gamepad
 
-## 一、前言
+## I.Preface  
 
-欢迎来到哮天的使用频道！本篇文档将带您快速掌握如何使用手柄遥控连接哮天，并让它实现动起来。您将体验到哮天的步态、头部、机身等运动，感受其灵活与智能。
+Welcome to Sparky's usage channel! This document will take you to quickly learn how to use a gamepad to remotely connect to Sparky and make it move. You will experience the gait, head, body and other movements of Sparky, feeling its flexibility and intelligence.  
 
-## 二、准备工作
+## II.Preparation Work  
 
-- **硬件：哮天 / 官方配套遥控手柄**
-- **环境：(使用手柄遥控的前提）哮天需在头部（UI）界面进入遥控模式。**
+- **Hardware: Sparky/Official gamepad**
+- **Environment: (Prerequisite for using the gamepad remote control) Sparky needs to enter remote control mode on the head interface(UI) .**
 
 >![sparky_remote](./img/remote/sparky_remote.jpg)
 
-## 三、启动哮天
+## III.Start Sparky  
 
 <iframe width="780" height="400" src="https://www.youtube.com/embed/5XsQ4V2q488?si=RPv1GSvDMWLclHD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-:::tip[Use Tip]
+:::tip[USER TIPS]
 
-**开机前请保证哮天以正确的初始姿势放置在平稳地面上，使用时可取消包装箱的泡棉**，在途中请勿让产品受到过度冲击，例如从高处跌落或碰撞等；
+**Remove the foam from the packaging box**. During moving, prevent the product from excessive impact, such as falling down or colliding, etc. **Make sure that the Sparky is placed on a stable ground in a proper initial posture before starting it up.**  
 
-| 开机前状态 | 开机后状态 |
+| Before starting up | After starting up |
 |----------|----------|
 | ![sparky_crouch](./img/Quick_use_img/crouch.jpg) | ![sparky_ctand](./img/Quick_use_img/stand.jpg) |
 
-
-**请使用包装箱原装充电头与充电线充电**：哮天不充电使用时间在1-2个小时，关机下充满需要50min左右，如果需要长时间编排动作与调试，建议尾部插上充电线使用。
+**Use the original adapter and cable with the product in the packaging box for charging**: The Sparky can work for 1-2 hours without charging. It takes about 50 minutes to fully charge when turned it off. It is recommended to plug in the cable for charging during working for a long time.
 
 ![charge](./img/charge.jpg)
 :::
 
-| 操作步骤 | 操作图 | 示意图
+| Steps | Image Guide | Reference picture |
 |---------------|----------|----|
-| 长按背部开机键三秒启动哮天 | ![power_on](./img/power_on.jpg) |
-| **开机后姿态变化**①：呈站立姿态并发出狗吠声 ②：头部播放开机眨眼动画。 | ![sparky.gif](./../../static/img/sparky.gif) |
-| **如何进入（UI）遥控模式，这里会出现两个可能**：①：如果哮天已联网则会自动进入遥控模式，如示意图。②：如果哮天无联网请参考操作图，使用左右耳按键选中遥控模式并确认，|![head_usage](./img/Quick_use_img/head_usage.jpg) | ![sparky_remote](./img/Quick_use_img/sparky_remote.jpg) |
+| Press and hold the power button on the back for three seconds to turn on the device. | ![power_on](./img/power_on.jpg) |
+| **Posture change after startup**①: Make a bark in a standing posture ; ②: Display the wink animation on the head | |
+| **There are two possibilities for how to enter the remote control mode (UI)**: ① If Sparky is connected to the network, it will automatically enter the remote control mode, as shown in the image. ②: If there is no network connection in Sparky, please refer to the image guide and use the left and right ear buttons to select the remote control mode and confirm.|![head_usage](./img/Quick_use_img/head_usage.jpg) | ![sparky_remote](./img/Quick_use_img/sparky_remote.jpg) |
 
-## 四、连接手柄遥控
+## IV.Connect the Gamepad for Remote Control
 
-| 操作步骤  | 操作图 |
-|----------|--------|
-| **手柄遥控开机及配对**（**标注一**）长按电源键2s开机；**标注二**：将哮天与手柄遥控进行配对。 | ![open](./img/remote/open.png)|
-| **按下 CH6 开启手柄遥控**（**标注一**）**首次遥控**确认开启手柄遥控| ![remote](./img/remote/remote.png) |
-|**切换模式**（**上图标注二**）使用 CH5 更换步行/姿态/定格模式。|
-|**根据右侧标识图熟悉姿态模式下的功能**| ![tip](./img/remote/tip.png) |
-| **根据右侧标识图熟悉步态模式下的功能** |![head_tip](./img/remote/head_tip.png)|
+| Steps    | Image Guide |
+|----------|-------------|
+| **Start with the gamepad and perform pairing.****Label 1**: Press and hold the power button for 2s to start it. **Label 2**: Pair Sparky with the gamepad. | ![open](./img/remote/open.png)|
+| **Press the CH6 key to start the gamepad (label 1)** to activate the remote control for the first time.| ![remote](./img/remote/remote.png) |
+|**Switch modes (Label 2 in above picture)** : Switch to walking/posture/freeze-frame mode with CH5.| |
+|**Familiarize yourself with the functions in posture mode according to the diagram on the right**| ![tip](./img/remote/tip.png) |
+| **Familiarize yourself with the functions in gait mode according to the diagram on the right** |![head_tip](./img/remote/head_tip.png)|
 
-接下来您就可以机器用手柄遥控控制哮天进行步态、头部、机身等运动体验了。
+Now, you can use the gamepad to remotely control Sparky's gait, head, body, and other movements to experience it.

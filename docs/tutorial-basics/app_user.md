@@ -2,103 +2,99 @@
 sidebar_position: 3
 ---
 
-# 基础系列：APP 玩法
+# Entry-level: APP Operation
 
-## 一、前言
+## I.Preface
 
-<div className="indent-first-line">
-前文、我们介绍了新伙伴“哮天”，并熟悉了包括联网和 App 连接在内的配置操作。现在，我们已经熟悉了这些设置。接下来，让我们一起探索 App 的有趣玩法，首先是学习如何控制哮天的步态、头部、机身运动等。"
-</div>
+In the previous section, we met our new partner "Sparky" and learnt configuration operations including networking and App connection. Now, let's explore the fun gameplay of the App. First, Let's learn how to control the gait, head, and body movements of Sparky."
 
 ![sparky](./img/app/sparky.jpg)
 
-## 二、准备工作
+## II.Preparation Work
 
-| 步骤 | 详细介绍 |
+| Steps | Description |
 |------|---------|
-|**软件：下载好 APP 并根据提示安装**| ![app_qr](./img/app/app_qr.jpg) |
-| **环境：哮天已联网并已成功连接手机 app**| 此文档不再对基础配置等使用操作进行阐述，相关资料请参考此文档：[开箱系列：基础配置使用](./quick_start_guide.md) ||
+| **Software**: download the APP and install it according to the prompts. | ![app_qr](./img/app/app_qr.jpg) |
+| **Environment**: Sparky has been connected to the Internet and successfully connected to the mobile App. | This section will not repeat the basic configuration and other operations. Please refer to this document: Unboxing:[ Entry-level Configuration and Usage for relevant information.](./quick_start_guide.md) |
 
 
-## 三、体验 APP 基础玩法
+## III.Experience the Entry-level Gameplay of APP
 
-| 步骤 | 示例图 |
-|------|-------|
-| 连接成功后 APP 会直接进入首页，**点击“进入遥控”** 开启体验您与哮天的奇妙互动。|![app_mode](./img/Quick_use_img/app_mode.jpg) |
-| 进入遥控模式后，会弹出是否 **"恢复初始姿态"** 的提醒，点击 **“确定”** 后即可。| ![app_restore](./img/Quick_use_img/app_restore.jpg) |
+| Steps | Reference pictures |
+|-------|-------|
+| After the connection is successful, the APP will go directly to the home page, and click **"Enter Remote Control"** to start and experience your wonderful interaction with Sparky. |![app_mode](./img/Quick_use_img/app_mode.jpg) |
+| After entering the Remote Control Mode, a prompt of whether to **"Restore Initial Posture"** will pop up, and then click "OK".| ![app_restore](./img/Quick_use_img/app_restore.jpg) |
 
-### 3.1 功能标注图
+### 3.1 Labelled Function Diagram  
 
-先根据标注图了解各类组件及图标的作用，熟悉后接着往下体验哮天的步态运动。
+First, learn the functions of various components and icons based on the labelled diagram, and then proceed to experience the gait movement of your Sparky.
 
 ![app_annota](./img/Quick_use_img/app_annota.jpg)
 
-### 3.2 体验步态运动
+### 3.2 Experience Sparky’s Gait Movement  
 
- | 操作步骤 | 示例图 |
- |------|-------|
- |**标注一**：滑动摇杆让哮天动起来实现步态运动，**标注二**：切换速度模式 “普通/急速” 来控制哮天的步态速度。| ![app_rocker](./img/Quick_use_img/app_rocker.jpg) |
-
-在了解完基础的操作步骤后，您可以一边观看视频更直观的看到操作步骤，一边来体验哮天的步态运动。
-
-| 功能 | 视频效果 |
-|----|----|
-| **左摇杆**：控制四足：向上（前进 向下（后退）/ 左右滑动可控制平移 | <iframe width="780" height="400" src="https://www.youtube.com/embed/sddgrfJwklk?si=AZlOMtSLRWS6SC_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
-| **右摇杆**：实现左右方向转弯 | <iframe width="780" height="400" src="https://www.youtube.com/embed/K-hf0xVGXPQ?si=JcGrO0wLIagjwVRC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
-| **双摇杆结合步态**：控制步态速度：普通/急速  | <iframe width="780" height="400" src="https://www.youtube.com/embed/rxBW_JiWsoE?si=fcfcMxC_ozY2hzIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
-
-### 3.3 体验头部运动
-
-| 操作步骤 | 示例图 |
+| Steps | Reference pictures |
 |------|-------|
-| **标注一：头部滑杆** 此次头部单独做了摇杆控制的优化，用户能够更精细地控制头部运动。|![app_head](./img/Quick_use_img/app_head.jpg) |
+| **Label 1**: Slide the joystick to make Sparky move and achieve gait movement.**Label 2**: Switch the speed mode between "Normal/Rapid" to control the gait speed of Sparky. | ![app_rocker](./img/Quick_use_img/app_rocker.jpg) |
 
-在熟悉完基础操作步骤后，您可以通过观看视频来亲身体验哮天的头部运动。
+After learning the basic operation steps, you can watch the video to see the operation steps more intuitively and experience the gait movement of Sparky simultaneously.
+
+| Function | Video effects |
+|----------|---------------|
+| **Left joystick**: controls quadrupedal movement: up→forward / down→backward, slide left/right to control moves in parallel | <iframe width="780" height="400" src="https://www.youtube.com/embed/sddgrfJwklk?si=AZlOMtSLRWS6SC_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
+| **Right joystick**: controls turning in left or right | <iframe width="780" height="400" src="https://www.youtube.com/embed/K-hf0xVGXPQ?si=JcGrO0wLIagjwVRC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
+| **Dual joystick combined gait**: controlling gait speed (Normal/Rapid)  | <iframe width="780" height="400" src="https://www.youtube.com/embed/rxBW_JiWsoE?si=fcfcMxC_ozY2hzIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
+
+### 3.3 Experience Head Movement
+
+| Steps | Reference pictures |
+|-------|--------------------|
+| **Label 1**: The head slider has been optimized with a separate joystick control, allowing users to control head movements more finely.|![app_head](./img/Quick_use_img/app_head.jpg) |
+
+After familiarizing yourself with the basic operation steps, you can also understand the head movements of your Sparky by watching videos.
 
 <iframe width="780" height="400" src="https://www.youtube.com/embed/lsRLkfgB-U0?si=B36pN0rV2jiTT3Nr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-为了进一步加深理解，下文的表格将对这些功能进行详细的标注和介绍。
+For further understanding, the table below shows detailed labels and descriptions of these functions.
 
-| 工具 | 用途 | 使用方法 |
-|----|----|----|
-| **头部滑杆** | 实现头部俯仰及偏航运动 | **上下滑动**：实现俯仰（抬头低头）；**左右滑动**：进行偏航运动（左右摇头）|
-| **头部图传** | 头部图传模块暂未开放，敬请期待。| | 
+| Tool | Purpose | Usage Method |
+|------|---------|--------------|
+| **Head slider** | Achieve head pitching and yaw motion | **Up and down sliding**: achieve pitching (head up and down); **Left and right sliding**: perform yaw motion (shake head left and right) |
+| **Head Image Transmission** | The head image transmission module is currently not available, please wait for it. | | 
 
-### 3.4 体验机身运动
+### 3.4 Experience body movement
 
-| 操作步骤 | 示例图 |
-|------|-------|
-| **标注一**：进入机身操控页面，调整参数轴来实现机身运动。| ![app_body](./img/Quick_use_img/app_body.jpg) |
-| **标注二**：滑动红点进行调整参数轴；**标注三**：点击参数轴两侧的“-”来减少或“+”来增加。| ![app_body_two](./img/Quick_use_img/app_body_two.jpg) |
+| Steps | Reference pictures |
+|-------|-------|
+| **Label 1**: Enter the body control page and adjust the parameter axis to achieve body movement. | ![app_body](./img/Quick_use_img/app_body.jpg) |
+| **Label 2**: Slide the red dot to adjust the parameter axis.**Label 3**: Click on the "-" to decrease or "+" to increase on both sides of the parameter axis.| ![app_body_two](./img/Quick_use_img/app_body_two.jpg) |
 
-在熟悉完基础操作步骤后，您可以通过观看视频来亲身体验哮天的机身运动。
+After familiarizing yourself with the basic operation steps, you can also understand the head movements of your Sparky by watching videos.
 
 <iframe width="780" height="400" src="https://www.youtube.com/embed/8NgFbh8joss?si=gjuPSA8yoR42ZE1S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-为了进一步加深理解，下文的表格将对这些功能进行详细的标注和介绍。
+For further understanding, the table below shows detailed labels and descriptions of these functions.
 
-| 名称 | 用途（滑动或调整“-”“+”按键使用）  | 
-|----|----|
-| **示意图** | ![api_move](./img/api_move.jpg) |
-| **Roll** | 机身绕 X 轴做左右滚转运动 |
-| **Z轴** | 腿部绕 Z 轴实现蹲下或站立姿态 |
-| **Y轴** | 机身绕 Y 轴进行偏航运动 |
-| **X轴** | 机身绕 X 轴实现俯仰运动 |
+| Name | Method (sliding or adjusting the "-" and "+" buttons) | 
+|------|----|
+| **Reference pictures** | ![api_move](./img/api_move.jpg) |
+| **Roll** | The body undergoes left and right rolling motion around the X-axis |
+| **Z axis** | Leg rotation around the Z-axis to achieve squatting or standing posture |
+| **Y axis** | The body undergoes yaw motion around the Y-axis |
+| **X axis** | The body achieves pitch motion around the X-axis |
 
-## 四、更多玩法
+## IV.More Gameplay Options
 
-<div className="indent-first-line">
-通过上文的玩法介绍，我们熟悉了 APP 的基础遥控玩法，学习了控制哮天的步态、头部和机身运动等技巧。而接下来准备更进一步，探索 APP 中的进阶遥控玩法——关键帧及拖拽示教。让我们共同期待下一章的精彩内容吧。敬请期待！
-</div>
+Through the introduction of the gameplay in the previous text, we have become familiar with the basic remote control gameplay of the APP and learned skills for controlling the gait, head, and body movements of your Sparky. And the next step is to further explore advanced remote control gameplay in the App - keyframes and drag and drop demonstrations. Let's look forward to the exciting content of the next chapter together. Coming soon!
 
-您可根据下文的导读区去往您需要的文档区。
+Go to find the document out which you desired as follows.
 
-| 文档 | 导读 |
+| Document title | Introduction |
 | ------------- | ------------- |
-| [开箱系列：基础配置使用](./quick_start_guide.md) | 在本文中，我们将带您了解哮天的基础配置和使用方法。这包括启动步骤、操作技巧、联网指南以及如何与 APP 进行连接等各项操作流程。 |
-| [快速使用系列：手柄遥控](./sparky_remote.md) | 本文档详细介绍了如何快速将哮天与蓝牙手柄配对，以便通过遥控操作实现更流畅的步态、头部和机身运动。|
-| [基础系列（一）：UI 界面使用](./quick_start_two.md) | 本文档介绍了哮天头部的 UI 基本界面与交互操作。|
-| [基础系列（二）：基础遥控玩法](./app_user.md) | 本文档为您介绍了App的基础遥控玩法，涵盖从基础操作到步态运动，头部和机身运动等各个方面。让我们一起探索 App 中的各种有趣玩法吧！|
-| [探索系列（一）：进阶遥控玩法](./create_a_blog_post.md) | 在这里我们将更进一步，探索 APP 中的进阶遥控玩法——关键帧模式及拖拽示教，来为您的哮天创造更多独一无二的动作吧！|
-| [探索系列（二）：Python API](./python_api.md) | 本篇文档介绍了如何使用 python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。|
-|[探索系列（三）：WebSocket API](./deploy_your_site.md) | 本篇文档介绍了如何使用 WebSocket API 来控制哮天的运动状态，完成哮天的二次开发以及更详细的 API 资料。|
+| [Unboxing: Entry-level configuration and usage](./quick_start_guide.md) | In this section, we will show you the basic configuration and usage of Sparky including steps of startup, operation skills, network connection and how to connect with the APP. |
+| [Entry-level: APP operation](./app_user.md) | This section introduces the basic remote-control gameplay of App, covering from basic operation to gait movement, head and body movement and so on. Let’s explore all kinds of interesting gameplay in the App! |
+| [Mid-level (I): Advanced APP operation](./create_a_blog_post.md) | In this section, we will further explore the advanced remote-control gameplay in the App - Keyframe Mode and Drag & Drop tutorial, to create more unique actions for your Sparky! |
+| [Mid-level (II): Python API](./python_api.md) | This section introduces how to use Python SDK to control the movement status of your Sparky. You can try using Python to learn robot control and complete the secondary development of your Sparky by following the interfaces and instances we provide.|
+|[Mid-level (III): WebSocket API](./deploy_your_site.md) | This section introduces how to use WebSocket API to control the movement status of your Sparky, complete the secondary development of your Sparky, and provide more detailed API information. |
+| [Advanced-level (I): UI Usage](./quick_start_two.md) | This section introduces the basic UI interface and interactive operations of Sparky’s Head. |
+| [Advanced-level (II): Operated by the gamepad](./sparky_remote.md) | This section provides a detailed description on how to quickly pair Sparky with the gamepad through Bluetooth for smoother movements of Sparky’s gait, head, and body through remote control. |

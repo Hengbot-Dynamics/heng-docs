@@ -4,7 +4,7 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.User Guide": {
-    "message": "使用指南",
+    "message": "User Guide",
     "description": "Navbar item with label 使用指南"
   },
   "item.label.GitHub": {

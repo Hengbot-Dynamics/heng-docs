@@ -1,112 +1,108 @@
 ---
-sidebar_label: "探索系列（一）：APP 进阶玩法"
+sidebar_label: "Mid-level (I): Advanced APP Operation"
 sidebar_position: 4
 ---
 
-# 探索系列（一）：APP 进阶玩法
+# Mid-level (I): Advanced APP Operation
 
-## 一、前言
+## I.Preface  
 
-<div className="indent-first-line">
-“嘿，未来的机器狗训练大师！您已经和哮天一起踏上了探索之旅，熟悉了它的启动、互动及使用过程，这无疑为生活增添了许多乐趣。现在，让我们更进一步来玩转动作编辑，为哮天创造更多独一无二的动作组！”
-</div>
+Hey, the future Sparky training master! You have embarked on an exploration journey with your Sparky. Familiarizing yourself with its startup, interaction, and usage process, which undoubtedly adds a lot of fun to life. Now, let's take action editing to the next level and create more unique action sets for your Sparky.
 
-## 二、准备工作
+## II.Preparation Work
 
-| 步骤 | 详细介绍 |
-|------|---------|
-|**软件：下载好 APP 并根据提示安装**| ![app_qr](./img/app/app_qr.jpg) |
-| **环境：哮天已联网并已成功连接手机 app**| 此文档不再对基础配置等使用操作进行阐述，相关资料请参考此文档：[开箱大放送](./quick_start_guide.md) ||
+| Steps	 | Introduction |
+|--------|---------|
+|**Software**: download the APP and install it according to the prompts.| ![app_qr](./img/app/app_qr.jpg) |
+|**Environment**: Sparky has been connected to the Internet and successfully connected to the mobile App.| This section will not repeat the basic configuration and other operations. Please refer to this document: Unboxing:[Entry-level Configuration and Usage](./quick_start_guide.md) for relevant information.|
 
-## 三、关键帧模式
+## III.Keyframe Mode  
 
-> **关键帧模式（编辑模式）**：提供了更精准的控制能力，允许调整哮天每一帧的动作细节：包括速度、加速度、停顿时间以及角度等参数；编辑参数的同时会把数值发送到机身同步调整。这种模式使得每一帧动作都能得到精准调整，从而实现更高精度和高控制度。
+**Keyframe Mode (Edit Mode)**: Provides more accurate control ability, allowing to adjust the action details of each frame of Sparky, including parameters such as speed, acceleration, pause time and angle; While editing parameters, the values will be sent to the device for synchronous adjustment. This mode enables precise adjustment of each frame action, thereby achieving higher precision and high control system.
 
 <iframe width="780" height="400" src="https://www.youtube.com/embed/razfjav5x6A?si=_TeCl-8AE6svFB4b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-> **用户可根据效果视频熟悉关键帧模式的使用，下文为文字版的步骤拆解，如有疑问可参考详情。**
+> **Users can be familiar with the use of Keyframe Mode according to the effect video. The following is a breakdown of the steps in the text version. If you have any questions, please refer to the details.**
 
-### 3.1 进入关键帧模式
+### 3.1 Enter Keyframe Mode
 
-| 示例图 | 操作描述 |
+| Reference pictures | Steps |
 |------|-----|
-|![open_editor_mode](./img/app/open_editor_mode.jpg)|**标注一**：通过顶栏切换到编辑模式；**标注二**：进入页面后提示恢复初始姿态，按“确认”即可。编辑页面展示了哮天在初始姿态时的关节参数，供用户在编辑动作时作为参考依据|
+|![open_editor_mode](./img/app/open_editor_mode.jpg)| **Label 1**: Switch to Edit Mode through the top bar.**Label 2**: After entering the page, it prompts to restore the initial posture. Press "OK" to confirm. The editing page displays the joint parameters of Sparky in its initial posture as a reference for users when editing actions. |
 
-### 3.2 新建关键帧
+### 3.2 Create new keyframes
 
-| 示例图 | 操作描述 |
-|------|-----|
-|![new_editor](./img/app/new_editor.jpg)|**标注一：（新建关键帧）**点击 “添加关键帧”进入编辑页面；**标注二：（编辑页面）**用户可在页面修改头部、机身、右后腿、左后腿、左前腿、右前腿的 XYZ 三轴参数并创建哮天一帧的关键帧，并进行保存、另存为、删除等操作。|
+| Reference pictures | Steps |
+|--------------------|-----|
+|![new_editor](./img/app/new_editor.jpg)|**Label 1**: (New Keyframe) Click "Add Keyframe" to enter the editing page.**Label 2**: (Edit Page)Users can modify the XYZ three-axis parameters of the head, body, right hind leg, left hind leg, left front leg, and right front leg on the page, create keyframes for one frame of Sparky, and perform operations such as save, save as, and delete.|
 
-### 3.3 示例关键帧（拆解步骤）
+### 3.3 Example keyframes (breakdown steps)
 
->以下为创造一帧哮天的抬头扭屁股的关键帧示例，具体参数值仅供参考。
+The following is an example of a keyframe for creating a Sparky's head up and butt twist. The specific parameter values are for reference only.
 
-| 关节 | 参数定义|
-|-----|-----|
-| **头部** | `Yaw`：控制颈部左右转动、`Pitch`：控制头部上下运动。 |
-| **机身** | `Roll`：控制机身的滚转运动、`Pitch`：控制机身的俯仰运动、`Yaw`：控制机身的偏航运动。 |
-| **腿部** | `X轴`：控制腿部前后移动、`Y轴`：控制腿部左右摆动、`Z轴`：控制腿部上下活动。 |
+| Joint | Parameters |
+|-------|-----|
+| **Head** | `Yaw`: controls the left and right rotation of the neck. `Pitch`: controls the up and down movement of the head.|
+| **Body** | `Roll`：Control the rolling motion of the body. `Pitch`：Control the pitch motion of the body. `Yaw`：Control the yaw motion of the body. |
+| **Legs** | `X-axis`: Control the forward and backward movement of the legs. `Y-axis`: Control the left and right swing of the legs. `Z-axis`: controls leg movement up and down. |
 
-了解我们可修改的关节部位、参数及它的定义后就开始创造一帧新的关键帧啦！
+After understanding the joint parts, parameters and their definitions that we can modify, let's create a new keyframe!
 
-| 操作步骤 | 示例图（上下为修改对比图） |
+| Steps | Reference pictures (comparison before and after modification) |
 |---------|-------|
-|**第一步编辑头部参数**：我们要实现一帧哮天抬头扭屁股的关键帧。为此头部需修改 `Pitch 参数`来实现抬起，同时为了让哮天看起来更加灵动，对 `Yaw 参数`进行修改实现颈部左右转向功能。| ![editor_head](./img/app/editor_head.jpg) |
-| **第二步编辑机身参数**：头部抬起时，为了让整体动作更加协调尝试机身也修改 `Pitch 参数`，以机身尾部的屁股抬高，前部低下的姿态去实现扭屁股的动作，而在颈部我们还添加 `Yaw 参数`，机身也可以微调此参数。|![editor_body](./img/app/editor_body.jpg) |
+| **Step 1. Edit the head parameters**: We need a keyframe for creating a Sparky's head up and butt twist. To achieve this, the Pitch parameters need to be modified to lift the head, and at the same time, in order to make Sparky look more agile, the Yaw parameters need to be modified to achieve left and right neck turning. | ![editor_head](./img/app/editor_head.jpg) |
+| **Step 2: Edit the body parameters**: In order to make the overall movement more coordinated, when Sparky's head is lifted, we also tried to modify the body pitch parameters to achieve the twisting of the buttocks with the tail of the body raised and the front lowered. We also added the Yaw parameter to the neck, and the body can be fine tuned with this parameter. |![editor_body](./img/app/editor_body.jpg) |
 
-**第三步编辑四足参数**：调整时需注意各腿部的原始参数，以确保动作自然协调。腿部可进行修改的有左后腿、右后腿、左前腿及右前腿，配合机身的姿势需调整腿部的上下参数，将前腿的位置调低、后腿的位置调高让哮天实现扭屁股的姿态。
+**Step 3: Edit quadruped parameters**: When adjusting, pay attention to the original parameters of each leg to ensure natural and coordinated movements. The legs can be modified to include left hind leg, right hind leg, left front leg, and right front leg. To match the posture of the body, the upper and lower parameters of the legs need to be adjusted, lowering the position of the front legs and raising the position of the hind legs to achieve a twisting posture for Sparky.
 
-| 右后腿示意图 | 左后腿示意图 |
+| Reference pictures (right hind leg) | Reference pictures (left hind leg) |
 |-----|-----|
 |![right_after](./img/app/right_after.jpg)| ![left_after](./img/app/left_after.jpg)|
 
-但此时在微调的过程中我们发现后腿调高后，哮天可能会出现站不稳的情况。这时可微调后腿的前后、左右参数，让后腿的支撑面更广并站的更稳当。
+During the fine-tuning process, it is possible that raising the hind legs may cause Sparky to become unstable. At this point, the parameters of the hind legs can be fine tuned to make the support surface of the hind legs wider and stand more steadily.
 
-| 左前腿示意图| 右前腿示意图 |
+| Reference pictures (left front leg) | Reference pictures (right front leg) |
 |-----|-----|
 | ![the_front_left](./img/app/the_front_left.jpg)| ![the_front_right](./img/app/the_front_right.jpg)|
 
-完成所有的调整参数后，我们可以将关键帧调整到 200ms 来观察哮天，在 200ms 内我们可以。
+After completing all parameter adjustments, we can adjust the keyframes to 200ms to observe Sparky.
 
-| 步骤 | 示例图 |
+|  Steps | Reference pictures |
 |------|-------|
-| **第四步保存关键帧**：编辑完成后点击左侧的保存按键（**标注一**）进行这一帧的关键帧保存。| ![save](./img/app/save.jpg) |
-| **第五步播放关键帧**：点击左上角播放图标（三角形）后会进行对此关键帧进行播放操作。 | ![app_play](./img/app/app_play.jpg) |
+| **Step 4: Save keyframes**: After editing, click the save button on the left (labelled as 1) to save the keyframes of this frame. | ![save](./img/app/save.jpg) |
+| **Step 5**: Play keyframes: Clicking on the play icon (triangle) in the lower left corner will play this keyframe. | ![app_play](./img/app/app_play.jpg) |
 
 <iframe width="780" height="400" src="https://www.youtube.com/embed/razfjav5x6A?si=_TeCl-8AE6svFB4b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### 3.4 调整参数项
+### 3.4 Adjust Parameter Items  
 
-- **标注一：先点击播放键后会弹出编辑键。**
-- **标注二：点击即可进入参数编辑页面。**
+- **Label 1: After clicking the play button, the edit button will pop up.**
+- **Label 2: Click to enter the parameter editing page.**
 
 ![app_parameter](./img/app/app_parameter.jpg)
 
-- **调整电机参数**
+- **Adjust motor parameters**
 
-| 参数项 | 相关含义及操作 | 备注 |
-|-----|-----|-----|
+| Parameter items | Related meanings and operations | Remarks |
+|-------|-----|-----|
 |||![aia](./img/app/aia.jpg)|
-| **调节电机速度（标注一）** | 电机速度调节有四个选项：最快、快、慢、最慢 | 如果将电机速度调至最快，电机的反应速度最快，也就代表会快速完成动作组的动作。以此类推，如果将电机速度调至最慢，而动作组的动作则会以缓慢且丝滑的状态完成。 |
-| **调节电机加速度（标注二)** | 电机加速度调节有四个选项：最快、快、慢、最慢 | |
-| **调节关键帧时间（标注三）**| 可在此调节关键帧的时间，建议以200ms为一帧的时间。 ||
+| **Adjust the motor speed (label 1)** | There are four options for motor speed adjustment: fastest, fast, slow, and slowest. | If the motor speed is adjusted to the fastest, the motor's response speed will be the fastest, which means it will quickly complete the actions of the action sets. Similarly, if the motor speed is adjusted to the slowest, the actions of the action sets will be completed in a slow and smooth state. |
+| **Adjust motor acceleration (label 2)** | There are four options for adjusting motor acceleration: fastest, fast, slow, and slowest. | |
+| **Adjust keyframe time (label 3)**| You can adjust the time of keyframes here, and it is recommended to set a frame time of 200ms. | |
 
-- **保存、另存为、删除关键帧**
+- **Save, Save As, Delete Keyframes**
 
-| 参数项 | 相关含义及操作 | 
+| Parameter items | Related meanings and operations |
 |-----|-----|
 ||![save](./img/app/save.jpg) |
-| **标注一：保存至此关键帧** | 点击此选项可将当前编辑的关键帧保存至当前动作序列中。| 
-| **标注二：另存至新关键帧** | 选择此选项可以将当前编辑的关键帧作为一个新的独立关键帧保存。 |
-| **标注三：删除此关键帧** | 点击此选项可从动作序列中移除当前选择的关键帧。| 
+| **Label 1: Save to this keyframe** | Click this option to save the currently edited keyframe to the current action sequence. | 
+| **Label 2: Save as new Keyframe** | Select this option to save the currently edited keyframe as a new independent keyframe. |
+| **Label 3: Delete this keyframe** | Click this option to remove the currently selected keyframe from the action sequence. | 
 
-## 四、结语
+## IV.Conclusion  
 
-<div className="indent-first-line">
-"以上内容是关于进阶遥控玩法的使用指南。对于好奇的用户来说，了解这些遥控操作背后的原理同样重要。因此，我们接下来将探讨遥控操作的核心——遥控 API 接口。让我们一起探索吧！"
-</div>
+The above content is a user guide for advanced remote control gameplay. For users with much curiosity, understanding the principles behind these remote control operations is very important. Therefore, we will now explore the core of remote control operations - the remote control API interface. Let's explore together.
 
 <!-- ## 四、拖拽示教模式（暂未开放）
 
