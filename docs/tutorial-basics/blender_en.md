@@ -1,8 +1,10 @@
 ---
+<<<<<<< HEAD
 sidebar_position: 7
 ---
 
 # Mid-level (Ⅳ): Blender Tutorial for Beginners
+
 ## I.Introduction
 
 This document introduces how to use Blender to edit cool actions of Sparky and debug accordingly. The document will also demonstrate how to export and play actions through Python scripts to achieve automated demonstrations of cool actions. To help users design and master the action editing of Sparky more efficiently, let's learn what effects Blender can achieve!
@@ -170,7 +172,10 @@ After exporting and checking the text file, we can try to play the actions in Py
 
 :::danger[Note]
 Before play another action, the current action shall be ended.  
+<<<<<<< HEAD
 :::
+=======
+>>>>>>> 221bbc55930bcbd09a6ee8b5eaa6f8cd3ff9a8bf
 
 | Steps | Reference pictures |
 |-------|--------------------|
