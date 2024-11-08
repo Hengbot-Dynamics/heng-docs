@@ -12,7 +12,6 @@ sidebar_position: 5
 <div className="indent-first-line">
 **首先，我首先，在学会本篇文档介绍了如何使用 Python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。在阅读本文档前，请先阅读[开箱系列：基础配置使用](./quick_start_guide.md)，对哮天有一定了解。**
 
-**本篇会带大家**
 </div>
 
 ![sparky](./img/app/sparky.jpg)

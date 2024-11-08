@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Sparky User Manual
 
-Thank you for choosing Sparky, a quadruped robot from Hengbot Innovation Ltd. Sparky is a flexible and smart robot partner with attractive appearance and amusing interactive experience. The shape and structure of Sparky have been optimized for many years. Its legs are designed with modular connecting rods and equipped with AIA integrated motor units, so that you can upgrade the power system of your Sparky like replacing the motor of four-wheel drive, or customize a unique Sparky like replacing the case of mobile phone. Every master deserves to be guarded and accompanied by a Sparky robot.
+Thank you for choosing Sparky, a quadruped robot from Hengbot Innovation Ltd. Sparky is a flexible and smart robot partner with attractive appearance and amusing interactive experience. The shape and structure of Sparky have been optimized for many years. Its legs are designed with modular connecting rods and equipped with Neurocore integrated motor units, so that you can upgrade the power system of your Sparky like replacing the motor of four-wheel drive, or customize a unique Sparky like replacing the case of mobile phone. Every master deserves to be guarded and accompanied by a Sparky robot.
 
 ![sparky](./tutorial-basics/img/app/sparky.jpg)
 
@@ -67,7 +67,7 @@ List：Cleaning brush, USB data cable (Type-C), Battery charger
 | 行走速度	| 0.4m/s |
 | 自由度	| 整机14，每条腿3，头部2。 |
 | 电机能力	| 类型：微型伺服电机 |
-|		| 数量：腿部AIAx4 头部x2 |
+|		| 数量：腿部 Neurocores x4 头部x2 |
 |       | 电机尺寸：32.7*31.4*47.7mm |
 |		| 最大扭矩：0.6N·m |
 | 		| 工作电压：6-8.4V |
