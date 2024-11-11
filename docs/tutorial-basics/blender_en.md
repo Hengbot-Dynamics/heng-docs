@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 sidebar_position: 7
 ---
 
@@ -172,10 +171,6 @@ After exporting and checking the text file, we can try to play the actions in Py
 
 :::danger[Note]
 Before play another action, the current action shall be ended.  
-<<<<<<< HEAD
-:::
-=======
->>>>>>> 221bbc55930bcbd09a6ee8b5eaa6f8cd3ff9a8bf
 
 | Steps | Reference pictures |
 |-------|--------------------|
