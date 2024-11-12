@@ -22,7 +22,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link className={clsx("button button--secondary button--lg button")}
             to="https://hengbot-dynamics.github.io/heng-docs/docs/intro">
-            <Translate>Mroe</Translate>
+            <Translate>More</Translate>
           </Link>
         </div>
       </div>
