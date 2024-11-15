@@ -343,5 +343,8 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "了解更多": {
+    "message": "More"
   }
 }
