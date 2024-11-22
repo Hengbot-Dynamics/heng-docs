@@ -2,12 +2,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import React from 'react';
 import type * as Preset from '@docusaurus/preset-classic';
+import Translate from '@docusaurus/Translate';
 
 const config: Config = {
   title: 'SPARKY',
-  tagline: 'A Highly Dynamic Robotic Dog, Lifelike & Open Sourced',
+  tagline: '',
   favicon: 'img/favicon.ico',
-  
+
   // Set the production url of your site here
   url: 'https://Hengbot-Dynamics.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served

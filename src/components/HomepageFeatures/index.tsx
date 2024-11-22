@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Translate from '@docusaurus/Translate';
 
 interface FeatureItem {
     title: string;
@@ -12,10 +13,10 @@ interface FeatureItem {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'SPARKY',
-    subtitle: 'A highly dynamic robot dog that combines interactivity and extensibility.',
+    title: '',
+    subtitle: (<Translate>消费级高动态AI仿生机器人平台</Translate>),
     description: (
-      <>SPARKY is a bionically-limbed robot dog that is flexible, opensourced and ready to bring more fun and possibilities.</>
+    <Translate>哮天是 Hengbot 推出的首款消费级高动态AI智能仿生陪伴机器狗，它结合了高级外观设计、灵巧高速运动能力和便捷二次开发功能，使用户能够轻松体验AI+机器人技术的魅力。</Translate>
     ),
     Gif: 'img/sparky.gif',
   },
