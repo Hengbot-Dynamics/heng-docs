@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import Translate from '@docusaurus/Translate';
 
 const config: Config = {
-  title: 'SPARKY',
+  title: 'SIRIUS',
   tagline: '',
   favicon: 'img/favicon.ico',
 

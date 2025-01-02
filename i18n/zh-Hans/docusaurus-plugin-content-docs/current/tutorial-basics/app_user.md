@@ -10,7 +10,7 @@ sidebar_position: 3
 前文、我们介绍了新伙伴“哮天”，并熟悉了包括联网和 App 连接在内的配置操作。现在，我们已经熟悉了这些设置。接下来，让我们一起探索 App 的有趣玩法，首先是学习如何控制哮天的步态、头部、机身运动等。"
 </div>
 
-![sparky](./img/app/sparky.jpg)
+![Sirius](./img/app/sirius.jpg)
 
 ## 二、准备工作
 

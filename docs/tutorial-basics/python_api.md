@@ -9,9 +9,9 @@ sidebar_position: 5
 > In the previous sections, we familiarized ourselves with the basic and advanced usage of remote control. So the question is: What principle creates these effects?  
 > From this document, we will find the answer we are looking for!
 
-This section introduces how to use Python SDK to control the movement status of your Sparky. You can try using Python to learn robot control and complete the secondary development of your Sparky by following the interfaces and instances we provide. Before reading this document, please learn the section "Unboxing: Entry-level configuration and usage" for a basic understanding of Sparky.
+This section introduces how to use Python SDK to control the movement status of your Sirius. You can try using Python to learn robot control and complete the secondary development of your Sirius by following the interfaces and instances we provide. Before reading this document, please learn the section "Unboxing: Entry-level configuration and usage" for a basic understanding of Sirius.
 
-![sparky](./img/app/sparky.jpg)
+![Sirius](./img/app/sirius.jpg)
 
 ## II.Preparation Work
 
@@ -20,16 +20,16 @@ Before entering the study of secondary development, let's finish some preparator
 ### 2.1 Basic Knowledge  
 
 - Possess a foundation in Python programming language and understand basic syntax concepts such as object-oriented programming and interactive interpretation.  
-- Familiar with the basic operations of Sparky and able to use the App to control Sparky.  
+- Familiar with the basic operations of Sirius and able to use the App to control Sirius.  
 
 ### 2.2 Hardware​
 
-- Hardware: a Sparky.  
+- Hardware: a Sirius.  
 - Environment: a clean desktop or flat work surface.  
   
 ### 2.3 Software  
 
-- Sparky: Connect to the same LAN as the computer and obtain the IP address from the screen.  
+- Sirius: Connect to the same LAN as the computer and obtain the IP address from the screen.  
 - PC: The Python environment (including Git repository with pip) has been installed, and the development SDK can be obtained through the following two methods.
 
 ```bash
@@ -41,21 +41,21 @@ git clone https://github.com/Hengbot-Dynamics/hengbot-api.git
 ## III.Basic Usage
 
 :::danger[TAKE CARE]
-The following code contains relevant configuration of Sparky's IP address. Please change it to the correct Sparky local IP address before using it.
+The following code contains relevant configuration of Sirius's IP address. Please change it to the correct Sirius local IP address before using it.
 This is an example:`IP = '192.168.8.139'` 
 :::
 
 ### 3.1 Get Status Information  
 
-Send commands to obtain information on the battery, hardware error status, and network information of Sparky.
+Send commands to obtain information on the battery, hardware error status, and network information of Sirius.
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_get_status(ip):
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         if robot.isconnected:
             # get information
             data = robot.get_status()
@@ -102,18 +102,18 @@ The information will be returned in the form of json, which is sorted as follows
 
 ### 3.2 Remote Control Mode  
 
-First, use the following code to enter the remote control mode and control Sparky to make a circle. After running the code here, Sparky will start to make a circle. Please place it on an open and flat ground or table.
+First, use the following code to enter the remote control mode and control Sirius to make a circle. After running the code here, Sirius will start to make a circle. Please place it on an open and flat ground or table.
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_circles(ip, timeout = 10):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to control mode and return to control mode operation object
-        ctrl = robot.switch_mode(sparky.MODE_CTRL)
+        ctrl = robot.switch_mode(Sirius.MODE_CTRL)
         # wait for readiness
         time.sleep(0.5)
         # make it turn in circles
@@ -121,7 +121,7 @@ def test_circles(ip, timeout = 10):
         ctrl.movew = 0.5
         ctrl.headyaw = 1
         ctrl.speed = ctrl.SPEED_NORMAL
-        # synchronized to Sparky
+        # synchronized to Sirius
         ctrl.sync()
         time.sleep(timeout)
 test_circles(IP)
@@ -134,15 +134,15 @@ After entering editing mode, we will write keyframes to implement a series of ac
 #### 3.3.1 Body Swing
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_swing(ip):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         for i in range(5):
             edit.yaw = 0.3
             edit.headyaw = 0.5
@@ -157,15 +157,15 @@ test_swing(IP)
 #### 3.3.2 Squat Down and Stand Up
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_crouch(ip, timeout = 5):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         # set speed
         edit.acc = edit.SPEED_SLOWEST
         edit.speed = edit.SPEED_SLOWEST
@@ -179,15 +179,15 @@ test_crouch(IP)
 #### 3.3.3 Nodding and Shaking Head
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_shake_head(ip, timeout = 3):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         # set speed
         edit.acc = edit.SPEED_SLOWEST
         edit.speed = edit.SPEED_SLOWEST
@@ -212,15 +212,15 @@ test_shake_head(IP)
 #### 3.3.4 Play Keyframes
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.154'
 def test_play_frame(ip):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         # play action frame
         edit.play('./20240808_Shaking_your_head.txt')
         input("回车退出")
@@ -232,15 +232,15 @@ test_play_frame(IP)
 After experiencing the editing mode above, we came to the teaching demonstration mode to record and play the action.
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_play(ip, timeout = 10):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to teach mode and return to edit teach operation object
-        teach = robot.switch_mode(sparky.MODE_TEACH)
+        teach = robot.switch_mode(Sirius.MODE_TEACH)
         print('start record')
         teach.start_record()
         time.sleep(timeout)
@@ -260,12 +260,12 @@ test_play(IP)
 
 There are 5 types of operation objects in the module, namely robot_comtrol, teach_mode，ctrl_mode，edit_mode，wave_mode。  
 
-Create a robot_comtrol connection to Sparky and use robot_comtrol.switch_mode to obtain the corresponding mode operation object.  
+Create a robot_comtrol connection to Sirius and use robot_comtrol.switch_mode to obtain the corresponding mode operation object.  
 
 ### 4.2 Import Module ​
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 ```
 
 ### 4.3 robot_control
@@ -274,7 +274,7 @@ from hengbot import sparky
 
 ```python
 IP = '192.168.8.237'
-with sparky.robot_control(IP) as robot_control:
+with Sirius.robot_control(IP) as robot_control:
 ```
 
 #### 4.3.2 Object Properties
@@ -343,8 +343,8 @@ robot_control.del_close_callback(closeCallback)
 
 | Function | Attribute | Remarks |
 |----------|-----------|---------|
-| robot_control.switch_mode(target, end_reset=True) | Switch Sparky working mode | target:`sparky.MODE_CTRL`、`sparky.MODE_TEACH`、`sparky.MODE_EDIT`、`sparky.MODE_WAVE` can be selected to return the corresponding mode operation object. `end_reset`:Whether to restore sparky mode after the program ends. Only valid in `sparky.MODE_TEACH` and `sparky.MODE_EDIT`. |
-| robot_control.reset() | Restore Sparky's posture | |
+| robot_control.switch_mode(target, end_reset=True) | Switch Sirius working mode | target:`Sirius.MODE_CTRL`、`Sirius.MODE_TEACH`、`Sirius.MODE_EDIT`、`Sirius.MODE_WAVE` can be selected to return the corresponding mode operation object. `end_reset`:Whether to restore Sirius mode after the program ends. Only valid in `Sirius.MODE_TEACH` and `Sirius.MODE_EDIT`. |
+| robot_control.reset() | Restore Sirius's posture | |
 | robot_control.get_status() | The information will be returned in the form of json, which is sorted as follows |  |
 
 ```json
@@ -385,7 +385,7 @@ robot_control.del_close_callback(closeCallback)
 #### 4.4.1 Creating Objects
 
 ```python
-teach_mode = robot_control.switch_mode(sparky.MODE_TEACH)
+teach_mode = robot_control.switch_mode(Sirius.MODE_TEACH)
 ```
 
 #### 4.4.2 Function
@@ -426,14 +426,14 @@ Set motor torque output
 
 | type(optional) | value(optional) |
 |----|----|
-|`sparky.PARM_TYPE_HEAD`、`sparky.PARM_TYPE_FRONTLEFT`、`sparky.PARM_TYPE_FRONTRIGHT`、`sparky.PARM_TYPE_BACKLEFT`、`sparky.PARM_TYPE_BACKRIGHT`、`sparky.PARM_TYPE_ALL`|`sparky.PARM_VALUE_ENABLE`、`sparky.PARM_VALUE_DISABLE`、`sparky.PARM_VALUE_LIMIT`、`sparky.PARM_VALUE_UNLIMIT`|
+|`Sirius.PARM_TYPE_HEAD`、`Sirius.PARM_TYPE_FRONTLEFT`、`Sirius.PARM_TYPE_FRONTRIGHT`、`Sirius.PARM_TYPE_BACKLEFT`、`Sirius.PARM_TYPE_BACKRIGHT`、`Sirius.PARM_TYPE_ALL`|`Sirius.PARM_VALUE_ENABLE`、`Sirius.PARM_VALUE_DISABLE`、`Sirius.PARM_VALUE_LIMIT`、`Sirius.PARM_VALUE_UNLIMIT`|
 
 ### 4.5 ctrl_mode
 
 #### 4.5.1 Creating Objects
 
 ```python
-ctrl_mode = robot_control.switch_mode(sparky.MODE_CTRL)
+ctrl_mode = robot_control.switch_mode(Sirius.MODE_CTRL)
 ```
 
 #### 4.5.2 Object Properties
@@ -457,14 +457,14 @@ ctrl_mode = robot_control.switch_mode(sparky.MODE_CTRL)
   
 | Function | Purpose |
 |----|----|
-| ctrl_mode.sync() | Synchronize the settings to Sparky. |
+| ctrl_mode.sync() | Synchronize the settings to Sirius. |
 
 ### 4.6 edit_mode
 
 #### 4.6.1 Creating Objects
 
 ```python
-edit_mode= robot_control.switch_mode(sparky.MODE_EDIT)
+edit_mode= robot_control.switch_mode(Sirius.MODE_EDIT)
 ```
 
 #### 4.6.2 Object Properties 
@@ -526,7 +526,7 @@ To obtain the torque output configuration of the motor, it is necessary to add a
 
 | type (optional) | value (optional) |
 |----|----|
-|`sparky.PARM_TYPE_HEAD`、`sparky.PARM_TYPE_FRONTLEFT`、`sparky.PARM_TYPE_FRONTRIGHT`、`sparky.PARM_TYPE_BACKLEFT`、`sparky.PARM_TYPE_BACKRIGHT`、`sparky.PARM_TYPE_ALL`|`sparky.PARM_VALUE_ENABLE`、`sparky.PARM_VALUE_DISABLE`、`sparky.PARM_VALUE_LIMIT`、`sparky.PARM_VALUE_UNLIMIT`|
+|`Sirius.PARM_TYPE_HEAD`、`Sirius.PARM_TYPE_FRONTLEFT`、`Sirius.PARM_TYPE_FRONTRIGHT`、`Sirius.PARM_TYPE_BACKLEFT`、`Sirius.PARM_TYPE_BACKRIGHT`、`Sirius.PARM_TYPE_ALL`|`Sirius.PARM_VALUE_ENABLE`、`Sirius.PARM_VALUE_DISABLE`、`Sirius.PARM_VALUE_LIMIT`、`Sirius.PARM_VALUE_UNLIMIT`|
 
 | Function | Purpose | Remarks |
 |----|----|----|
@@ -538,7 +538,7 @@ To obtain the torque output configuration of the motor, it is necessary to add a
 #### 4.7.1 Creating Objects
 
 ```python
-wave_mode= robot_control.switch_mode(sparky.MODE_WAVE)
+wave_mode= robot_control.switch_mode(Sirius.MODE_WAVE)
 ```
 
 #### 4.7.2 Creating Objects
@@ -559,9 +559,9 @@ wave_mode= robot_control.switch_mode(sparky.MODE_WAVE)
 
 ### 5.1 Disconnect  
 
-If Sparky is disconnected, the error callback function will receive information at this time, and Sparky will automatically enter the recovery operation.  
+If Sirius is disconnected, the error callback function will receive information at this time, and Sirius will automatically enter the recovery operation.  
 
-But if it has disconnected for a long time, please check whether Sparky's own network status is normal? Whether to display the IP address.  
+But if it has disconnected for a long time, please check whether Sirius's own network status is normal? Whether to display the IP address.  
 
 ## VI.Version
 

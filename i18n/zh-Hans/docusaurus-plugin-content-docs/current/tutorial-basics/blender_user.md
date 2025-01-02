@@ -156,15 +156,15 @@ sidebar_position: 7
 
 ```python
 #Python播放哮天动作
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.154'
 def test_play_frame(ip):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         # play action frame
         edit.play('./20240808_Shaking_your_head.txt')
         input("回车退出")
@@ -214,8 +214,8 @@ Traceback (most recent call last):
   File "D:\桌面\Python播放动作\action.py", line 14, in <module>
     test_play_frame(IP)
   File "D:\桌面\Python播放动作\action.py", line 10, in test_play_frame
-    edit = robot.switch_mode(sparky.MODE_EDIT)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\site-packages\hengbot\sparky.py", line 116, in switch_mode
+    edit = robot.switch_mode(Sirius.MODE_EDIT)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\site-packages\hengbot\Sirius.py", line 116, in switch_mode
     self.ws.send('{"cmd": "Mode_Switch", "target": "' + target + '"}')
   File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\site-packages\websocket\_app.py", line 290, in send
     if not self.sock or self.sock.send(data, opcode) == 0:
@@ -243,7 +243,7 @@ Traceback (most recent call last):
     test_play_frame(IP)
   File "D:\桌面\Python播放动作\action.py", line 12, in test_play_frame
     edit.play('./240823_Initial_Engineerin.txt')
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\site-packages\hengbot\sparky.py", line 451, in play
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\site-packages\hengbot\Sirius.py", line 451, in play
     with open(path, 'r', encoding='utf-8') as f:
 FileNotFoundError: [Errno 2] No such file or directory: './240823_Initial_Engineerin.txt'
 ```

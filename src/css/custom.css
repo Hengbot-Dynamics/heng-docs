@@ -42,7 +42,7 @@ body {
 
 .hero__title {
   text-align: left;
-  margin-bottom: 60px; /* 根据需要调整下边距 */
+  margin-bottom: 0px; /* 根据需要调整下边距 */
 }
 
 .hero__subtitle {

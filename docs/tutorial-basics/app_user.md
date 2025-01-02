@@ -6,38 +6,38 @@ sidebar_position: 3
 
 ## I.Preface
 
-In the previous section, we met our new partner "Sparky" and learnt configuration operations including networking and App connection. Now, let's explore the fun gameplay of the App. First, Let's learn how to control the gait, head, and body movements of Sparky."
+In the previous section, we met our new partner "Sirius" and learnt configuration operations including networking and App connection. Now, let's explore the fun gameplay of the App. First, Let's learn how to control the gait, head, and body movements of Sirius."
 
-![sparky](./img/app/sparky.jpg)
+![Sirius](./img/app/sirius.jpg)
 
 ## II.Preparation Work
 
 | Steps | Description |
 |------|---------|
 | **Software**: download the APP and install it according to the prompts. | ![app_qr](./img/app/app_qr.jpg) |
-| **Environment**: Sparky has been connected to the Internet and successfully connected to the mobile App. | This section will not repeat the basic configuration and other operations. Please refer to this document: Unboxing:[ Entry-level Configuration and Usage for relevant information.](./quick_start_guide.md) |
+| **Environment**: Sirius has been connected to the Internet and successfully connected to the mobile App. | This section will not repeat the basic configuration and other operations. Please refer to this document: Unboxing:[ Entry-level Configuration and Usage for relevant information.](./quick_start_guide.md) |
 
 
 ## III.Experience the Entry-level Gameplay of APP
 
 | Steps | Reference pictures |
 |-------|-------|
-| After the connection is successful, the APP will go directly to the home page, and click **"Enter Remote Control"** to start and experience your wonderful interaction with Sparky. |![app_mode](./img/Quick_use_img/app_mode.jpg) |
+| After the connection is successful, the APP will go directly to the home page, and click **"Enter Remote Control"** to start and experience your wonderful interaction with Sirius. |![app_mode](./img/Quick_use_img/app_mode.jpg) |
 | After entering the Remote Control Mode, a prompt of whether to **"Restore Initial Posture"** will pop up, and then click "OK".| ![app_restore](./img/Quick_use_img/app_restore.jpg) |
 
 ### 3.1 Labelled Function Diagram  
 
-First, learn the functions of various components and icons based on the labelled diagram, and then proceed to experience the gait movement of your Sparky.
+First, learn the functions of various components and icons based on the labelled diagram, and then proceed to experience the gait movement of your Sirius.
 
 ![app_annota](./img/Quick_use_img/app_annota.jpg)
 
-### 3.2 Experience Sparky’s Gait Movement  
+### 3.2 Experience Sirius’s Gait Movement  
 
 | Steps | Reference pictures |
 |------|-------|
-| **Label 1**: Slide the joystick to make Sparky move and achieve gait movement.**Label 2**: Switch the speed mode between "Normal/Rapid" to control the gait speed of Sparky. | ![app_rocker](./img/Quick_use_img/app_rocker.jpg) |
+| **Label 1**: Slide the joystick to make Sirius move and achieve gait movement.**Label 2**: Switch the speed mode between "Normal/Rapid" to control the gait speed of Sirius. | ![app_rocker](./img/Quick_use_img/app_rocker.jpg) |
 
-After learning the basic operation steps, you can watch the video to see the operation steps more intuitively and experience the gait movement of Sparky simultaneously.
+After learning the basic operation steps, you can watch the video to see the operation steps more intuitively and experience the gait movement of Sirius simultaneously.
 
 | Function | Video effects |
 |----------|---------------|
@@ -51,7 +51,7 @@ After learning the basic operation steps, you can watch the video to see the ope
 |-------|--------------------|
 | **Label 1**: The head slider has been optimized with a separate joystick control, allowing users to control head movements more finely.|![app_head](./img/Quick_use_img/app_head.jpg) |
 
-After familiarizing yourself with the basic operation steps, you can also understand the head movements of your Sparky by watching videos.
+After familiarizing yourself with the basic operation steps, you can also understand the head movements of your Sirius by watching videos.
 
 <iframe width="780" height="400" src="https://www.youtube.com/embed/lsRLkfgB-U0?si=B36pN0rV2jiTT3Nr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -69,7 +69,7 @@ For further understanding, the table below shows detailed labels and description
 | **Label 1**: Enter the body control page and adjust the parameter axis to achieve body movement. | ![app_body](./img/Quick_use_img/app_body.jpg) |
 | **Label 2**: Slide the red dot to adjust the parameter axis.**Label 3**: Click on the "-" to decrease or "+" to increase on both sides of the parameter axis.| ![app_body_two](./img/Quick_use_img/app_body_two.jpg) |
 
-After familiarizing yourself with the basic operation steps, you can also understand the head movements of your Sparky by watching videos.
+After familiarizing yourself with the basic operation steps, you can also understand the head movements of your Sirius by watching videos.
 
 <iframe width="780" height="400" src="https://www.youtube.com/embed/8NgFbh8joss?si=gjuPSA8yoR42ZE1S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -85,16 +85,16 @@ For further understanding, the table below shows detailed labels and description
 
 ## IV.More Gameplay Options
 
-Through the introduction of the gameplay in the previous text, we have become familiar with the basic remote control gameplay of the APP and learned skills for controlling the gait, head, and body movements of your Sparky. And the next step is to further explore advanced remote control gameplay in the App - keyframes and drag and drop demonstrations. Let's look forward to the exciting content of the next chapter together. Coming soon!
+Through the introduction of the gameplay in the previous text, we have become familiar with the basic remote control gameplay of the APP and learned skills for controlling the gait, head, and body movements of your Sirius. And the next step is to further explore advanced remote control gameplay in the App - keyframes and drag and drop demonstrations. Let's look forward to the exciting content of the next chapter together. Coming soon!
 
 Go to find the document out which you desired as follows.
 
 | Document title | Introduction |
 | ------------- | ------------- |
-| [Unboxing: Entry-level configuration and usage](./quick_start_guide.md) | In this section, we will show you the basic configuration and usage of Sparky including steps of startup, operation skills, network connection and how to connect with the APP. |
+| [Unboxing: Entry-level configuration and usage](./quick_start_guide.md) | In this section, we will show you the basic configuration and usage of Sirius including steps of startup, operation skills, network connection and how to connect with the APP. |
 | [Entry-level: APP operation](./app_user.md) | This section introduces the basic remote-control gameplay of App, covering from basic operation to gait movement, head and body movement and so on. Let’s explore all kinds of interesting gameplay in the App! |
-| [Mid-level (I): Advanced APP operation](./create_a_blog_post.md) | In this section, we will further explore the advanced remote-control gameplay in the App - Keyframe Mode and Drag & Drop tutorial, to create more unique actions for your Sparky! |
-| [Mid-level (II): Python API](./python_api.md) | This section introduces how to use Python SDK to control the movement status of your Sparky. You can try using Python to learn robot control and complete the secondary development of your Sparky by following the interfaces and instances we provide.|
-|[Mid-level (III): WebSocket API](./deploy_your_site.md) | This section introduces how to use WebSocket API to control the movement status of your Sparky, complete the secondary development of your Sparky, and provide more detailed API information. |
-| [Advanced-level (I): UI Usage](./quick_start_two.md) | This section introduces the basic UI interface and interactive operations of Sparky’s Head. |
-| [Advanced-level (II): Operated by the gamepad](./sparky_remote.md) | This section provides a detailed description on how to quickly pair Sparky with the gamepad through Bluetooth for smoother movements of Sparky’s gait, head, and body through remote control. |
+| [Mid-level (I): Advanced APP operation](./create_a_blog_post.md) | In this section, we will further explore the advanced remote-control gameplay in the App - Keyframe Mode and Drag & Drop tutorial, to create more unique actions for your Sirius! |
+| [Mid-level (II): Python API](./python_api.md) | This section introduces how to use Python SDK to control the movement status of your Sirius. You can try using Python to learn robot control and complete the secondary development of your Sirius by following the interfaces and instances we provide.|
+|[Mid-level (III): WebSocket API](./deploy_your_site.md) | This section introduces how to use WebSocket API to control the movement status of your Sirius, complete the secondary development of your Sirius, and provide more detailed API information. |
+| [Advanced-level (I): UI Usage](./quick_start_two.md) | This section introduces the basic UI interface and interactive operations of Sirius’s Head. |
+| [Advanced-level (II): Operated by the gamepad](./sparky_remote.md) | This section provides a detailed description on how to quickly pair Sirius with the gamepad through Bluetooth for smoother movements of Sirius’s gait, head, and body through remote control. |
