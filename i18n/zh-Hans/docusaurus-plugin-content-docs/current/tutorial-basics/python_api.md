@@ -14,7 +14,7 @@ sidebar_position: 5
 
 </div>
 
-![sparky](./img/app/sparky.jpg)
+![Sirius](./img/app/sirius.jpg)
 
 ## 二、准备工作
 
@@ -23,7 +23,7 @@ sidebar_position: 5
 ### 2.1 基础知识
 
 - 有 Python 语言编程基础，了解基本语法，如面向对象、交互解释等概念。
-- 熟悉哮天的基础使用等操作，能够使用 Sparky's App 控制哮天。
+- 熟悉哮天的基础使用等操作，能够使用 Sirius's App 控制哮天。
 
 ### 2.2 硬件
 
@@ -53,12 +53,12 @@ git clone https://github.com/Hengbot-Dynamics/hengbot-api.git
 发送指令获取哮天电池信息，硬件错误状态及网络信息
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_get_status(ip):
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         if robot.isconnected:
             # get information
             data = robot.get_status()
@@ -108,15 +108,15 @@ test_get_status(IP)
 先使用以下代码进入遥控模式并控制哮天进行转圈，这里运行代码后哮天会开始转圈，请放置在空阔平整的地面或台面上。
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_circles(ip, timeout = 10):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to control mode and return to control mode operation object
-        ctrl = robot.switch_mode(sparky.MODE_CTRL)
+        ctrl = robot.switch_mode(Sirius.MODE_CTRL)
         # wait for readiness
         time.sleep(0.5)
         # make it turn in circles
@@ -124,7 +124,7 @@ def test_circles(ip, timeout = 10):
         ctrl.movew = 0.5
         ctrl.headyaw = 1
         ctrl.speed = ctrl.SPEED_NORMAL
-        # synchronized to Sparky
+        # synchronized to Sirius
         ctrl.sync()
         time.sleep(timeout)
 test_circles(IP)
@@ -137,15 +137,15 @@ test_circles(IP)
 #### 3.3.1 身体摇摆
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_swing(ip):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         for i in range(5):
             edit.yaw = 0.3
             edit.headyaw = 0.5
@@ -160,15 +160,15 @@ test_swing(IP)
 #### 3.3.2 蹲下起立
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_crouch(ip, timeout = 5):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         # set speed
         edit.acc = edit.SPEED_SLOWEST
         edit.speed = edit.SPEED_SLOWEST
@@ -182,15 +182,15 @@ test_crouch(IP)
 #### 3.3.3 点头摇头
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_shake_head(ip, timeout = 3):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         # set speed
         edit.acc = edit.SPEED_SLOWEST
         edit.speed = edit.SPEED_SLOWEST
@@ -214,15 +214,15 @@ test_shake_head(IP)
 #### 3.3.4 播放关键帧
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.154'
 def test_play_frame(ip):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to edit mode and return to edit mode operation object
-        edit = robot.switch_mode(sparky.MODE_EDIT)
+        edit = robot.switch_mode(Sirius.MODE_EDIT)
         # play action frame
         edit.play('./20240808_Shaking_your_head.txt')
         input("回车退出")
@@ -234,15 +234,15 @@ test_play_frame(IP)
 体验完上文的编辑模式后，我们来到示教模式来录制动作并播放动作。
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 # set IP
 IP = '192.168.8.139'
 def test_play(ip, timeout = 10):
     import time
     # connect through ip
-    with sparky.robot_control(ip) as robot:
+    with Sirius.robot_control(ip) as robot:
         # switch to teach mode and return to edit teach operation object
-        teach = robot.switch_mode(sparky.MODE_TEACH)
+        teach = robot.switch_mode(Sirius.MODE_TEACH)
         print('start record')
         teach.start_record()
         time.sleep(timeout)
@@ -267,7 +267,7 @@ test_play(IP)
 ### 4.2 导入模块
 
 ```python
-from hengbot import sparky
+from hengbot import Sirius
 ```
 
 ### 4.3 robot_control
@@ -276,7 +276,7 @@ from hengbot import sparky
 
 ```python
 IP = '192.168.8.237'
-with sparky.robot_control(IP) as robot_control:
+with Sirius.robot_control(IP) as robot_control:
 ```
 
 #### 4.3.2 对象属性
@@ -346,7 +346,7 @@ robot_control.del_close_callback(closeCallback)
 
 | 函数 | 属性 | 备注|
 |----|----|----|
-| robot_control.switch_mode(target, end_reset=True) | 切换哮天工作模式 | target:可选 `sparky.MODE_CTRL`、`sparky.MODE_TEACH`、`sparky.MODE_EDIT`、`sparky.MODE_WAVE`  返回对应模式操作对象; `end_reset`:程序运行结束后是否恢复哮天形态，仅在 `sparky.MODE_TEACH`、`sparky.MODE_EDIT` 有效。|
+| robot_control.switch_mode(target, end_reset=True) | 切换哮天工作模式 | target:可选 `Sirius.MODE_CTRL`、`Sirius.MODE_TEACH`、`Sirius.MODE_EDIT`、`Sirius.MODE_WAVE`  返回对应模式操作对象; `end_reset`:程序运行结束后是否恢复哮天形态，仅在 `Sirius.MODE_TEACH`、`Sirius.MODE_EDIT` 有效。|
 | robot_control.reset() | 恢复哮天姿态 | |
 | robot_control.get_status() | 以 Json 的形式返回哮天状态信息，整理后如下所示 |  |
 
@@ -388,7 +388,7 @@ robot_control.del_close_callback(closeCallback)
 #### 4.4.1 对象创建
 
 ```python
-teach_mode = robot_control.switch_mode(sparky.MODE_TEACH)
+teach_mode = robot_control.switch_mode(Sirius.MODE_TEACH)
 ```
 
 #### 4.4.2 函数
@@ -429,14 +429,14 @@ teach_mode = robot_control.switch_mode(sparky.MODE_TEACH)
 
 | type 可选 | value 可选 |
 |----|----|
-|`sparky.PARM_TYPE_HEAD`、`sparky.PARM_TYPE_FRONTLEFT`、`sparky.PARM_TYPE_FRONTRIGHT`、`sparky.PARM_TYPE_BACKLEFT`、`sparky.PARM_TYPE_BACKRIGHT`、`sparky.PARM_TYPE_ALL`|`sparky.PARM_VALUE_ENABLE`、`sparky.PARM_VALUE_DISABLE`、`sparky.PARM_VALUE_LIMIT`、`sparky.PARM_VALUE_UNLIMIT`|
+|`Sirius.PARM_TYPE_HEAD`、`Sirius.PARM_TYPE_FRONTLEFT`、`Sirius.PARM_TYPE_FRONTRIGHT`、`Sirius.PARM_TYPE_BACKLEFT`、`Sirius.PARM_TYPE_BACKRIGHT`、`Sirius.PARM_TYPE_ALL`|`Sirius.PARM_VALUE_ENABLE`、`Sirius.PARM_VALUE_DISABLE`、`Sirius.PARM_VALUE_LIMIT`、`Sirius.PARM_VALUE_UNLIMIT`|
 
 ### 4.5 ctrl_mode
 
 #### 4.5.1 对象创建
 
 ```python
-ctrl_mode = robot_control.switch_mode(sparky.MODE_CTRL)
+ctrl_mode = robot_control.switch_mode(Sirius.MODE_CTRL)
 ```
 
 #### 4.5.2 对象属性
@@ -467,7 +467,7 @@ ctrl_mode = robot_control.switch_mode(sparky.MODE_CTRL)
 #### 4.6.1 对象创建
 
 ```python
-edit_mode= robot_control.switch_mode(sparky.MODE_EDIT)
+edit_mode= robot_control.switch_mode(Sirius.MODE_EDIT)
 ```
 
 #### 4.6.2 对象属性
@@ -529,7 +529,7 @@ edit_mode= robot_control.switch_mode(sparky.MODE_EDIT)
 
 | type 可选 | value 可选 |
 |----|----|
-|`sparky.PARM_TYPE_HEAD`、`sparky.PARM_TYPE_FRONTLEFT`、`sparky.PARM_TYPE_FRONTRIGHT`、`sparky.PARM_TYPE_BACKLEFT`、`sparky.PARM_TYPE_BACKRIGHT`、`sparky.PARM_TYPE_ALL`|`sparky.PARM_VALUE_ENABLE`、`sparky.PARM_VALUE_DISABLE`、`sparky.PARM_VALUE_LIMIT`、`sparky.PARM_VALUE_UNLIMIT`|
+|`Sirius.PARM_TYPE_HEAD`、`Sirius.PARM_TYPE_FRONTLEFT`、`Sirius.PARM_TYPE_FRONTRIGHT`、`Sirius.PARM_TYPE_BACKLEFT`、`Sirius.PARM_TYPE_BACKRIGHT`、`Sirius.PARM_TYPE_ALL`|`Sirius.PARM_VALUE_ENABLE`、`Sirius.PARM_VALUE_DISABLE`、`Sirius.PARM_VALUE_LIMIT`、`Sirius.PARM_VALUE_UNLIMIT`|
 
 | 函数 | 作用 | 备注 |
 |----|----|----|
@@ -541,7 +541,7 @@ edit_mode= robot_control.switch_mode(sparky.MODE_EDIT)
 #### 4.7.1 对象创建
 
 ```python
-wave_mode= robot_control.switch_mode(sparky.MODE_WAVE)
+wave_mode= robot_control.switch_mode(Sirius.MODE_WAVE)
 ```
 
 #### 4.7.2 对象属性

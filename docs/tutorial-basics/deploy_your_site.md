@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ## I.Preface
 
-Before reading this document, please familiarize yourself with the relevant documentation of Sparky to learn its basic usage. HENGBOT assumes that you have a certain foundation in programming and development, and are familiar with the Python language and interface calling. Please note that this document does not provide detailed explanations or popularization of professional terminology. Let's follow the guidance in the document together and learn how to debug and develop Sparky's API interface to achieve more innovative and interesting features.
+Before reading this document, please familiarize yourself with the relevant documentation of Sirius to learn its basic usage. HENGBOT assumes that you have a certain foundation in programming and development, and are familiar with the Python language and interface calling. Please note that this document does not provide detailed explanations or popularization of professional terminology. Let's follow the guidance in the document together and learn how to debug and develop Sirius's API interface to achieve more innovative and interesting features.
 
 ## II.Preparation Work  
 
@@ -14,9 +14,9 @@ We need to do some preparation work before use to make the follow-up use easier.
 
 ### 2.1 Hardware  
 
-- A Sparky updated to the latest mirror system (Version: hzwl831-m2dock-20240621)
+- A Sirius updated to the latest mirror system (Version: hzwl831-m2dock-20240621)
 
-![app/sparky](./img/app/sparky.jpg)
+![Sirius](./img/app/sirius.jpg)
 
 ### 2.2 Software
 
@@ -24,17 +24,17 @@ We need to do some preparation work before use to make the follow-up use easier.
   - Webscoket debugging website:http://wstool.js.org/
   - Json format online conversion tool:https://www.sojson.com/
 - Operating environment
-  - Sparky: By default, the network is connected and has obtained an IP address on the screen（例如“IP:192.168.8.232” ）
+  - Sirius: By default, the network is connected and has obtained an IP address on the screen（例如“IP:192.168.8.232” ）
   - API test: By default, API test can only be carried out when the body is in remote control mode.
   - PC: Python environment installed
 
 The above environment construction will not be explained in detail in this document. If necessary, please refer to the following documents.  
 
->Meet Sparky: User Guide：[Unboxing: Entry-level Configuration and Usage](./quick_start_guide.md)
+>Meet Sirius: User Guide：[Unboxing: Entry-level Configuration and Usage](./quick_start_guide.md)
 
 ## III.Notes  
 
-In order to better use the API, you need to understand some physical definitions on Sparky's body.
+In order to better use the API, you need to understand some physical definitions on Sirius's body.
 
 | Reference pictures |  |
 |-----|-----|
@@ -61,12 +61,12 @@ Before enabling API usage, we need to learn how to implement API function throug
 ### 4.1 Browser debugging of API  
 
 1. Preparation stage: Prepare the software and hardware before use according to the preparation work.
-2. Verify connection: First, confirm whether Sparky can be connected normally.
-3. Test remote control gait: Test whether Sparky can give instructions and execute them.
+2. Verify connection: First, confirm whether Sirius can be connected normally.
+3. Test remote control gait: Test whether Sirius can give instructions and execute them.
 4. Record and playback: Experience the recording function in teaching demonstration mode, whether the preset recording script can be played.
 5. 
 6. Play keyframes: Experience the keyframe function in Edit Mode, whether the preset keyframes can be played.
-7. Abnormal State Q&A: Learn how to restore normal use of Sparky when an abnormal state occurs.
+7. Abnormal State Q&A: Learn how to restore normal use of Sirius when an abnormal state occurs.
 
 ### 4.2 More API Development Materials  
 
@@ -76,11 +76,11 @@ Before enabling API usage, we need to learn how to implement API function throug
 
 ## V.Browser Debugging of API  
 
-Most API functions are related to the mode of the Sparky and need to be used in a specific mode. So when we establish a connection with Sparky, we need to switch modes first before using specific functions.
+Most API functions are related to the mode of the Sirius and need to be used in a specific mode. So when we establish a connection with Sirius, we need to switch modes first before using specific functions.
 
-### 5.1 Connect to Sparky  
+### 5.1 Connect to Sirius  
 
-We have already connected Sparky to the network and obtained an IP address in the preparation work, Here, take IP: 192.168.8.74 as an example.
+We have already connected Sirius to the network and obtained an IP address in the preparation work, Here, take IP: 192.168.8.74 as an example.
 
 :::danger[TAKE CARE]  
 
@@ -90,10 +90,10 @@ We have already connected Sparky to the network and obtained an IP address in th
 
 | Steps | Reference pictures |
 |-------|--------|
-| **Step 1**: Click to enter the Webscoket debugging webpage and input the service address with the IP information as `ws://<Sparky's IP>: 10710/getjson`. **Example**: ws://192.168.8.74:10710/getjson | |
-| **Step 2**: Click **"Open Connection"**, and the debugging information will be returned after the Sparky connection is successful. Next, check the box 'Receive JSON Decoding'. Now, you can enable the debugging API function on the browser! ||
-| **Step 3**: Try to send the first instruction to Sparky to get the basic state of Sparky's body! |`{"cmd":"Get_Status"}`|
-| **Step 4**: Copy and paste the above instructions in the Send box and click Send. The message box on the right will return the status information of Sparky. | |
+| **Step 1**: Click to enter the Webscoket debugging webpage and input the service address with the IP information as `ws://<Sirius's IP>: 10710/getjson`. **Example**: ws://192.168.8.74:10710/getjson | |
+| **Step 2**: Click **"Open Connection"**, and the debugging information will be returned after the Sirius connection is successful. Next, check the box 'Receive JSON Decoding'. Now, you can enable the debugging API function on the browser! ||
+| **Step 3**: Try to send the first instruction to Sirius to get the basic state of Sirius's body! |`{"cmd":"Get_Status"}`|
+| **Step 4**: Copy and paste the above instructions in the Send box and click Send. The message box on the right will return the status information of Sirius. | |
 
 We can try to interpret the meaning of the returned data. The data contains four main parts: battery information, hardware error status, network information, and status information. At present, only the following three parts of valid information are available, and the hardware status has not yet been standardized.
 
@@ -117,12 +117,12 @@ We can try to interpret the meaning of the returned data. The data contains four
 
 :::danger[TAKE CARE]
 Notes:
-1. Brake mode and gait movement cause Sparky to enter the unloading force state. At this point, rapidly hold Sparky's waist to avoid damage caused by bumping or falling.
-2. Each time after mode switch, you need to send a command to reset the posture of Sparky before using it.
-3. The user can use the function of restoring the posture of Sparky's body according to the requirements, so as to adjust Sparky to a stable standing state.
+1. Brake mode and gait movement cause Sirius to enter the unloading force state. At this point, rapidly hold Sirius's waist to avoid damage caused by bumping or falling.
+2. Each time after mode switch, you need to send a command to reset the posture of Sirius before using it.
+3. The user can use the function of restoring the posture of Sirius's body according to the requirements, so as to adjust Sirius to a stable standing state.
 :::
 
-After confirming that the robot can connect normally, refer to the following text to enable instruction testing to test whether Sparky can receive and execute instructions.
+After confirming that the robot can connect normally, refer to the following text to enable instruction testing to test whether Sirius can receive and execute instructions.
 
 #### Test 1: Switch modes and restore normal posture
 
@@ -137,7 +137,7 @@ Send the code instructions to separately enter **Remote Control Mode ->Brake Mod
 ```json
 // Switch to Remote Control Mode
 {"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
-// Enter Brake Mode, please hold Sparky's body before entering to prevent collision damage due to motor unloading force!!! Experimental function
+// Enter Brake Mode, please hold Sirius's body before entering to prevent collision damage due to motor unloading force!!! Experimental function
 {"cmd":"Mode_Switch","target":"Emergency_Stop"}
 /* Restore Initial Posture */
 {"cmd":"Reset_Robot_Position"} 
@@ -145,11 +145,11 @@ Send the code instructions to separately enter **Remote Control Mode ->Brake Mod
 
 #### Test 2: Test gait movement  
 
-Before starting the gait test, we first send instructions to ensure that Sparky has entered the Remote Control Mode. Next, please put Sparky on a flat and open ground or table, and we will do the gait test according to the following steps.
+Before starting the gait test, we first send instructions to ensure that Sirius has entered the Remote Control Mode. Next, please put Sirius on a flat and open ground or table, and we will do the gait test according to the following steps.
 
-1. Send the full-speed-ahead instruction and observe Sparky's full-speed-ahead posture. At this time, the record page will pop up with relevant parameter information.
+1. Send the full-speed-ahead instruction and observe Sirius's full-speed-ahead posture. At this time, the record page will pop up with relevant parameter information.
 2. Send a stop command to end gait movement.
-3. After the test is completed, send an instruction to restore the body posture, so as to ensure that Sparky can safely return to its original posture.。
+3. After the test is completed, send an instruction to restore the body posture, so as to ensure that Sirius can safely return to its original posture.。
 
 ```json
 {"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
@@ -161,7 +161,7 @@ Before starting the gait test, we first send instructions to ensure that Sparky 
 ```json
 // Switch to Remote Control Mode
 {"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
-// Full speed ahead, put Sparky on a flat and open ground or table before starting!!!
+// Full speed ahead, put Sirius on a flat and open ground or table before starting!!!
 {"cmd":"Control_Move","movex":1.0,"movey":0,"movew":0,"moveh":0,"tranx":0,"trany":0,"tranz":0,"roll":0,"pitch":0,"yaw":0,"headpitch":0,"headyaw":0,"speed":"normal"}
 // Stop
 {"cmd":"Control_Move","movex":0,"movey":0,"movew":0,"moveh":0,"tranx":0,"trany":0,"tranz":0,"roll":0,"pitch":0,"yaw":0,"headpitch":0,"headyaw":0,"speed":"normal"}
@@ -193,7 +193,7 @@ Mode switching and body posture reset are the prerequisite steps for all mode fu
 /* Action playback */
 // 1、Send action playback command
 {"cmd":"Start_Play"}
-// 2、end all action frames that need to be played. Before starting, please hold Sparky's body to prevent collision damage caused by motor unloading force!!!
+// 2、end all action frames that need to be played. Before starting, please hold Sirius's body to prevent collision damage caused by motor unloading force!!!
 // The format difference from recording frames is "feedback": "Recording" replaced with "cmd": "Playing"
 {"AIA":{"BackLeftLeg":{"x":-58.03042221069336,"y":19.174842834472656,"z":-166.43234252929688},"BackRightLeg":{"x":-64.67723846435547,"y":0.9458351135253906,"z":-164.07229614257813},"FrontLeftLeg":{"x":38.319374084472656,"y":-8.239791870117188,"z":-168.74769592285156},"FrontRightLeg":{"x":54.310855865478516,"y":21.319934844970703,"z":-165.0332794189453},"Head":{"pitch":0.3413107395172119,"yaw":0.0007669925689697266}},"cmd":"Playing","time":3000}
 
@@ -239,15 +239,15 @@ Notes:
 
 ### 5.5 Handling method of abnormal situation  
 
-Q: The command has been sent, but Sparky's body doesn't respond.  
+Q: The command has been sent, but Sirius's body doesn't respond.  
 
 A: Need to send instructions in one of Remote Control Mode, Edit Mode, Teaching Demonstration Mode, please check it before sending instructions.  
 
-Q: Python has finished the process, but the process in Sparky continues.  
+Q: Python has finished the process, but the process in Sirius continues.  
 
 A: After Python stops, you need to switch to any mode in the browser to stop this process.  
 
-Q: After the browser message page finishes the process, a large amount of data appears, which causes Sparky to run slowly.  
+Q: After the browser message page finishes the process, a large amount of data appears, which causes Sirius to run slowly.  
 
 A: The data volume is too large, which leads to a slow situation. Refresh the web page on the browser side.   
 
@@ -257,13 +257,13 @@ A: The data volume is too large, which leads to a slow situation. Refresh the we
 
 ### 6.1 Mode switching and body posture reset  
 
-There are five related modes for Sparky: Remote Control Mode, Teaching Demonstration Mode, Edit Mode, Brake Mode, and Freedom Mode. Among them, Remote Control Mode, Teaching Demonstration Mode, Edit Mode, and Brake Mode have already been available in the APP, while the Freedom Mode has not been available yet because its behavior process has not been determined.
+There are five related modes for Sirius: Remote Control Mode, Teaching Demonstration Mode, Edit Mode, Brake Mode, and Freedom Mode. Among them, Remote Control Mode, Teaching Demonstration Mode, Edit Mode, and Brake Mode have already been available in the APP, while the Freedom Mode has not been available yet because its behavior process has not been determined.
 
 :::danger[TAKE CARE]
 Notes:
-1. Brake mode and gait movement cause Sparky to enter the unloading force state. At this point, rapidly hold Sparky's waist to avoid damage caused by bumping or falling.
-2. Each time after mode switch, you need to send a command to reset the posture of Sparky before using it.
-3. The user can use the function of restoring the posture of Sparky's body according to the requirements, so as to adjust Sparky to a stable standing state.
+1. Brake mode and gait movement cause Sirius to enter the unloading force state. At this point, rapidly hold Sirius's waist to avoid damage caused by bumping or falling.
+2. Each time after mode switch, you need to send a command to reset the posture of Sirius before using it.
+3. The user can use the function of restoring the posture of Sirius's body according to the requirements, so as to adjust Sirius to a stable standing state.
 :::
 
 #### 6.1.1 模式切换指令表
@@ -320,7 +320,7 @@ The instruction interaction process for mode switching is all the same. Taking e
 // *  The robot side will reply to the received instructions (Hereinafter not repeated)
 // < {"cmd":"Mode_Switch","target":"Remote_Control_Mode"}
 
-// Before entering Brake Mode, please hold Sparky's body to prevent collision damage caused by motor unloading force!!!
+// Before entering Brake Mode, please hold Sirius's body to prevent collision damage caused by motor unloading force!!!
 {"cmd":"Mode_Switch","target":"Emergency_Stop"}
 
 // 2、Reset the body posture
@@ -662,7 +662,7 @@ We have tested that Jupyter Notebook can be used normally under Windows/linux. T
 
 [Remote control test](./api_py/key_test.ipynb)
 
-### 6.6 Graphical GUI controls the motion of Sparky in various dimensions.
+### 6.6 Graphical GUI controls the motion of Sirius in various dimensions.
 
 Source code：[keyDrame_UI.py](./api_py/keyFrameUI.py)
 
@@ -670,18 +670,18 @@ Source code：[keyDrame_UI.py](./api_py/keyFrameUI.py)
 
 Source code：[record_UI.py](./api_py/recordUI.py)
 
-### 6.8 Visualize and generate waveform curves to control the rhythmic movement of Sparky in all degrees of freedom.
+### 6.8 Visualize and generate waveform curves to control the rhythmic movement of Sirius in all degrees of freedom.
 
 Source code：[wave_control_GUI.py](./api_py/240623_wave_control_GUI.py)
 
 **Websocket can run on both remote and local sides**
 
 :::tip[USER TIPS] 
-When Sparky runs websocket locally (such as 831/X3), the IP address needs to be changed to 127.0.0.1.
+When Sirius runs websocket locally (such as 831/X3), the IP address needs to be changed to 127.0.0.1.
 :::
 
 ### 6.6 MJPEG Video Transmission
 
-Users can run it directly in the browser and experience the scenery from the perspective of Sparky together.
+Users can run it directly in the browser and experience the scenery from the perspective of Sirius together.
 
-> `Example: http://<Sparky IP>:8080` http://192.168.8.232:8080
+> `Example: http://<Sirius IP>:8080` http://192.168.8.232:8080

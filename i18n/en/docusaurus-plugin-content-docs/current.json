@@ -3,12 +3,12 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.初识 Sparky：使用指南": {
-    "message": "初识 Sparky：使用指南",
-    "description": "The label for category Meet Sparky：User Guide in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.初识 Sirius：使用指南": {
+    "message": "初识 Sirius：使用指南",
+    "description": "The label for category Meet Sirius：User Guide in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Meet Sparky: User Guide": {
-    "message": "Meet Sparky: User Guide",
-    "description": "The label for category Meet Sparky: User Guide in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Meet Sirius: User Guide": {
+    "message": "Meet Sirius: User Guide",
+    "description": "The label for category Meet Sirius: User Guide in sidebar tutorialSidebar"
   }
 }

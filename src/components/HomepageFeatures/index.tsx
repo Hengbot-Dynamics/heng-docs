@@ -18,7 +18,7 @@ const FeatureList: FeatureItem[] = [
     description: (
     <Translate>哮天是 Hengbot 推出的首款消费级高动态AI智能仿生陪伴机器狗，它结合了高级外观设计、灵巧高速运动能力和便捷二次开发功能，使用户能够轻松体验AI+机器人技术的魅力。</Translate>
     ),
-    Gif: 'img/sparky.gif',
+    Gif: 'img/Sirius.gif',
   },
 ];
 

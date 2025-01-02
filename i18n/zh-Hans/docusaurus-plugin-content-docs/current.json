@@ -3,8 +3,8 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.初识 Sparky：使用指南": {
-    "message": "初识 Sparky：使用指南",
-    "description": "The label for category 初识 Sparky：使用指南 in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.初识 Sirius：使用指南": {
+    "message": "初识 Sirius：使用指南",
+    "description": "The label for category 初识 Sirius：使用指南 in sidebar tutorialSidebar"
   }
 }
