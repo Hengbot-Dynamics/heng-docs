@@ -40,10 +40,11 @@ List：Cleaning brush, USB data cable (Type-C), Battery charger
 | Name  | Parameter |
 | ------------- | ------------- |
 | Dimension | 250x130x250mm |
-| Weight | 850g |
+| Weight | 960g |
 | Max. Load | 300g |
 | Working Temperature | 10-30°C |
-| Battery Duration | Over 45 minutes |
+| Battery life（Standby）| 100-120 min|
+| Battery life（Active Mode）| 45-50 min |
 | Max. Speed | 0.4m/s |
 | Power interface | PD30w |
 | Operating System | Linux |

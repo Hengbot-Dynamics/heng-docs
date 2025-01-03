@@ -343,7 +343,7 @@ robot_control.del_close_callback(closeCallback)
 
 | Function | Attribute | Remarks |
 |----------|-----------|---------|
-| robot_control.switch_mode(target, end_reset=True) | Switch Sirius working mode | target:`Sirius.MODE_CTRL`、`Sirius.MODE_TEACH`、`Sirius.MODE_EDIT`、`Sirius.MODE_WAVE` can be selected to return the corresponding mode operation object. `end_reset`:Whether to restore Sirius mode after the program ends. Only valid in `Sirius.MODE_TEACH` and `Sirius.MODE_EDIT`. |
+| robot_control.switch_mode(target, end_reset=True) | Switch Sirius working mode | target:`sparky.MODE_CTRL`、`sparky.MODE_TEACH`、`sparky.MODE_EDIT`、`sparky.MODE_WAVE` can be selected to return the corresponding mode operation object. `end_reset`:Whether to restore sparky mode after the program ends. Only valid in `sparky.MODE_TEACH` and `sparky.MODE_EDIT`. |
 | robot_control.reset() | Restore Sirius's posture | |
 | robot_control.get_status() | The information will be returned in the form of json, which is sorted as follows |  |
 
