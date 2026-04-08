@@ -15,6 +15,23 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/heng-docs',
 
+  // Redirect to new React application deployment
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'refresh',
+        content: '0; url=https://user.hengbot.com/heng-docs/',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: 'window.location.replace("https://user.hengbot.com/heng-docs/");',
+    },
+  ],
+
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Hengbot-Dynamics', // Usually your GitHub org/user name.

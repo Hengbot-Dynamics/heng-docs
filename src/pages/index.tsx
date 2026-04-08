@@ -1,49 +1,23 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-
-import Heading from '@theme/Heading';
-import Translate from '@docusaurus/Translate';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--dark', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className={clsx("button button--secondary button--lg button")}
-            to="https://hengbot-dynamics.github.io/heng-docs/docs/intro">
-            <Translate>了解更多</Translate>
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-
+import React, { useEffect } from 'react';
+import Head from '@docusaurus/Head';
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  useEffect(() => {
+    // 确保在客户端执行跳转（兜底方案）
+    window.location.replace("https://user.hengbot.com/zh/heng-docs/intro");
+  }, []);
+
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <div style={{ backgroundColor: 'rgb(28 28 28)' }} >
-        <HomepageHeader />
-        <main>
-          <HomepageFeatures />
-        </main>
+    <>
+      <Head>
+        {/* 利用静态生成的 meta 标签实现瞬间重定向，对 SEO 更友好且跳转速度极快 */}
+        <meta http-equiv="refresh" content="0; url=https://user.hengbot.com/zh/heng-docs/intro" />
+        <title>Redirecting to new documentation...</title>
+      </Head>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#1c1c1c', color: '#fff', fontFamily: 'system-ui, sans-serif' }}>
+        <p>正在跳转至全新文档中心，请稍候...</p>
+        <p>Redirecting to the new documentation center, please wait...</p>
       </div>
-    </Layout>
+    </>
   );
 }
