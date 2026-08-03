@@ -21,13 +21,13 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         'http-equiv': 'refresh',
-        content: '0; url=https://user.hengbot.com/heng-docs/',
+        content: '0; url=https://user.hengbot.com/en/heng-docs/intro',
       },
     },
     {
       tagName: 'script',
       attributes: {},
-      innerHTML: 'window.location.replace("https://user.hengbot.com/heng-docs/");',
+      innerHTML: 'window.location.replace("https://user.hengbot.com/en/heng-docs/intro");',
     },
   ],
 
