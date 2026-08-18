@@ -100,5 +100,5 @@ sidebar_position: 3
 | [基础系列（一）：UI 界面使用](./quick_start_two.md) | 本文档介绍了哮天头部的 UI 基本界面与交互操作。|
 | [基础系列（二）：基础遥控玩法](./app_user.md) | 本文档为您介绍了App的基础遥控玩法，涵盖从基础操作到步态运动，头部和机身运动等各个方面。让我们一起探索 App 中的各种有趣玩法吧！|
 | [探索系列（一）：进阶遥控玩法](./create_a_blog_post.md) | 在这里我们将更进一步，探索 APP 中的进阶遥控玩法——关键帧模式及拖拽示教，来为您的哮天创造更多独一无二的动作吧！|
-| [探索系列（二）：Python API](./python_api.md) | 本篇文档介绍了如何使用 python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。|
-|[探索系列（三）：WebSocket API](./deploy_your_site.md) | 本篇文档介绍了如何使用 WebSocket API 来控制哮天的运动状态，完成哮天的二次开发以及更详细的 API 资料。|
+| [探索系列（二）：Python API](./python_api.md) | 本篇文档介绍了如何使用 python sdk 控制哮天的运动状态。您可以按照我们提供的接口和例程，尝试用 Python 来学习机器人控制，完成哮天的二次开发。**Sirius v1.0 世代内容 —— 请先阅读该页顶部的安全提示。**|
+|[Sirius v1.0 WebSocket API 退役说明](./deploy_your_site.md) | 本页是旧 v1.0 WebSocket API 的退役说明，记录其退役状态与需遵守的安全边界；不提供当前 API 操作指引。|

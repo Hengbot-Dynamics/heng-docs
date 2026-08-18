@@ -77,8 +77,9 @@ Remote control mode is one of the core features of the UI on the Sirius's head, 
 | The developer mode is designed for developers who want deep programming and secondary development. Once enabled, Sirius's UI will be suspended, so that developers can use the API interface documents provided by HENGBOT and realize their innovative ideas through programming languages such as Python. | ![ui_api](./img/Quick_use_img/ui_api.jpg)|
 
 > [Mid-level (II): Python API](./python_api.md)  
+> Sirius v1.0 generation — read the safety notice at the top of that page first.
 
-> [Mid-level (III): WebSocket API](./deploy_your_site.md)
+> [Legacy WebSocket API retirement notice](./deploy_your_site.md)
 
 ### 2.7 More Settings on the Head  
 

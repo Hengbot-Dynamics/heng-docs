@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # Mid-level (II): Python API
 
+:::danger Version-bound legacy reference — read this before running any example
+
+This page documents the Python SDK for the **Sirius v1.0 generation**. It is kept as a reference for owners of that generation and is not a specification for current firmware.
+
+- `set_parameter` can **disable motor torque** and **remove the torque limit**. With torque disabled the robot collapses under its own weight; with the limit removed it can move with enough force to injure a person or damage itself.
+- Before running any example: clear the area around the robot, place it on a stable surface or have someone support it, and confirm that its firmware generation matches this document.
+- Every IP address shown on this page is a **historical development-network placeholder**. Replace it with the address of your own robot.
+
+:::
+
 ## I.Preface
 
 > In the previous sections, we familiarized ourselves with the basic and advanced usage of remote control. So the question is: What principle creates these effects?  

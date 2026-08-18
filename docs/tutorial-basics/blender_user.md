@@ -4,6 +4,14 @@ sidebar_position: 7
 
 # Mid-level (Ⅳ): Blender Tutorial for Beginners
 
+:::danger Legacy generation — not applicable to current robots
+
+The examples on this page talk to the robot over the **same v1.0 WebSocket protocol that has been retired** — see [Legacy Sirius v1.0 WebSocket API (Retired)](./deploy_your_site.md). They are kept as a historical reference for that generation and are not expected to work against current firmware.
+
+Every IP address shown on this page is a **historical development-network placeholder**. Replace it with the address of your own robot.
+
+:::
+
 ## I.Introduction
 
 This document introduces how to use Blender to edit cool actions of Sirius and debug accordingly. The document will also demonstrate how to export and play actions through Python scripts to achieve automated demonstrations of cool actions. To help users design and master the action editing of Sirius more efficiently, let's learn what effects Blender can achieve!
